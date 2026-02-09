@@ -1,0 +1,109 @@
+{
+  "experiment_name": "perfect_progressions",
+  "description": "Perfectly predictable disease progression sequences",
+  "progressions": {
+    "diabetes_progression": {
+      "sequence": [
+        "CCSR_END009",
+        "CCSR_END010",
+        "CCSR_CIR007",
+        "CCSR_EYE001"
+      ],
+      "ages": [
+        45,
+        47,
+        49,
+        52
+      ],
+      "descriptions": [
+        "Diabetes T2",
+        "Diabetes complications",
+        "Hypertension",
+        "Diabetic eye"
+      ]
+    },
+    "cardiovascular_cascade": {
+      "sequence": [
+        "CCSR_CIR007",
+        "CCSR_CIR006",
+        "CCSR_CIR011",
+        "CCSR_CIR004"
+      ],
+      "ages": [
+        50,
+        55,
+        60,
+        62
+      ],
+      "descriptions": [
+        "Hypertension",
+        "CAD",
+        "MI",
+        "Heart failure"
+      ]
+    },
+    "mental_health_progression": {
+      "sequence": [
+        "CCSR_MBD006",
+        "CCSR_MBD005",
+        "CCSR_MBD011",
+        "CCSR_NVS012"
+      ],
+      "ages": [
+        25,
+        28,
+        32,
+        35
+      ],
+      "descriptions": [
+        "Anxiety",
+        "Depression",
+        "Substance abuse",
+        "Sleep disorders"
+      ]
+    },
+    "cancer_progression": {
+      "sequence": [
+        "CCSR_NEO019",
+        "CCSR_NEO038",
+        "CCSR_SYM010",
+        "CCSR_FAC007"
+      ],
+      "ages": [
+        60,
+        61,
+        62,
+        63
+      ],
+      "descriptions": [
+        "Primary cancer",
+        "Metastases",
+        "Cachexia",
+        "Palliative care"
+      ]
+    },
+    "degenerative_progression": {
+      "sequence": [
+        "CCSR_MUS004",
+        "CCSR_NVS008",
+        "CCSR_NVS001",
+        "CCSR_GEN001"
+      ],
+      "ages": [
+        65,
+        70,
+        75,
+        80
+      ],
+      "descriptions": [
+        "Arthritis",
+        "Headaches",
+        "Dementia",
+        "Functional decline"
+      ]
+    }
+  },
+  "total_patients": 750,
+  "total_visits": 3000,
+  "created": "2026-02-09T02:08:39.400536"
+}

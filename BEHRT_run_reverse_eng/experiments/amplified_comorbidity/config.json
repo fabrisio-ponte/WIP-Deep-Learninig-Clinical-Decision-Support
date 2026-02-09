@@ -1,0 +1,62 @@
+{
+  "experiment_name": "amplified_comorbidity",
+  "description": "Strongly amplified comorbidity patterns",
+  "comorbidity_clusters": {
+    "metabolic_syndrome": {
+      "core_diseases": [
+        "CCSR_END009",
+        "CCSR_CIR007",
+        "CCSR_END001"
+      ],
+      "associated": [
+        "CCSR_CIR006",
+        "CCSR_END010",
+        "CCSR_CIR013"
+      ],
+      "co_occurrence_rate": 0.95
+    },
+    "heart_failure_complex": {
+      "core_diseases": [
+        "CCSR_CIR004",
+        "CCSR_CIR007",
+        "CCSR_CIR006"
+      ],
+      "associated": [
+        "CCSR_END009",
+        "CCSR_RES005",
+        "CCSR_GU001"
+      ],
+      "co_occurrence_rate": 0.9
+    },
+    "mental_health_complex": {
+      "core_diseases": [
+        "CCSR_MBD005",
+        "CCSR_MBD006",
+        "CCSR_MBD011"
+      ],
+      "associated": [
+        "CCSR_NVS012",
+        "CCSR_INJ002",
+        "CCSR_FAC012"
+      ],
+      "co_occurrence_rate": 0.85
+    },
+    "cancer_cascade": {
+      "core_diseases": [
+        "CCSR_NEO019",
+        "CCSR_NEO038",
+        "CCSR_SYM010"
+      ],
+      "associated": [
+        "CCSR_BLD001",
+        "CCSR_MBD005",
+        "CCSR_FAC007"
+      ],
+      "co_occurrence_rate": 0.95
+    }
+  },
+  "patients_per_cluster": 200,
+  "total_patients": 800,
+  "total_visits": 8578,
+  "created": "2026-02-09T02:08:39.576735"
+}

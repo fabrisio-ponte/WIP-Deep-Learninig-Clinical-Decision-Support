@@ -1,0 +1,33 @@
+{
+  "total_experiments": 4,
+  "baseline_aps": 0.4,
+  "target_aps": "0.85-0.90",
+  "experiments": [
+    {
+      "name": "perfect_progressions",
+      "path": "experiments/perfect_progressions",
+      "created": "2026-02-09T02:08:39.581142"
+    },
+    {
+      "name": "optimal_temporal",
+      "path": "experiments/optimal_temporal",
+      "created": "2026-02-09T02:08:39.581144"
+    },
+    {
+      "name": "amplified_comorbidity",
+      "path": "experiments/amplified_comorbidity",
+      "created": "2026-02-09T02:08:39.581145"
+    },
+    {
+      "name": "minimal_complexity",
+      "path": "experiments/minimal_complexity",
+      "created": "2026-02-09T02:08:39.581146"
+    }
+  ],
+  "next_steps": [
+    "Train BEHRT model on each experimental dataset",
+    "Compare APS/ROC-AUC results against baseline",
+    "Identify which strategies achieve target performance",
+    "Analyze data characteristics that drive high performance"
+  ]
+}

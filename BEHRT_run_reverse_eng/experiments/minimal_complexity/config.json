@@ -1,0 +1,75 @@
+{
+  "experiment_name": "minimal_complexity",
+  "description": "Minimal complexity with maximum predictability",
+  "rules": {
+    "rule_1_young_anxiety_depression": {
+      "condition": "age 25-35 AND anxiety",
+      "prediction": "depression in next visit",
+      "sequence": [
+        "CCSR_MBD006",
+        "CCSR_MBD005"
+      ],
+      "ages": [
+        28,
+        30
+      ],
+      "probability": 0.98
+    },
+    "rule_2_diabetes_hypertension": {
+      "condition": "age 45-55 AND diabetes",
+      "prediction": "hypertension in next visit",
+      "sequence": [
+        "CCSR_END009",
+        "CCSR_CIR007"
+      ],
+      "ages": [
+        48,
+        50
+      ],
+      "probability": 0.95
+    },
+    "rule_3_hypertension_cad": {
+      "condition": "age 55-65 AND hypertension",
+      "prediction": "coronary artery disease in next visit",
+      "sequence": [
+        "CCSR_CIR007",
+        "CCSR_CIR006"
+      ],
+      "ages": [
+        58,
+        61
+      ],
+      "probability": 0.92
+    },
+    "rule_4_cad_mi": {
+      "condition": "age 60-70 AND CAD",
+      "prediction": "myocardial infarction in next visit",
+      "sequence": [
+        "CCSR_CIR006",
+        "CCSR_CIR011"
+      ],
+      "ages": [
+        63,
+        65
+      ],
+      "probability": 0.9
+    },
+    "rule_5_cancer_metastases": {
+      "condition": "age 60+ AND primary cancer",
+      "prediction": "metastases in next visit",
+      "sequence": [
+        "CCSR_NEO019",
+        "CCSR_NEO038"
+      ],
+      "ages": [
+        65,
+        66
+      ],
+      "probability": 0.97
+    }
+  },
+  "patients_per_rule": 300,
+  "total_patients": 1500,
+  "total_visits": 3000,
+  "created": "2026-02-09T02:08:39.580883"
+}

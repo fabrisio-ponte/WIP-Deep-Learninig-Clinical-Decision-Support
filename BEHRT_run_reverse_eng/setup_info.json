@@ -1,0 +1,23 @@
+{
+  "environment": "BEHRT_run_reverse_eng",
+  "description": "Isolated environment for BEHRT reverse engineering experiments",
+  "created": "2026-02-09T02:08:03.808709",
+  "source": "/Users/telaclaimstech/Desktop/BEHRT_WIP/BEHRT_run",
+  "experiments": [
+    "perfect_progressions",
+    "optimal_temporal",
+    "amplified_comorbidity",
+    "minimal_complexity"
+  ],
+  "goals": {
+    "current_baseline_aps": "~0.40",
+    "target_aps": "0.85-0.90",
+    "original_paper_aps": "0.462-0.525"
+  },
+  "usage": [
+    "1. cd BEHRT_run_reverse_eng",
+    "2. python run_reverse_engineering_experiments.py",
+    "3. python train_experimental_models.py",
+    "4. python analyze_experimental_results.py"
+  ]
+}

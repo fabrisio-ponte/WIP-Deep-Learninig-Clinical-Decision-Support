@@ -1,0 +1,39 @@
+{
+  "experiment_name": "optimal_temporal",
+  "description": "Optimal temporal spacing and age-disease correlations",
+  "age_disease_mapping": {
+    "20-35": [
+      "CCSR_MBD006",
+      "CCSR_MBD005",
+      "CCSR_PRG001",
+      "CCSR_INJ001"
+    ],
+    "35-50": [
+      "CCSR_CIR007",
+      "CCSR_END009",
+      "CCSR_DIG006",
+      "CCSR_MUS004"
+    ],
+    "50-65": [
+      "CCSR_END010",
+      "CCSR_CIR006",
+      "CCSR_NEO019",
+      "CCSR_RES005"
+    ],
+    "65-80": [
+      "CCSR_NVS001",
+      "CCSR_CIR004",
+      "CCSR_GEN001",
+      "CCSR_SYM001"
+    ],
+    "80-95": [
+      "CCSR_FAC007",
+      "CCSR_CIR012",
+      "CCSR_NVS013",
+      "CCSR_GEN002"
+    ]
+  },
+  "total_patients": 1000,
+  "total_visits": 17948,
+  "created": "2026-02-09T02:08:39.541244"
+}
