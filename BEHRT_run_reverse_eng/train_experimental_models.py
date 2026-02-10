@@ -5,6 +5,7 @@ Train BEHRT models on experimental datasets
 
 import subprocess
 import sys
+import os
 from pathlib import Path
 import json
 
@@ -25,11 +26,15 @@ def train_experiment(experiment_name):
         print(f"❌ Data file not found: {exp_data}")
         return False
     
-    # Run quickstart training
+    # Run proper NextVisit training following working implementation
     try:
+        # Set environment variable to pass experiment name
+        env = os.environ.copy()
+        env['EXPERIMENT_NAME'] = experiment_name
+        
         result = subprocess.run([
-            sys.executable, "quickstart.py"
-        ], capture_output=True, text=True, timeout=3600)  # 1 hour timeout
+            sys.executable, "proper_nextvisit_training.py"
+        ], capture_output=True, text=True, timeout=3600, cwd="BEHRT_Project", env=env)  # 1 hour timeout
         
         if result.returncode == 0:
             print(f"✅ {experiment_name} training completed successfully")
