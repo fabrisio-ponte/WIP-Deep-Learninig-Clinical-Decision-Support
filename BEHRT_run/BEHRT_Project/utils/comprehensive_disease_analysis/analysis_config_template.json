@@ -1,0 +1,19 @@
+{
+  "model_path": "../data/models/quick/behrt_nextvisit_ccsr_quick.pt",
+  "vocab_path": "../data/processed/vocab_ccsr",
+  "test_data_path": "../data/processed/test_nextvisit_ccsr.parquet",
+  "batch_size": 64,
+  "device": "cuda:0",
+  "max_len_seq": 100,
+  "max_age": 110,
+  "description": "Configuration template for comprehensive BEHRT disease analysis",
+  "instructions": {
+    "model_path": "Path to trained BEHRT model (.bin or .pth file)",
+    "vocab_path": "Path to vocabulary pickle file (without .pkl extension)",
+    "test_data_path": "Path to test data parquet file",
+    "batch_size": "Batch size for prediction generation (adjust based on GPU memory)",
+    "device": "Device to use ('cuda:0' if GPU available, 'cpu' otherwise)",
+    "max_len_seq": "Maximum sequence length (should match training)",
+    "max_age": "Maximum age in vocabulary (should match preprocessing)"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "vocab_path": "data/processed/vocab_ccsr.pkl",
+  "test_data_path": "data/processed/test_data_ccsr.parquet",
+  "model_path": "data/models/quick/behrt_nextvisit.pth",
+  "max_age": 110,
+  "month": 1,
+  "age_symbol": null,
+  "max_len_seq": 100,
+  "batch_size": 32,
+  "hidden_size": 288,
+  "num_hidden_layers": 6,
+  "num_attention_heads": 12,
+  "hidden_dropout_prob": 0.2,
+  "attention_probs_dropout_prob": 0.22,
+  "intermediate_size": 512
+}
