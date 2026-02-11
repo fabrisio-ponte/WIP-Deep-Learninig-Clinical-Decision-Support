@@ -1,6 +1,6 @@
 {
-  "vocab_path": "data/processed/vocab_ccsr.pkl",
-  "test_data_path": "data/processed/test_data_ccsr.parquet",
+  "vocab_path": "data/processed/vocab_ccsr_clean.pkl",
+  "test_data_path": "data/processed/test_nextvisit_ccsr_clean.parquet",
   "model_path": "data/models/quick/behrt_nextvisit.pth",
   "max_age": 110,
   "month": 1,

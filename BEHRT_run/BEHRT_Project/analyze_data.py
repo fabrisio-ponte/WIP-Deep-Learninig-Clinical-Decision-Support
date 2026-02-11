@@ -12,7 +12,7 @@ def analyze_data():
     print("=" * 50)
     
     # 1. Load test data
-    test_data = pd.read_parquet('data/processed/test_nextvisit_ccsr.parquet')
+    test_data = pd.read_parquet('data/processed/test_nextvisit_ccsr_clean.parquet')
     print(f"Test data shape: {test_data.shape}")
     
     # 2. Analyze label distribution
