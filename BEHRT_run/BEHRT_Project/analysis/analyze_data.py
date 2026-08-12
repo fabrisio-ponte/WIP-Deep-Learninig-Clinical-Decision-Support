@@ -5,14 +5,20 @@ Quick data analysis to understand the XXX000 and performance issues
 
 import pandas as pd
 import json
+import sys
+from pathlib import Path
 from collections import Counter
+
+# Get project root directory
+project_root = Path(__file__).parent.parent
+data_dir = project_root / "data" / "processed"
 
 def analyze_data():
     print("🔍 BEHRT DATA ANALYSIS")
     print("=" * 50)
     
     # 1. Load test data
-    test_data = pd.read_parquet('data/processed/test_nextvisit_ccsr_clean.parquet')
+    test_data = pd.read_parquet(data_dir / "test_nextvisit_ccsr_clean.parquet")
     print(f"Test data shape: {test_data.shape}")
     
     # 2. Analyze label distribution
@@ -45,7 +51,8 @@ def analyze_data():
     
     # 5. Load prediction results
     try:
-        with open('utils/comprehensive_disease_analysis/comprehensive_disease_analysis_results.json', 'r') as f:
+        results_file = project_root / "utils" / "comprehensive_disease_analysis" / "comprehensive_disease_analysis_results.json"
+        with open(results_file, 'r') as f:
             results = json.load(f)
         
         individual_results = results['all_individual_diseases']

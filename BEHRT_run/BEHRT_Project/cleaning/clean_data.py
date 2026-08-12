@@ -25,13 +25,13 @@ import sys
 from pathlib import Path
 
 # Add project to path
-project_root = Path(__file__).parent
+project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
 from common.common import save_obj, load_obj
 
 class BEHRTDataCleaner:
-    def __init__(self, data_dir="data/processed"):
+    def __init__(self, data_dir="../data/processed"):
         self.data_dir = Path(data_dir)
         self.original_vocab = None
         self.clean_vocab = None

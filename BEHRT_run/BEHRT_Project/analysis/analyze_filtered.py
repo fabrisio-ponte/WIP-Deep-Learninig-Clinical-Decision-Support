@@ -14,9 +14,8 @@ from collections import Counter
 import sys
 from pathlib import Path
 
-# Add project to path
-project_root = Path(__file__).parent
-sys.path.insert(0, str(project_root))
+# Get project root directory
+project_root = Path(__file__).parent.parent
 
 def load_and_filter_results():
     """Load comprehensive results and filter out XXX000"""
@@ -24,7 +23,7 @@ def load_and_filter_results():
     print("=" * 60)
     
     # Load original comprehensive results
-    results_file = "utils/comprehensive_disease_analysis/comprehensive_disease_analysis_results.json"
+    results_file = project_root / "utils" / "comprehensive_disease_analysis" / "comprehensive_disease_analysis_results.json"
     with open(results_file, 'r') as f:
         results = json.load(f)
     
