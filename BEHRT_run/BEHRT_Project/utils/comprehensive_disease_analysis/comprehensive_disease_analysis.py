@@ -133,25 +133,28 @@ class ComprehensiveDiseaseAnalysis:
         """Load trained BEHRT model and test data"""
         print("Loading model and data...")
         
-        # Load vocabulary
-        self.vocab = load_obj(self.config['vocab_path'])
+        # Normalize pickle path to avoid double-appending .pkl when config already includes the suffix.
+        vocab_path = Path(self.config['vocab_path'])
+        if vocab_path.suffix == '.pkl':
+            vocab_path = vocab_path.with_suffix('')
+        self.vocab = load_obj(str(vocab_path))
         self.age_vocab, _ = age_vocab(max_age=self.config['max_age'], mon=1)
         
         # Format label vocabulary
         self.label_vocab = self._format_label_vocab(self.vocab['token2idx'])
         
-        # Setup model configuration - QUICK version to match saved model
+        # Use the same architecture as the trained clean model instead of the stale quick-model defaults.
         self.model_config = {
             'vocab_size': len(self.vocab['token2idx'].keys()),
-            'hidden_size': 144,  # Quick version uses 144
+            'hidden_size': self.config.get('hidden_size', 144),
             'seg_vocab_size': 2,
             'age_vocab_size': len(self.age_vocab.keys()),
-            'max_position_embedding': 64,  # Quick version uses 64
-            'hidden_dropout_prob': 0.1,
-            'num_hidden_layers': 3,  # Quick version uses 3 layers
-            'num_attention_heads': 6,  # Quick version uses 6 heads
-            'attention_probs_dropout_prob': 0.1,
-            'intermediate_size': 256,  # Quick version uses 256
+            'max_position_embedding': self.config.get('max_len_seq', 64),
+            'hidden_dropout_prob': self.config.get('hidden_dropout_prob', 0.1),
+            'num_hidden_layers': self.config.get('num_hidden_layers', 3),
+            'num_attention_heads': self.config.get('num_attention_heads', 6),
+            'attention_probs_dropout_prob': self.config.get('attention_probs_dropout_prob', 0.1),
+            'intermediate_size': self.config.get('intermediate_size', 256),
             'hidden_act': 'gelu',
             'initializer_range': 0.02,
         }
@@ -243,9 +246,15 @@ class ComprehensiveDiseaseAnalysis:
             for batch_idx, batch in enumerate(self.test_loader):
                 age_ids, input_ids, posi_ids, segment_ids, att_mask, targets, _ = batch
                 
-                # Transform labels using MultiLabelBinarizer
+                # Strip padded -1 labels before multilabel binarization. The dataset pads labels with -1,
+                # which should not be treated as a real class during evaluation.
+                cleaned_targets = []
+                for row in targets.numpy():
+                    cleaned = [int(x) for x in row if int(x) >= 0]
+                    cleaned_targets.append(cleaned)
+
                 targets_binary = torch.tensor(
-                    self.mlb.transform(targets.numpy()), 
+                    self.mlb.transform(cleaned_targets),
                     dtype=torch.float32
                 ).to(self.config['device'])
                 
@@ -519,7 +528,11 @@ class ComprehensiveDiseaseAnalysis:
 
 def main():
     """Run comprehensive disease analysis"""
-    analyzer = ComprehensiveDiseaseAnalysis()
+    parser = argparse.ArgumentParser(description="Run BEHRT disease-level evaluation.")
+    parser.add_argument("--config", default="config/analysis_config.json", help="Path to the analysis configuration JSON file.")
+    args = parser.parse_args()
+
+    analyzer = ComprehensiveDiseaseAnalysis(config_path=args.config)
     analyzer.run_complete_analysis()
 
 

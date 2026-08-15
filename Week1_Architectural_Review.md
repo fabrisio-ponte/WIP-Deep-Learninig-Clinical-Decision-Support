@@ -2,6 +2,22 @@
 
 Source material: `Ponte_Vela_BEHRT_2025_.pdf`, original BEHRT paper (Li et al. 2020), and the code in `BEHRT_WIP/BEHRT_run/BEHRT_Project` (production pipeline) and `BEHRT_WIP/BEHRT_run_reverse_eng` (ablation experiments).
 
+## Executive summary for publication
+
+This review is meant to serve as a working publication-risk audit, not as a final manuscript. The central finding is that the project already has a plausible BEHRT-style architecture and a credible clinical story, but the current results are not yet publication-ready because several foundational details are inconsistent across code, methods, and reported metrics.
+
+The main issue is not a weak concept; it is a reproducibility and documentation problem. The model has a coherent design, the project already contains cleaned data and cleaned-vocabulary workflows, and the quick/full split gives us a sensible research pipeline. The remaining work is to turn that pipeline into a traceable, reviewer-proof experimental record.
+
+The publication path is straightforward:
+
+1. Use the quick pipeline for iteration and debugging.
+2. Fix the data leakage and noise-code issues before any final reporting.
+3. Recompute the headline metrics on the cleaned datasets.
+4. Regenerate all tables and figures from saved artifacts.
+5. Only then write the paper narrative in a way that stays faithful to the code.
+
+This is a project with a realistic path to publication, but not yet with a fully defensible paper draft. The current document identifies what must be fixed before that handoff.
+
 ## 1. Design rationale (paper's four contributions, one sentence each)
 
 | Design choice | Why it was made | Alternative considered |
@@ -30,6 +46,54 @@ These need to be resolved (or the paper corrected) before Week 2, since a JAMIA 
 **Table II's per-disease AUC numbers aren't traceable to any file in the repo.** The only saved results artifact (`comprehensive_disease_analysis_results.json`) reports F1/precision/recall by CCSR code, not AUC/AP by disease name, and its top performers by F1 don't obviously correspond one-to-one with "Heart disease 0.94 / T2D 0.93 / CKD 0.92 / Hypertension 0.91 / COPD 0.90." Table II needs to be regenerated from a script that saves its output, so the numbers in the final paper are reproducible from something in the repo.
 
 ## 3. Weakest CCSR categories, and why
+
+## Publication-risk summary
+
+We now have a clear distinction between three categories of issues:
+
+- Structural issues: architecture, config, and code/data mismatches.
+- Statistical issues: inflated metrics due to generic label leakage and non-cleaned evaluation.
+- Editorial issues: values that need to be made reproducible and traceable in the manuscript.
+
+The architecture itself is solid enough to keep. The actual publication risk comes from the mismatch between the story we want to tell and the numbers currently produced by the code. That mismatch is fixable without rewriting the core paper idea, but it must be corrected before submission.
+
+## Week 2 priority plan
+
+### Phase 1: Stabilize the experimental baseline
+
+- Reproduce the cleaned data training run on the existing `_clean.parquet` files.
+- Verify that the generic noise code is absent from train/val/test before evaluation.
+- Confirm the quick run remains the default iteration mode while the full run is reserved for final validation.
+
+### Phase 2: Recompute the paper metrics from saved artifacts
+
+- Use a reproducible script to generate APS/AUC and per-disease metrics.
+- Save each result set as a file in the project results directory.
+- Make sure every figure or table in the paper can be regenerated from that artifact.
+
+### Phase 3: Align the architecture description with the actual code
+
+- Decide whether segment embedding is part of the final architecture.
+- Reconcile the model size and intermediate dimension values across code and manuscript.
+- State the train/test subsampling explicitly if it remains part of the pipeline.
+
+### Phase 4: Rewrite the manuscript narrative to reflect what is actually true
+
+- Keep the high-level story: compact BEHRT-style model, age-aware multi-label next-visit prediction, strong chronic disease signals.
+- Remove or soften any claim that depends on the generic noise code still being present.
+- Frame performance as a clinically meaningful subset result rather than a fully cleaned global benchmark unless the clean rerun confirms it.
+
+### Phase 5: Final publication gate
+
+The paper is ready for a clean draft pass only when all of the following are true:
+
+- the clean-data metrics are reproducible;
+- the headline numbers come from the same data the methods section claims;
+- the architecture description matches the code;
+- the tables are generated from saved artifacts, not hand-transcribed from memory;
+- the quick/full distinction is clearly explained as an iteration workflow, not a hidden model mismatch.
+
+If those gate conditions are met, the project becomes publishable in a strong, transparent way without changing the core scientific direction.
 
 From `comprehensive_disease_analysis_results.json` (F1 at the default 0.5 threshold, computed on the QUICK model / 80%-subsampled test set):
 
