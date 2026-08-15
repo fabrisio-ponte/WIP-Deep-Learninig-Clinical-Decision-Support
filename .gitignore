@@ -238,6 +238,10 @@ Thumbs.db
 *.swo
 
 # Temporary files
+
+# BEHRT project generated artifacts
+BEHRT_run/BEHRT_Project/data/models/
+BEHRT_run/BEHRT_Project/comprehensive_disease_analysis_results.json
 *.tmp
 *.temp
 *~
