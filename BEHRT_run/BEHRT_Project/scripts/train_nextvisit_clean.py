@@ -216,6 +216,9 @@ def main():
     val_loader = DataLoader(val_set, batch_size=global_params["batch_size"], shuffle=False, num_workers=0)
     test_loader = DataLoader(test_set, batch_size=global_params["batch_size"], shuffle=False, num_workers=0)
 
+    num_epochs = int(os.getenv("EPOCHS", "3"))
+    total_train_steps = len(train_loader) * num_epochs
+
     mlb = MultiLabelBinarizer(classes=list(label_vocab.values()))
     mlb.fit([[x] for x in list(label_vocab.values())])
 
@@ -225,15 +228,17 @@ def main():
 
     optim = optimiser.adam(
         params=list(model.named_parameters()),
-        config={"lr": 5e-5, "warmup_proportion": 0.1, "weight_decay": 0.01},
+        config={"lr": 5e-5, "warmup_proportion": 0.1, "weight_decay": 0.01, "t_total": total_train_steps},
     )
 
     best_val_aps = -1.0
     best_model_path = run_dir / "behrt_nextvisit_ccsr_clean_best.pt"
-    num_epochs = int(os.getenv("EPOCHS", "3"))
     log_every = int(os.getenv("LOG_EVERY", "100"))
+    grad_clip_norm = float(os.getenv("GRAD_CLIP_NORM", "1.0"))
+    early_stop_patience = int(os.getenv("EARLY_STOP_PATIENCE", "0"))
     use_pos_weight = os.getenv("USE_POS_WEIGHT", "0") == "1"
     max_pos_weight = float(os.getenv("MAX_POS_WEIGHT", "30.0"))
+    epochs_without_improvement = 0
 
     if use_pos_weight:
         pos_weight = compute_pos_weight_from_train(train_df, label_vocab, max_pos_weight=max_pos_weight)
@@ -264,6 +269,8 @@ def main():
                 logits = model(input_ids, age_ids, segment_ids, posi_ids, attention_mask=att_mask)
                 loss = loss_fn(logits, target_ml)
             loss.backward()
+            if grad_clip_norm > 0:
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=grad_clip_norm)
             optim.step()
 
             epoch_loss += loss.item()
@@ -278,7 +285,14 @@ def main():
 
         if val_metrics["sample_wise_aps"] > best_val_aps:
             best_val_aps = val_metrics["sample_wise_aps"]
+            epochs_without_improvement = 0
             save_model(str(best_model_path), model)
+        else:
+            epochs_without_improvement += 1
+
+        if early_stop_patience > 0 and epochs_without_improvement >= early_stop_patience:
+            print(f"Early stopping triggered after {epoch+1} epochs (patience={early_stop_patience}).")
+            break
 
     # Load best model weights for final test metrics
     model.load_state_dict(torch.load(best_model_path, map_location=global_params["device"]))
@@ -297,6 +311,8 @@ def main():
         "run_controls": {
             "sample_limit": sample_limit,
             "log_every": log_every,
+            "grad_clip_norm": grad_clip_norm,
+            "early_stop_patience": early_stop_patience,
             "seed": seed,
             "use_pos_weight": use_pos_weight,
             "max_pos_weight": max_pos_weight,
