@@ -168,11 +168,15 @@ def create_visit_sequences(df):
         
         # Only include patients with minimum number of visits
         if visit_count >= MIN_VISITS:
+            first_admit = group['admittime'].min()
+            last_admit = group['admittime'].max()
             sequences.append({
                 'patid': subject_id,
                 'code': codes,
                 'age': ages,
-                'num_visits': visit_count
+                'num_visits': visit_count,
+                'first_admittime': first_admit,
+                'last_admittime': last_admit,
             })
     
     print(f"Created sequences for {len(sequences)} patients with >={MIN_VISITS} visits")
@@ -236,12 +240,17 @@ def create_age_vocabulary(max_age=110, granularity='month'):
     print(f"Age vocabulary size: {len(age2idx)}")
     return age2idx, idx2age
 
-def split_data(sequences_df, train_ratio=0.8, val_ratio=0.1):
-    """Split data into train, validation, and test sets"""
-    print("Splitting data...")
-    
-    # Shuffle
-    sequences_df = sequences_df.sample(frac=1, random_state=42).reset_index(drop=True)
+def split_data(sequences_df, train_ratio=0.8, val_ratio=0.1, split_mode='random_patient'):
+    """Split patient-level sequence rows into train, validation, and test sets."""
+    print(f"Splitting data using mode: {split_mode}")
+
+    if split_mode == 'temporal_patient':
+        if 'last_admittime' not in sequences_df.columns:
+            raise ValueError("temporal_patient split requires last_admittime in sequences_df")
+        sequences_df = sequences_df.sort_values('last_admittime').reset_index(drop=True)
+    else:
+        # Default split is still by patient rows, randomized for stable benchmarking.
+        sequences_df = sequences_df.sample(frac=1, random_state=42).reset_index(drop=True)
     
     n = len(sequences_df)
     train_size = int(n * train_ratio)
@@ -252,6 +261,15 @@ def split_data(sequences_df, train_ratio=0.8, val_ratio=0.1):
     test_df = sequences_df[train_size+val_size:]
     
     print(f"Train: {len(train_df)}, Val: {len(val_df)}, Test: {len(test_df)}")
+
+    # Leakage audit: split must remain patient-disjoint.
+    train_pat = set(train_df['patid'].astype(str))
+    val_pat = set(val_df['patid'].astype(str))
+    test_pat = set(test_df['patid'].astype(str))
+    print("Patient overlap counts:")
+    print(f"  train-val: {len(train_pat & val_pat)}")
+    print(f"  train-test: {len(train_pat & test_pat)}")
+    print(f"  val-test: {len(val_pat & test_pat)}")
     return train_df, val_df, test_df
 
 def create_label_sequences(sequences_df):
@@ -350,7 +368,8 @@ def main():
     age_vocab = {'age2idx': age2idx, 'idx2age': idx2age}
     
     # Step 8: Split data
-    train_df, val_df, test_df = split_data(sequences_df)
+    split_mode = os.getenv('SPLIT_MODE', 'random_patient').strip().lower()
+    train_df, val_df, test_df = split_data(sequences_df, split_mode=split_mode)
     
     # Step 9: Create labeled sequences for next visit prediction
     print("\nCreating labeled data for next visit prediction...")
