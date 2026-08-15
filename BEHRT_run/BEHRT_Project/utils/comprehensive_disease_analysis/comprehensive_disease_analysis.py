@@ -33,7 +33,7 @@ from torch.utils.data import DataLoader
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics import (
     accuracy_score, precision_score, recall_score, f1_score,
-    average_precision_score, roc_auc_score
+    average_precision_score, roc_auc_score, hamming_loss
 )
 
 # Add BEHRT_Project to path for imports
@@ -292,16 +292,23 @@ class ComprehensiveDiseaseAnalysis:
         """Calculate overall performance metrics"""
         print("Calculating overall metrics...")
         
-        # Weighted metrics (by support)
-        weighted_precision = precision_score(self.true_labels, self.predictions, average='weighted', zero_division=0)
-        weighted_recall = recall_score(self.true_labels, self.predictions, average='weighted', zero_division=0)
-        weighted_f1 = f1_score(self.true_labels, self.predictions, average='weighted', zero_division=0)
-        weighted_accuracy = accuracy_score(self.true_labels, self.predictions)
-        
-        # Macro metrics (unweighted average)
+        # Exact-match subset accuracy is strict in multilabel settings but still useful to report explicitly.
+        subset_accuracy = accuracy_score(self.true_labels, self.predictions)
+
+        # Multilabel-friendly aggregate metrics.
+        micro_precision = precision_score(self.true_labels, self.predictions, average='micro', zero_division=0)
+        micro_recall = recall_score(self.true_labels, self.predictions, average='micro', zero_division=0)
+        micro_f1 = f1_score(self.true_labels, self.predictions, average='micro', zero_division=0)
+
         macro_precision = precision_score(self.true_labels, self.predictions, average='macro', zero_division=0)
         macro_recall = recall_score(self.true_labels, self.predictions, average='macro', zero_division=0)
         macro_f1 = f1_score(self.true_labels, self.predictions, average='macro', zero_division=0)
+
+        samples_precision = precision_score(self.true_labels, self.predictions, average='samples', zero_division=0)
+        samples_recall = recall_score(self.true_labels, self.predictions, average='samples', zero_division=0)
+        samples_f1 = f1_score(self.true_labels, self.predictions, average='samples', zero_division=0)
+
+        hamming_acc = 1.0 - hamming_loss(self.true_labels, self.predictions)
         
         # Per-class F1 scores
         per_class_f1 = f1_score(self.true_labels, self.predictions, average=None, zero_division=0)
@@ -317,13 +324,17 @@ class ComprehensiveDiseaseAnalysis:
         token_accuracy = correct_predictions / total_predictions
         
         self.overall_metrics = {
-            'weighted_accuracy': weighted_accuracy,
-            'weighted_precision': weighted_precision,
-            'weighted_recall': weighted_recall,
-            'weighted_f1': weighted_f1,
+            'subset_accuracy': subset_accuracy,
+            'micro_precision': micro_precision,
+            'micro_recall': micro_recall,
+            'micro_f1': micro_f1,
             'macro_precision': macro_precision,
             'macro_recall': macro_recall,
             'macro_f1': macro_f1,
+            'samples_precision': samples_precision,
+            'samples_recall': samples_recall,
+            'samples_f1': samples_f1,
+            'hamming_accuracy': hamming_acc,
             'mean_per_class_f1': mean_per_class_f1,
             'sample_wise_aps': sample_wise_aps,
             'sample_wise_auc': sample_wise_auc,
@@ -425,15 +436,20 @@ class ComprehensiveDiseaseAnalysis:
         
         # Overall Performance
         report.append("OVERALL PERFORMANCE:")
-        report.append(f"├─ Weighted Accuracy:       {self.overall_metrics['weighted_accuracy']:.2%}")
-        report.append(f"├─ Weighted Precision:      {self.overall_metrics['weighted_precision']:.2%}")
-        report.append(f"├─ Weighted Recall:         {self.overall_metrics['weighted_recall']:.2%}")
-        report.append(f"├─ Weighted F1 Score:       {self.overall_metrics['weighted_f1']:.2%}")
+        report.append(f"├─ Subset Accuracy:         {self.overall_metrics['subset_accuracy']:.2%}")
+        report.append(f"├─ Micro Precision:         {self.overall_metrics['micro_precision']:.2%}")
+        report.append(f"├─ Micro Recall:            {self.overall_metrics['micro_recall']:.2%}")
+        report.append(f"├─ Micro F1 Score:          {self.overall_metrics['micro_f1']:.2%}")
         report.append("│")
         report.append(f"├─ Macro Precision:         {self.overall_metrics['macro_precision']:.2%}")
         report.append(f"├─ Macro Recall:            {self.overall_metrics['macro_recall']:.2%}")
         report.append(f"├─ Macro F1 Score:          {self.overall_metrics['macro_f1']:.2%}")
         report.append("│")
+        report.append(f"├─ Samples Precision:       {self.overall_metrics['samples_precision']:.2%}")
+        report.append(f"├─ Samples Recall:          {self.overall_metrics['samples_recall']:.2%}")
+        report.append(f"├─ Samples F1 Score:        {self.overall_metrics['samples_f1']:.2%}")
+        report.append("│")
+        report.append(f"├─ Hamming Accuracy:        {self.overall_metrics['hamming_accuracy']:.2%}")
         report.append(f"└─ Mean Per-Class F1:       {self.overall_metrics['mean_per_class_f1']:.2%}")
         report.append("")
         

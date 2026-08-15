@@ -109,6 +109,30 @@ def evaluate(model, loader, mlb, device):
     return {"sample_wise_aps": float(aps), "sample_wise_auc": float(auc)}
 
 
+def compute_pos_weight_from_train(train_df, label_vocab, max_pos_weight=30.0):
+    """Compute stable per-class positive weights for BCEWithLogitsLoss.
+
+    Weight formula: neg_count / pos_count, clipped to avoid extreme gradients.
+    """
+    num_classes = len(label_vocab)
+    class_counts = np.zeros(num_classes, dtype=np.int64)
+
+    for labels in train_df["label"]:
+        for code in set(labels):
+            idx = label_vocab.get(code)
+            if idx is not None:
+                class_counts[idx] += 1
+
+    n_samples = len(train_df)
+    neg_counts = n_samples - class_counts
+
+    safe_pos = np.maximum(class_counts, 1)
+    pos_weight = neg_counts / safe_pos
+    pos_weight = np.clip(pos_weight, 1.0, float(max_pos_weight))
+
+    return torch.tensor(pos_weight, dtype=torch.float32)
+
+
 def main():
     seed = int(os.getenv("SEED", "42"))
     np.random.seed(seed)
@@ -208,6 +232,16 @@ def main():
     best_model_path = run_dir / "behrt_nextvisit_ccsr_clean_best.pt"
     num_epochs = int(os.getenv("EPOCHS", "3"))
     log_every = int(os.getenv("LOG_EVERY", "100"))
+    use_pos_weight = os.getenv("USE_POS_WEIGHT", "0") == "1"
+    max_pos_weight = float(os.getenv("MAX_POS_WEIGHT", "30.0"))
+
+    if use_pos_weight:
+        pos_weight = compute_pos_weight_from_train(train_df, label_vocab, max_pos_weight=max_pos_weight)
+        pos_weight = pos_weight.to(global_params["device"])
+        loss_fn = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
+        print(f"Using BCEWithLogitsLoss with pos_weight (max clip={max_pos_weight:.1f})")
+    else:
+        loss_fn = None
 
     for epoch in range(num_epochs):
         model.train()
@@ -224,7 +258,11 @@ def main():
             target_ml = targets_to_multihot(targets, mlb, device=global_params["device"])
 
             optim.zero_grad()
-            loss, _ = model(input_ids, age_ids, segment_ids, posi_ids, attention_mask=att_mask, labels=target_ml)
+            if loss_fn is None:
+                loss, _ = model(input_ids, age_ids, segment_ids, posi_ids, attention_mask=att_mask, labels=target_ml)
+            else:
+                logits = model(input_ids, age_ids, segment_ids, posi_ids, attention_mask=att_mask)
+                loss = loss_fn(logits, target_ml)
             loss.backward()
             optim.step()
 
@@ -256,7 +294,13 @@ def main():
         },
         "model_config": model_config,
         "training": {"epochs": num_epochs, "batch_size": global_params["batch_size"]},
-        "run_controls": {"sample_limit": sample_limit, "log_every": log_every, "seed": seed},
+        "run_controls": {
+            "sample_limit": sample_limit,
+            "log_every": log_every,
+            "seed": seed,
+            "use_pos_weight": use_pos_weight,
+            "max_pos_weight": max_pos_weight,
+        },
         "metrics": test_metrics,
         "artifacts": {"best_model": str(best_model_path.relative_to(project_root))},
     }
