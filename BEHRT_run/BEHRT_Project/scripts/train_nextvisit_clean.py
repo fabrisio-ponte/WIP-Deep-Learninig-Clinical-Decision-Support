@@ -10,6 +10,7 @@ import sys
 import os
 from pathlib import Path
 from datetime import datetime
+from collections import Counter
 
 import numpy as np
 import pandas as pd
@@ -73,6 +74,47 @@ def targets_to_multihot(targets, mlb, device=None):
     if device is not None:
         target_ml = target_ml.to(device)
     return target_ml
+
+
+def normalize_label_row(labels):
+    if isinstance(labels, np.ndarray):
+        return [str(label) for label in labels.tolist()]
+    if isinstance(labels, (list, tuple, set)):
+        return [str(label) for label in labels]
+    if pd.isna(labels):
+        return []
+    return [str(labels)]
+
+
+def build_label_subset(train_df, base_label_vocab, top_k_labels=0, min_label_freq=0.0):
+    if top_k_labels > 0 and min_label_freq > 0:
+        raise ValueError("Set only one of TOP_K_LABELS or MIN_LABEL_FREQ")
+
+    if top_k_labels <= 0 and min_label_freq <= 0:
+        return base_label_vocab, train_df, None
+
+    label_counts = Counter()
+    for labels in train_df["label"]:
+        label_counts.update(set(normalize_label_row(labels)))
+
+    if top_k_labels > 0:
+        selected_labels = [label for label, _ in label_counts.most_common(top_k_labels)]
+        strategy = f"top-{top_k_labels} labels"
+    else:
+        selected_labels = [label for label, count in label_counts.items() if (count / len(train_df)) >= min_label_freq]
+        strategy = f"labels with train prevalence >= {min_label_freq * 100:.2f}%"
+
+    keep_set = set(selected_labels)
+    selected_vocab_tokens = [label for label in base_label_vocab if label in keep_set]
+    if "UNK" in base_label_vocab and "UNK" not in selected_vocab_tokens:
+        selected_vocab_tokens.append("UNK")
+    label_vocab = {label: idx for idx, label in enumerate(selected_vocab_tokens)}
+
+    filtered_df = train_df.copy()
+    filtered_df["label"] = filtered_df["label"].map(lambda labels: np.array([label for label in normalize_label_row(labels) if label in keep_set], dtype=object))
+    filtered_df = filtered_df[filtered_df["label"].map(len) > 0].reset_index(drop=True)
+
+    return label_vocab, filtered_df, strategy
 
 
 def evaluate(model, loader, mlb, device):
@@ -165,7 +207,28 @@ def main():
 
     bert_vocab = load_obj(str(vocab_path))
     age_vocab_dict, _ = age_vocab(max_age=110, symbol=None)
-    label_vocab = format_label_vocab(bert_vocab["token2idx"])
+    base_label_vocab = format_label_vocab(bert_vocab["token2idx"])
+
+    top_k_labels = int(os.getenv("TOP_K_LABELS", "0"))
+    min_label_freq = float(os.getenv("MIN_LABEL_FREQ", "0.0"))
+    label_vocab, train_df, label_strategy = build_label_subset(
+        train_df,
+        base_label_vocab,
+        top_k_labels=top_k_labels,
+        min_label_freq=min_label_freq,
+    )
+
+    if label_strategy is not None:
+        keep_set = set(label_vocab.keys())
+        val_df = val_df.copy()
+        test_df = test_df.copy()
+        val_df["label"] = val_df["label"].map(lambda labels: np.array([label for label in normalize_label_row(labels) if label in keep_set], dtype=object))
+        test_df["label"] = test_df["label"].map(lambda labels: np.array([label for label in normalize_label_row(labels) if label in keep_set], dtype=object))
+        val_df = val_df[val_df["label"].map(len) > 0].reset_index(drop=True)
+        test_df = test_df[test_df["label"].map(len) > 0].reset_index(drop=True)
+        print(f"Using label subset strategy: {label_strategy}")
+        print(f"Retained labels: {len(label_vocab)}")
+        print(f"Filtered rows: train={len(train_df)} val={len(val_df)} test={len(test_df)}")
 
     global_params = {
         "batch_size": 64,
