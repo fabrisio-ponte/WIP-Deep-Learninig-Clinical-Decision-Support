@@ -31,8 +31,9 @@ sys.path.insert(0, str(project_root))
 from common.common import save_obj, load_obj
 
 class BEHRTDataCleaner:
-    def __init__(self, data_dir="../data/processed"):
-        self.data_dir = Path(data_dir)
+    def __init__(self, data_dir=None):
+        project_root = Path(__file__).resolve().parent.parent
+        self.data_dir = Path(data_dir) if data_dir is not None else project_root / "data" / "processed"
         self.original_vocab = None
         self.clean_vocab = None
         self.codes_to_remove = set()
@@ -163,8 +164,27 @@ class BEHRTDataCleaner:
         
         return codes_to_remove
     
+    def _clean_history_sequence(self, codes, ages=None):
+        """Remove problematic codes from patient histories while keeping ages aligned."""
+        if isinstance(codes, str):
+            return codes, ages
+
+        if ages is None:
+            ages = [None] * len(codes)
+
+        filtered_codes = []
+        filtered_ages = []
+
+        for code, age in zip(codes, ages):
+            if code not in self.codes_to_remove:
+                filtered_codes.append(code)
+                if ages is not None:
+                    filtered_ages.append(age)
+
+        return filtered_codes, filtered_ages
+
     def clean_datasets(self):
-        """Clean all datasets by removing problematic codes"""
+        """Clean all datasets by removing problematic codes from labels and patient histories."""
         print(f"\n🧹 CLEANING DATASETS")
         print("=" * 50)
         
@@ -198,9 +218,31 @@ class BEHRTDataCleaner:
                 removed_count += len(labels) - len(clean_label_list)
             
             df['label'] = cleaned_labels
+
+            # Also remove problematic codes from patient-history sequences to prevent
+            # generic catch-all codes from polluting the model input.
+            cleaned_codes = []
+            cleaned_ages = []
+            history_removed = 0
+
+            for code_seq, age_seq in zip(df['code'], df['age']):
+                clean_code_list = [
+                    code for code in code_seq
+                    if code not in self.codes_to_remove
+                ]
+                clean_age_list = [
+                    age for code, age in zip(code_seq, age_seq)
+                    if code not in self.codes_to_remove
+                ]
+                cleaned_codes.append(clean_code_list)
+                cleaned_ages.append(clean_age_list)
+                history_removed += len(code_seq) - len(clean_code_list)
+
+            df['code'] = cleaned_codes
+            df['age'] = cleaned_ages
             
             # Remove rows with empty labels after cleaning
-            df = df[df['label'].apply(len) > 0].reset_index(drop=True)
+            df = df[(df['label'].apply(len) > 0) & (df['code'].apply(len) > 0)].reset_index(drop=True)
             final_size = len(df)
             
             # Save cleaned dataset
@@ -213,6 +255,7 @@ class BEHRTDataCleaner:
                 'cleaned_rows': final_size,
                 'removed_rows': original_size - final_size,
                 'removed_labels': removed_count,
+                'removed_history_tokens': history_removed,
                 'retention_rate': (final_size / original_size) * 100
             }
             
@@ -220,6 +263,7 @@ class BEHRTDataCleaner:
             print(f"  Cleaned rows: {final_size:,}")
             print(f"  Removed rows: {original_size - final_size:,}")
             print(f"  Removed labels: {removed_count:,}")
+            print(f"  Removed history tokens: {history_removed:,}")
             print(f"  Retention rate: {(final_size/original_size)*100:.1f}%")
         
         self.cleaning_stats = cleaning_stats
