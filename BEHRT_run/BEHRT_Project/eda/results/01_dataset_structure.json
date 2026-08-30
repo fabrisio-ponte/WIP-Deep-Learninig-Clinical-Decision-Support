@@ -1,0 +1,167 @@
+{
+  "train": {
+    "path": "/Users/telaclaimstech/Desktop/BEHRT_WIP/BEHRT_run/BEHRT_Project/data/processed/train_nextvisit_ccsr_clean.parquet",
+    "rows": 143677,
+    "columns": [
+      "patid",
+      "code",
+      "age",
+      "label",
+      "label_original"
+    ],
+    "dtypes": {
+      "patid": "int64",
+      "code": "object",
+      "age": "object",
+      "label": "object",
+      "label_original": "object"
+    },
+    "null_counts": {
+      "patid": 0,
+      "code": 0,
+      "age": 0,
+      "label": 0,
+      "label_original": 0
+    },
+    "array_stats": {
+      "code": {
+        "mean_length": 82.39302741566152,
+        "median_length": 44.0,
+        "min_length": 2,
+        "max_length": 1636,
+        "std_length": 115.17998047063763
+      },
+      "age": {
+        "mean_length": 82.39302741566152,
+        "median_length": 44.0,
+        "min_length": 2,
+        "max_length": 1636,
+        "std_length": 115.17998047063763
+      },
+      "label": {
+        "mean_length": 9.46768097886231,
+        "median_length": 9.0,
+        "min_length": 1,
+        "max_length": 34,
+        "std_length": 5.094523426192065
+      },
+      "label_original": {
+        "mean_length": 10.295322146202942,
+        "median_length": 10.0,
+        "min_length": 1,
+        "max_length": 35,
+        "std_length": 5.241395851966539
+      }
+    }
+  },
+  "val": {
+    "path": "/Users/telaclaimstech/Desktop/BEHRT_WIP/BEHRT_run/BEHRT_Project/data/processed/val_nextvisit_ccsr_clean.parquet",
+    "rows": 17799,
+    "columns": [
+      "patid",
+      "code",
+      "age",
+      "label",
+      "label_original"
+    ],
+    "dtypes": {
+      "patid": "int64",
+      "code": "object",
+      "age": "object",
+      "label": "object",
+      "label_original": "object"
+    },
+    "null_counts": {
+      "patid": 0,
+      "code": 0,
+      "age": 0,
+      "label": 0,
+      "label_original": 0
+    },
+    "array_stats": {
+      "code": {
+        "mean_length": 81.62413618742626,
+        "median_length": 43.0,
+        "min_length": 2,
+        "max_length": 1199,
+        "std_length": 114.4016875816779
+      },
+      "age": {
+        "mean_length": 81.62413618742626,
+        "median_length": 43.0,
+        "min_length": 2,
+        "max_length": 1199,
+        "std_length": 114.4016875816779
+      },
+      "label": {
+        "mean_length": 9.398224619360638,
+        "median_length": 9.0,
+        "min_length": 1,
+        "max_length": 32,
+        "std_length": 5.110781861953595
+      },
+      "label_original": {
+        "mean_length": 10.223327153210855,
+        "median_length": 10.0,
+        "min_length": 1,
+        "max_length": 33,
+        "std_length": 5.253872199145303
+      }
+    }
+  },
+  "test": {
+    "path": "/Users/telaclaimstech/Desktop/BEHRT_WIP/BEHRT_run/BEHRT_Project/data/processed/test_nextvisit_ccsr_clean.parquet",
+    "rows": 18237,
+    "columns": [
+      "patid",
+      "code",
+      "age",
+      "label",
+      "label_original"
+    ],
+    "dtypes": {
+      "patid": "int64",
+      "code": "object",
+      "age": "object",
+      "label": "object",
+      "label_original": "object"
+    },
+    "null_counts": {
+      "patid": 0,
+      "code": 0,
+      "age": 0,
+      "label": 0,
+      "label_original": 0
+    },
+    "array_stats": {
+      "code": {
+        "mean_length": 80.96627734824807,
+        "median_length": 44.0,
+        "min_length": 2,
+        "max_length": 921,
+        "std_length": 105.56029191012772
+      },
+      "age": {
+        "mean_length": 80.96627734824807,
+        "median_length": 44.0,
+        "min_length": 2,
+        "max_length": 921,
+        "std_length": 105.56029191012772
+      },
+      "label": {
+        "mean_length": 9.267533037232,
+        "median_length": 9.0,
+        "min_length": 1,
+        "max_length": 32,
+        "std_length": 5.201024216582392
+      },
+      "label_original": {
+        "mean_length": 10.082414870866918,
+        "median_length": 9.0,
+        "min_length": 1,
+        "max_length": 33,
+        "std_length": 5.357667632409794
+      }
+    }
+  }
+}

@@ -1,0 +1,7010 @@
+{
+  "total_labels_vocab": 469,
+  "datasets": {
+    "train": {
+      "total_samples": 143677,
+      "unique_labels_appearing": 463,
+      "labels_never_appearing": 6,
+      "frequency_stats": {
+        "min": 6.960056237254397e-06,
+        "q25": 0.0005289642740313341,
+        "median": 0.004127313348691857,
+        "q75": 0.018889592627908434,
+        "max": 0.36581359577385386,
+        "mean": 0.02044855502994019
+      },
+      "count_stats": {
+        "min": 1,
+        "q25": 76,
+        "median": 593,
+        "q75": 2714,
+        "max": 52559,
+        "mean": 2937.987041036717
+      },
+      "support_distribution": {
+        "ultra_rare_lt10": 38,
+        "very_rare_10_99": 95,
+        "rare_100_999": 153,
+        "common_1k_9k": 145,
+        "very_common_gte10k": 32
+      },
+      "class_imbalance_ratio": 52559.0,
+      "label_density": {
+        "positive_ratio": 0.020448555029940193,
+        "negative_ratio": 0.9795514449700599,
+        "sparsity_ratio": 47.90321093768379
+      },
+      "top_10_diseases": [
+        {
+          "label_code": "CCSR_END010",
+          "count": 52559,
+          "frequency": 0.36581359577385386
+        },
+        {
+          "label_code": "CCSR_CIR007",
+          "count": 50748,
+          "frequency": 0.35320893392818614
+        },
+        {
+          "label_code": "CCSR_FAC025",
+          "count": 40269,
+          "frequency": 0.2802745046179973
+        },
+        {
+          "label_code": "CCSR_DIG004",
+          "count": 37866,
+          "frequency": 0.263549489479875
+        },
+        {
+          "label_code": "CCSR_CIR011",
+          "count": 33828,
+          "frequency": 0.23544478239384176
+        },
+        {
+          "label_code": "CCSR_GEN003",
+          "count": 33581,
+          "frequency": 0.2337256485032399
+        },
+        {
+          "label_code": "CCSR_END011",
+          "count": 33400,
+          "frequency": 0.23246587832429685
+        },
+        {
+          "label_code": "CCSR_MBD002",
+          "count": 31593,
+          "frequency": 0.21988905670357817
+        },
+        {
+          "label_code": "CCSR_CIR019",
+          "count": 30752,
+          "frequency": 0.21403564940804723
+        },
+        {
+          "label_code": "CCSR_CIR017",
+          "count": 28801,
+          "frequency": 0.2004565796891639
+        }
+      ],
+      "bottom_10_diseases": [
+        {
+          "label_code": "CCSR_INJ059",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_END017",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_NEO055",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_GEN015",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_PNL013",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ068",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ014",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_NEO054",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ060",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ063",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        }
+      ],
+      "all_label_stats": [
+        {
+          "label_code": "CCSR_END010",
+          "count": 52559,
+          "frequency": 0.36581359577385386
+        },
+        {
+          "label_code": "CCSR_CIR007",
+          "count": 50748,
+          "frequency": 0.35320893392818614
+        },
+        {
+          "label_code": "CCSR_FAC025",
+          "count": 40269,
+          "frequency": 0.2802745046179973
+        },
+        {
+          "label_code": "CCSR_DIG004",
+          "count": 37866,
+          "frequency": 0.263549489479875
+        },
+        {
+          "label_code": "CCSR_CIR011",
+          "count": 33828,
+          "frequency": 0.23544478239384176
+        },
+        {
+          "label_code": "CCSR_GEN003",
+          "count": 33581,
+          "frequency": 0.2337256485032399
+        },
+        {
+          "label_code": "CCSR_END011",
+          "count": 33400,
+          "frequency": 0.23246587832429685
+        },
+        {
+          "label_code": "CCSR_MBD002",
+          "count": 31593,
+          "frequency": 0.21988905670357817
+        },
+        {
+          "label_code": "CCSR_CIR019",
+          "count": 30752,
+          "frequency": 0.21403564940804723
+        },
+        {
+          "label_code": "CCSR_CIR017",
+          "count": 28801,
+          "frequency": 0.2004565796891639
+        },
+        {
+          "label_code": "CCSR_END003",
+          "count": 25097,
+          "frequency": 0.1746765313863736
+        },
+        {
+          "label_code": "CCSR_GEN002",
+          "count": 24391,
+          "frequency": 0.169762731682872
+        },
+        {
+          "label_code": "CCSR_END002",
+          "count": 22685,
+          "frequency": 0.157888875742116
+        },
+        {
+          "label_code": "CCSR_NVS016",
+          "count": 22021,
+          "frequency": 0.15326739840057907
+        },
+        {
+          "label_code": "CCSR_END001",
+          "count": 20293,
+          "frequency": 0.14124042122260347
+        },
+        {
+          "label_code": "CCSR_MBD005",
+          "count": 20233,
+          "frequency": 0.14082281784836823
+        },
+        {
+          "label_code": "CCSR_BLD003",
+          "count": 17834,
+          "frequency": 0.12412564293519492
+        },
+        {
+          "label_code": "CCSR_RSP008",
+          "count": 16660,
+          "frequency": 0.11595453691265825
+        },
+        {
+          "label_code": "CCSR_SYM017",
+          "count": 15469,
+          "frequency": 0.10766510993408827
+        },
+        {
+          "label_code": "CCSR_END009",
+          "count": 15269,
+          "frequency": 0.10627309868663738
+        },
+        {
+          "label_code": "CCSR_SYM006",
+          "count": 15116,
+          "frequency": 0.10520821008233747
+        },
+        {
+          "label_code": "CCSR_DIG025",
+          "count": 14470,
+          "frequency": 0.10071201375307112
+        },
+        {
+          "label_code": "CCSR_RSP009",
+          "count": 14348,
+          "frequency": 0.0998628868921261
+        },
+        {
+          "label_code": "CCSR_GEN004",
+          "count": 13586,
+          "frequency": 0.09455932403933824
+        },
+        {
+          "label_code": "CCSR_BLD006",
+          "count": 13108,
+          "frequency": 0.09123241715793064
+        },
+        {
+          "label_code": "CCSR_NVS019",
+          "count": 13029,
+          "frequency": 0.09068257271518754
+        },
+        {
+          "label_code": "CCSR_MBD017",
+          "count": 12960,
+          "frequency": 0.09020232883481699
+        },
+        {
+          "label_code": "CCSR_DIG019",
+          "count": 12933,
+          "frequency": 0.09001440731641111
+        },
+        {
+          "label_code": "CCSR_SYM013",
+          "count": 12158,
+          "frequency": 0.08462036373253896
+        },
+        {
+          "label_code": "CCSR_END016",
+          "count": 11320,
+          "frequency": 0.07878783660571978
+        },
+        {
+          "label_code": "CCSR_SYM016",
+          "count": 10049,
+          "frequency": 0.06994160512816944
+        },
+        {
+          "label_code": "CCSR_INF007",
+          "count": 10048,
+          "frequency": 0.06993464507193219
+        },
+        {
+          "label_code": "CCSR_NVS020",
+          "count": 9785,
+          "frequency": 0.06810415028153427
+        },
+        {
+          "label_code": "CCSR_BLD001",
+          "count": 9683,
+          "frequency": 0.06739422454533432
+        },
+        {
+          "label_code": "CCSR_MUS010",
+          "count": 9586,
+          "frequency": 0.06671909909032064
+        },
+        {
+          "label_code": "CCSR_CIR026",
+          "count": 9464,
+          "frequency": 0.06586997222937561
+        },
+        {
+          "label_code": "CCSR_GEN012",
+          "count": 8933,
+          "frequency": 0.06217418236739353
+        },
+        {
+          "label_code": "CCSR_MUS006",
+          "count": 8862,
+          "frequency": 0.061680018374548465
+        },
+        {
+          "label_code": "CCSR_MUS033",
+          "count": 8830,
+          "frequency": 0.06145729657495633
+        },
+        {
+          "label_code": "CCSR_MUS011",
+          "count": 8795,
+          "frequency": 0.06121369460665242
+        },
+        {
+          "label_code": "CCSR_NVS009",
+          "count": 8705,
+          "frequency": 0.06058728954529952
+        },
+        {
+          "label_code": "CCSR_CIR031",
+          "count": 8443,
+          "frequency": 0.05876375481113887
+        },
+        {
+          "label_code": "CCSR_RSP002",
+          "count": 8363,
+          "frequency": 0.05820695031215852
+        },
+        {
+          "label_code": "CCSR_BLD007",
+          "count": 8040,
+          "frequency": 0.05595885214752535
+        },
+        {
+          "label_code": "CCSR_SYM011",
+          "count": 7754,
+          "frequency": 0.05396827606367059
+        },
+        {
+          "label_code": "CCSR_NEO070",
+          "count": 7606,
+          "frequency": 0.05293818774055695
+        },
+        {
+          "label_code": "CCSR_NVS010",
+          "count": 7240,
+          "frequency": 0.05039080715772183
+        },
+        {
+          "label_code": "CCSR_SYM010",
+          "count": 7240,
+          "frequency": 0.05039080715772183
+        },
+        {
+          "label_code": "CCSR_RSP012",
+          "count": 7204,
+          "frequency": 0.050140245133180675
+        },
+        {
+          "label_code": "CCSR_MUS013",
+          "count": 7179,
+          "frequency": 0.04996624372724932
+        },
+        {
+          "label_code": "CCSR_SYM004",
+          "count": 6995,
+          "frequency": 0.04868559337959451
+        },
+        {
+          "label_code": "CCSR_NVS011",
+          "count": 6977,
+          "frequency": 0.04856031236732393
+        },
+        {
+          "label_code": "CCSR_SKN001",
+          "count": 6965,
+          "frequency": 0.04847679169247687
+        },
+        {
+          "label_code": "CCSR_CIR003",
+          "count": 6890,
+          "frequency": 0.0479547874746828
+        },
+        {
+          "label_code": "CCSR_CIR014",
+          "count": 6850,
+          "frequency": 0.047676385225192616
+        },
+        {
+          "label_code": "CCSR_END008",
+          "count": 6588,
+          "frequency": 0.045852850491031966
+        },
+        {
+          "label_code": "CCSR_BLD004",
+          "count": 6462,
+          "frequency": 0.04497588340513791
+        },
+        {
+          "label_code": "CCSR_INJ030",
+          "count": 6244,
+          "frequency": 0.043458591145416454
+        },
+        {
+          "label_code": "CCSR_INF002",
+          "count": 6241,
+          "frequency": 0.043437710976704694
+        },
+        {
+          "label_code": "CCSR_DIG008",
+          "count": 6029,
+          "frequency": 0.04196217905440676
+        },
+        {
+          "label_code": "CCSR_CIR012",
+          "count": 6025,
+          "frequency": 0.04193433882945774
+        },
+        {
+          "label_code": "CCSR_MBD001",
+          "count": 5740,
+          "frequency": 0.03995072280184024
+        },
+        {
+          "label_code": "CCSR_SKN004",
+          "count": 5608,
+          "frequency": 0.03903199537852266
+        },
+        {
+          "label_code": "CCSR_INJ037",
+          "count": 5593,
+          "frequency": 0.03892759453496384
+        },
+        {
+          "label_code": "CCSR_MBD007",
+          "count": 5572,
+          "frequency": 0.0387814333539815
+        },
+        {
+          "label_code": "CCSR_MBD003",
+          "count": 5383,
+          "frequency": 0.03746598272514042
+        },
+        {
+          "label_code": "CCSR_DIG017",
+          "count": 5327,
+          "frequency": 0.03707621957585417
+        },
+        {
+          "label_code": "CCSR_DIG022",
+          "count": 5318,
+          "frequency": 0.03701357906971888
+        },
+        {
+          "label_code": "CCSR_MBD012",
+          "count": 5314,
+          "frequency": 0.03698573884476986
+        },
+        {
+          "label_code": "CCSR_SKN002",
+          "count": 5269,
+          "frequency": 0.03667253631409342
+        },
+        {
+          "label_code": "CCSR_DIG020",
+          "count": 5264,
+          "frequency": 0.036637736032907146
+        },
+        {
+          "label_code": "CCSR_SYM012",
+          "count": 5141,
+          "frequency": 0.03578164911572485
+        },
+        {
+          "label_code": "CCSR_CIR005",
+          "count": 5131,
+          "frequency": 0.03571204855335231
+        },
+        {
+          "label_code": "CCSR_NEO058",
+          "count": 5058,
+          "frequency": 0.03520396444803274
+        },
+        {
+          "label_code": "CCSR_CIR039",
+          "count": 4847,
+          "frequency": 0.033735392581972064
+        },
+        {
+          "label_code": "CCSR_GEN006",
+          "count": 4813,
+          "frequency": 0.03349875066990541
+        },
+        {
+          "label_code": "CCSR_NEO074",
+          "count": 4703,
+          "frequency": 0.03273314448380743
+        },
+        {
+          "label_code": "CCSR_CIR016",
+          "count": 4673,
+          "frequency": 0.032524342796689795
+        },
+        {
+          "label_code": "CCSR_END015",
+          "count": 4590,
+          "frequency": 0.03194665812899768
+        },
+        {
+          "label_code": "CCSR_END007",
+          "count": 4548,
+          "frequency": 0.031654335767033
+        },
+        {
+          "label_code": "CCSR_DIG021",
+          "count": 4413,
+          "frequency": 0.030714728175003654
+        },
+        {
+          "label_code": "CCSR_RSP016",
+          "count": 4284,
+          "frequency": 0.02981688092039784
+        },
+        {
+          "label_code": "CCSR_FAC010",
+          "count": 4272,
+          "frequency": 0.029733360245550785
+        },
+        {
+          "label_code": "CCSR_INJ036",
+          "count": 4264,
+          "frequency": 0.02967767979565275
+        },
+        {
+          "label_code": "CCSR_DIG001",
+          "count": 4217,
+          "frequency": 0.029350557152501792
+        },
+        {
+          "label_code": "CCSR_FAC006",
+          "count": 4147,
+          "frequency": 0.028863353215893985
+        },
+        {
+          "label_code": "CCSR_INJ033",
+          "count": 4141,
+          "frequency": 0.02882159287847046
+        },
+        {
+          "label_code": "CCSR_INF006",
+          "count": 4065,
+          "frequency": 0.028292628604439124
+        },
+        {
+          "label_code": "CCSR_NVS015",
+          "count": 4050,
+          "frequency": 0.028188227760880306
+        },
+        {
+          "label_code": "CCSR_DIG010",
+          "count": 4017,
+          "frequency": 0.027958545905050914
+        },
+        {
+          "label_code": "CCSR_CIR025",
+          "count": 3991,
+          "frequency": 0.027777584442882298
+        },
+        {
+          "label_code": "CCSR_EYE003",
+          "count": 3873,
+          "frequency": 0.02695629780688628
+        },
+        {
+          "label_code": "CCSR_MBD018",
+          "count": 3835,
+          "frequency": 0.02669181566987061
+        },
+        {
+          "label_code": "CCSR_RSP011",
+          "count": 3800,
+          "frequency": 0.02644821370156671
+        },
+        {
+          "label_code": "CCSR_CIR033",
+          "count": 3769,
+          "frequency": 0.026232451958211823
+        },
+        {
+          "label_code": "CCSR_DIG011",
+          "count": 3692,
+          "frequency": 0.025696527627943232
+        },
+        {
+          "label_code": "CCSR_DIG013",
+          "count": 3639,
+          "frequency": 0.025327644647368752
+        },
+        {
+          "label_code": "CCSR_MUS038",
+          "count": 3511,
+          "frequency": 0.024436757449000188
+        },
+        {
+          "label_code": "CCSR_MUS024",
+          "count": 3502,
+          "frequency": 0.0243741169428649
+        },
+        {
+          "label_code": "CCSR_CIR009",
+          "count": 3490,
+          "frequency": 0.024290596268017845
+        },
+        {
+          "label_code": "CCSR_DIG012",
+          "count": 3425,
+          "frequency": 0.023838192612596308
+        },
+        {
+          "label_code": "CCSR_NEO073",
+          "count": 3256,
+          "frequency": 0.022661943108500317
+        },
+        {
+          "label_code": "CCSR_CIR001",
+          "count": 3196,
+          "frequency": 0.022244339734265053
+        },
+        {
+          "label_code": "CCSR_MUS028",
+          "count": 3181,
+          "frequency": 0.022139938890706236
+        },
+        {
+          "label_code": "CCSR_DIG016",
+          "count": 3146,
+          "frequency": 0.021896336922402334
+        },
+        {
+          "label_code": "CCSR_EYE010",
+          "count": 3136,
+          "frequency": 0.02182673636002979
+        },
+        {
+          "label_code": "CCSR_MUS025",
+          "count": 3031,
+          "frequency": 0.021095930455118077
+        },
+        {
+          "label_code": "CCSR_MUS026",
+          "count": 3000,
+          "frequency": 0.02088016871176319
+        },
+        {
+          "label_code": "CCSR_DIG018",
+          "count": 2928,
+          "frequency": 0.020379044662680874
+        },
+        {
+          "label_code": "CCSR_SKN003",
+          "count": 2926,
+          "frequency": 0.020365124550206365
+        },
+        {
+          "label_code": "CCSR_BLD008",
+          "count": 2888,
+          "frequency": 0.0201006424131907
+        },
+        {
+          "label_code": "CCSR_MBD021",
+          "count": 2886,
+          "frequency": 0.02008672230071619
+        },
+        {
+          "label_code": "CCSR_MBD026",
+          "count": 2885,
+          "frequency": 0.020079762244478935
+        },
+        {
+          "label_code": "CCSR_DIG007",
+          "count": 2794,
+          "frequency": 0.019446397126888785
+        },
+        {
+          "label_code": "CCSR_CIR036",
+          "count": 2772,
+          "frequency": 0.019293275889669188
+        },
+        {
+          "label_code": "CCSR_GEN007",
+          "count": 2745,
+          "frequency": 0.01910535437126332
+        },
+        {
+          "label_code": "CCSR_MUS003",
+          "count": 2683,
+          "frequency": 0.018673830884553547
+        },
+        {
+          "label_code": "CCSR_SYM014",
+          "count": 2669,
+          "frequency": 0.018576390097231985
+        },
+        {
+          "label_code": "CCSR_RSP007",
+          "count": 2586,
+          "frequency": 0.01799870542953987
+        },
+        {
+          "label_code": "CCSR_MUS002",
+          "count": 2573,
+          "frequency": 0.017908224698455565
+        },
+        {
+          "label_code": "CCSR_MBD014",
+          "count": 2566,
+          "frequency": 0.01785950430479478
+        },
+        {
+          "label_code": "CCSR_GEN008",
+          "count": 2532,
+          "frequency": 0.017622862392728134
+        },
+        {
+          "label_code": "CCSR_DIG024",
+          "count": 2504,
+          "frequency": 0.01742798081808501
+        },
+        {
+          "label_code": "CCSR_SYM015",
+          "count": 2421,
+          "frequency": 0.016850296150392897
+        },
+        {
+          "label_code": "CCSR_DIG003",
+          "count": 2397,
+          "frequency": 0.01668325480069879
+        },
+        {
+          "label_code": "CCSR_NEO072",
+          "count": 2392,
+          "frequency": 0.016648454519512516
+        },
+        {
+          "label_code": "CCSR_SYM001",
+          "count": 2385,
+          "frequency": 0.016599734125851737
+        },
+        {
+          "label_code": "CCSR_GEN009",
+          "count": 2317,
+          "frequency": 0.01612645030171844
+        },
+        {
+          "label_code": "CCSR_RSP010",
+          "count": 2262,
+          "frequency": 0.015743647208669446
+        },
+        {
+          "label_code": "CCSR_NVS017",
+          "count": 2200,
+          "frequency": 0.015312123721959673
+        },
+        {
+          "label_code": "CCSR_SYM005",
+          "count": 2185,
+          "frequency": 0.015207722878400857
+        },
+        {
+          "label_code": "CCSR_SKN007",
+          "count": 2126,
+          "frequency": 0.014797079560402849
+        },
+        {
+          "label_code": "CCSR_FAC016",
+          "count": 2118,
+          "frequency": 0.014741399110504812
+        },
+        {
+          "label_code": "CCSR_FAC014",
+          "count": 2105,
+          "frequency": 0.014650918379420506
+        },
+        {
+          "label_code": "CCSR_MBD009",
+          "count": 2083,
+          "frequency": 0.014497797142200909
+        },
+        {
+          "label_code": "CCSR_INJ017",
+          "count": 2065,
+          "frequency": 0.01437251612993033
+        },
+        {
+          "label_code": "CCSR_NEO022",
+          "count": 2057,
+          "frequency": 0.014316835680032294
+        },
+        {
+          "label_code": "CCSR_DIG014",
+          "count": 1940,
+          "frequency": 0.01350250910027353
+        },
+        {
+          "label_code": "CCSR_MUS007",
+          "count": 1897,
+          "frequency": 0.01320322668207159
+        },
+        {
+          "label_code": "CCSR_INF008",
+          "count": 1892,
+          "frequency": 0.013168426400885318
+        },
+        {
+          "label_code": "CCSR_NVS008",
+          "count": 1889,
+          "frequency": 0.013147546232173556
+        },
+        {
+          "label_code": "CCSR_CIR029",
+          "count": 1872,
+          "frequency": 0.01302922527614023
+        },
+        {
+          "label_code": "CCSR_SYM007",
+          "count": 1813,
+          "frequency": 0.012618581958142222
+        },
+        {
+          "label_code": "CCSR_MBD019",
+          "count": 1752,
+          "frequency": 0.012194018527669704
+        },
+        {
+          "label_code": "CCSR_RSP006",
+          "count": 1690,
+          "frequency": 0.011762495040959931
+        },
+        {
+          "label_code": "CCSR_NEO065",
+          "count": 1684,
+          "frequency": 0.011720734703536404
+        },
+        {
+          "label_code": "CCSR_DIG023",
+          "count": 1679,
+          "frequency": 0.011685934422350133
+        },
+        {
+          "label_code": "CCSR_END014",
+          "count": 1633,
+          "frequency": 0.01136577183543643
+        },
+        {
+          "label_code": "CCSR_EAR004",
+          "count": 1604,
+          "frequency": 0.011163930204556053
+        },
+        {
+          "label_code": "CCSR_SYM002",
+          "count": 1586,
+          "frequency": 0.011038649192285473
+        },
+        {
+          "label_code": "CCSR_CIR023",
+          "count": 1570,
+          "frequency": 0.010927288292489403
+        },
+        {
+          "label_code": "CCSR_DIG005",
+          "count": 1559,
+          "frequency": 0.010850727673879604
+        },
+        {
+          "label_code": "CCSR_MBD025",
+          "count": 1524,
+          "frequency": 0.0106071257055757
+        },
+        {
+          "label_code": "CCSR_NVS004",
+          "count": 1523,
+          "frequency": 0.010600165649338446
+        },
+        {
+          "label_code": "CCSR_SYM003",
+          "count": 1515,
+          "frequency": 0.010544485199440411
+        },
+        {
+          "label_code": "CCSR_END013",
+          "count": 1514,
+          "frequency": 0.010537525143203157
+        },
+        {
+          "label_code": "CCSR_INF004",
+          "count": 1490,
+          "frequency": 0.010370483793509052
+        },
+        {
+          "label_code": "CCSR_NEO017",
+          "count": 1480,
+          "frequency": 0.010300883231136508
+        },
+        {
+          "label_code": "CCSR_NVS006",
+          "count": 1394,
+          "frequency": 0.00970231839473263
+        },
+        {
+          "label_code": "CCSR_MBD004",
+          "count": 1382,
+          "frequency": 0.009618797719885577
+        },
+        {
+          "label_code": "CCSR_MAL001",
+          "count": 1359,
+          "frequency": 0.009458716426428726
+        },
+        {
+          "label_code": "CCSR_EYE005",
+          "count": 1355,
+          "frequency": 0.009430876201479707
+        },
+        {
+          "label_code": "CCSR_GEN005",
+          "count": 1266,
+          "frequency": 0.008811431196364067
+        },
+        {
+          "label_code": "CCSR_CIR013",
+          "count": 1252,
+          "frequency": 0.008713990409042504
+        },
+        {
+          "label_code": "CCSR_BLD009",
+          "count": 1225,
+          "frequency": 0.008526068890636637
+        },
+        {
+          "label_code": "CCSR_RSP017",
+          "count": 1205,
+          "frequency": 0.008386867765891549
+        },
+        {
+          "label_code": "CCSR_CIR020",
+          "count": 1194,
+          "frequency": 0.00831030714728175
+        },
+        {
+          "label_code": "CCSR_INJ034",
+          "count": 1181,
+          "frequency": 0.008219826416197442
+        },
+        {
+          "label_code": "CCSR_NEO051",
+          "count": 1170,
+          "frequency": 0.008143265797587644
+        },
+        {
+          "label_code": "CCSR_BLD002",
+          "count": 1118,
+          "frequency": 0.007781342873250416
+        },
+        {
+          "label_code": "CCSR_NEO060",
+          "count": 1101,
+          "frequency": 0.007663021917217091
+        },
+        {
+          "label_code": "CCSR_INJ035",
+          "count": 1076,
+          "frequency": 0.0074890205112857315
+        },
+        {
+          "label_code": "CCSR_PRG028",
+          "count": 1075,
+          "frequency": 0.007482060455048477
+        },
+        {
+          "label_code": "CCSR_NEO015",
+          "count": 1053,
+          "frequency": 0.00732893921782888
+        },
+        {
+          "label_code": "CCSR_NVS013",
+          "count": 1039,
+          "frequency": 0.007231498430507318
+        },
+        {
+          "label_code": "CCSR_CIR024",
+          "count": 1039,
+          "frequency": 0.007231498430507318
+        },
+        {
+          "label_code": "CCSR_CIR006",
+          "count": 1033,
+          "frequency": 0.007189738093083792
+        },
+        {
+          "label_code": "CCSR_MUS037",
+          "count": 997,
+          "frequency": 0.006939176068542633
+        },
+        {
+          "label_code": "CCSR_INJ022",
+          "count": 973,
+          "frequency": 0.006772134718848528
+        },
+        {
+          "label_code": "CCSR_BLD005",
+          "count": 972,
+          "frequency": 0.006765174662611274
+        },
+        {
+          "label_code": "CCSR_DIG015",
+          "count": 972,
+          "frequency": 0.006765174662611274
+        },
+        {
+          "label_code": "CCSR_CIR008",
+          "count": 968,
+          "frequency": 0.0067373344376622565
+        },
+        {
+          "label_code": "CCSR_CIR015",
+          "count": 967,
+          "frequency": 0.006730374381425002
+        },
+        {
+          "label_code": "CCSR_GEN001",
+          "count": 960,
+          "frequency": 0.006681653987764221
+        },
+        {
+          "label_code": "CCSR_CIR032",
+          "count": 957,
+          "frequency": 0.006660773819052458
+        },
+        {
+          "label_code": "CCSR_NVS005",
+          "count": 957,
+          "frequency": 0.006660773819052458
+        },
+        {
+          "label_code": "CCSR_NEO039",
+          "count": 936,
+          "frequency": 0.006514612638070115
+        },
+        {
+          "label_code": "CCSR_NEO068",
+          "count": 927,
+          "frequency": 0.006451972131934826
+        },
+        {
+          "label_code": "CCSR_CIR038",
+          "count": 921,
+          "frequency": 0.0064102117945112995
+        },
+        {
+          "label_code": "CCSR_NEO030",
+          "count": 905,
+          "frequency": 0.006298850894715229
+        },
+        {
+          "label_code": "CCSR_INF012",
+          "count": 885,
+          "frequency": 0.006159649769970141
+        },
+        {
+          "label_code": "CCSR_INJ003",
+          "count": 873,
+          "frequency": 0.006076129095123089
+        },
+        {
+          "label_code": "CCSR_MBD023",
+          "count": 866,
+          "frequency": 0.006027408701462308
+        },
+        {
+          "label_code": "CCSR_NEO075",
+          "count": 853,
+          "frequency": 0.005936927970378001
+        },
+        {
+          "label_code": "CCSR_GEN025",
+          "count": 831,
+          "frequency": 0.005783806733158404
+        },
+        {
+          "label_code": "CCSR_SKN005",
+          "count": 831,
+          "frequency": 0.005783806733158404
+        },
+        {
+          "label_code": "CCSR_MAL003",
+          "count": 817,
+          "frequency": 0.0056863659458368425
+        },
+        {
+          "label_code": "CCSR_MUS016",
+          "count": 810,
+          "frequency": 0.005637645552176062
+        },
+        {
+          "label_code": "CCSR_EYE002",
+          "count": 801,
+          "frequency": 0.005575005046040772
+        },
+        {
+          "label_code": "CCSR_NEO061",
+          "count": 794,
+          "frequency": 0.005526284652379991
+        },
+        {
+          "label_code": "CCSR_RSP003",
+          "count": 793,
+          "frequency": 0.005519324596142737
+        },
+        {
+          "label_code": "CCSR_FAC022",
+          "count": 783,
+          "frequency": 0.005449724033770193
+        },
+        {
+          "label_code": "CCSR_INJ005",
+          "count": 771,
+          "frequency": 0.00536620335892314
+        },
+        {
+          "label_code": "CCSR_EYE001",
+          "count": 762,
+          "frequency": 0.00530356285278785
+        },
+        {
+          "label_code": "CCSR_GEN018",
+          "count": 756,
+          "frequency": 0.0052618025153643245
+        },
+        {
+          "label_code": "CCSR_BLD010",
+          "count": 755,
+          "frequency": 0.00525484245912707
+        },
+        {
+          "label_code": "CCSR_CIR034",
+          "count": 748,
+          "frequency": 0.005206122065466289
+        },
+        {
+          "label_code": "CCSR_PRG023",
+          "count": 739,
+          "frequency": 0.005143481559330999
+        },
+        {
+          "label_code": "CCSR_SYM008",
+          "count": 739,
+          "frequency": 0.005143481559330999
+        },
+        {
+          "label_code": "CCSR_INJ004",
+          "count": 726,
+          "frequency": 0.005053000828246692
+        },
+        {
+          "label_code": "CCSR_FAC009",
+          "count": 719,
+          "frequency": 0.005004280434585911
+        },
+        {
+          "label_code": "CCSR_MUS009",
+          "count": 718,
+          "frequency": 0.004997320378348657
+        },
+        {
+          "label_code": "CCSR_MBD006",
+          "count": 717,
+          "frequency": 0.004990360322111403
+        },
+        {
+          "label_code": "CCSR_MBD010",
+          "count": 712,
+          "frequency": 0.004955560040925131
+        },
+        {
+          "label_code": "CCSR_INJ011",
+          "count": 711,
+          "frequency": 0.004948599984687876
+        },
+        {
+          "label_code": "CCSR_EAR003",
+          "count": 694,
+          "frequency": 0.004830279028654552
+        },
+        {
+          "label_code": "CCSR_CIR021",
+          "count": 693,
+          "frequency": 0.004823318972417297
+        },
+        {
+          "label_code": "CCSR_RSP001",
+          "count": 692,
+          "frequency": 0.004816358916180043
+        },
+        {
+          "label_code": "CCSR_NVS018",
+          "count": 687,
+          "frequency": 0.004781558634993771
+        },
+        {
+          "label_code": "CCSR_MUS022",
+          "count": 683,
+          "frequency": 0.004753718410044753
+        },
+        {
+          "label_code": "CCSR_INJ073",
+          "count": 664,
+          "frequency": 0.00462147734153692
+        },
+        {
+          "label_code": "CCSR_MBD013",
+          "count": 663,
+          "frequency": 0.004614517285299665
+        },
+        {
+          "label_code": "CCSR_MUS021",
+          "count": 660,
+          "frequency": 0.004593637116587902
+        },
+        {
+          "label_code": "CCSR_INJ002",
+          "count": 652,
+          "frequency": 0.004537956666689867
+        },
+        {
+          "label_code": "CCSR_RSP005",
+          "count": 646,
+          "frequency": 0.004496196329266341
+        },
+        {
+          "label_code": "CCSR_DIG002",
+          "count": 645,
+          "frequency": 0.004489236273029086
+        },
+        {
+          "label_code": "CCSR_INJ020",
+          "count": 643,
+          "frequency": 0.0044753161605545775
+        },
+        {
+          "label_code": "CCSR_NEO045",
+          "count": 635,
+          "frequency": 0.004419635710656542
+        },
+        {
+          "label_code": "CCSR_INJ024",
+          "count": 631,
+          "frequency": 0.004391795485707524
+        },
+        {
+          "label_code": "CCSR_INJ006",
+          "count": 621,
+          "frequency": 0.00432219492333498
+        },
+        {
+          "label_code": "CCSR_GEN016",
+          "count": 597,
+          "frequency": 0.004155153573640875
+        },
+        {
+          "label_code": "CCSR_INJ008",
+          "count": 593,
+          "frequency": 0.004127313348691857
+        },
+        {
+          "label_code": "CCSR_INJ012",
+          "count": 580,
+          "frequency": 0.00403683261760755
+        },
+        {
+          "label_code": "CCSR_GEN026",
+          "count": 572,
+          "frequency": 0.0039811521677095155
+        },
+        {
+          "label_code": "CCSR_CIR030",
+          "count": 555,
+          "frequency": 0.00386283121167619
+        },
+        {
+          "label_code": "CCSR_NEO043",
+          "count": 535,
+          "frequency": 0.0037236300869311024
+        },
+        {
+          "label_code": "CCSR_GEN013",
+          "count": 534,
+          "frequency": 0.003716670030693848
+        },
+        {
+          "label_code": "CCSR_CIR028",
+          "count": 519,
+          "frequency": 0.003612269187135032
+        },
+        {
+          "label_code": "CCSR_MUS014",
+          "count": 489,
+          "frequency": 0.0034034675000174
+        },
+        {
+          "label_code": "CCSR_EYE008",
+          "count": 483,
+          "frequency": 0.003361707162593874
+        },
+        {
+          "label_code": "CCSR_MUS001",
+          "count": 479,
+          "frequency": 0.0033338669376448563
+        },
+        {
+          "label_code": "CCSR_SYM018",
+          "count": 471,
+          "frequency": 0.003278186487746821
+        },
+        {
+          "label_code": "CCSR_INF010",
+          "count": 465,
+          "frequency": 0.0032364261503232948
+        },
+        {
+          "label_code": "CCSR_GEN014",
+          "count": 464,
+          "frequency": 0.00322946609408604
+        },
+        {
+          "label_code": "CCSR_PRG020",
+          "count": 458,
+          "frequency": 0.0031877057566625138
+        },
+        {
+          "label_code": "CCSR_NVS007",
+          "count": 456,
+          "frequency": 0.003173785644188005
+        },
+        {
+          "label_code": "CCSR_INJ026",
+          "count": 453,
+          "frequency": 0.003152905475476242
+        },
+        {
+          "label_code": "CCSR_MAL008",
+          "count": 452,
+          "frequency": 0.0031459454192389875
+        },
+        {
+          "label_code": "CCSR_CIR018",
+          "count": 449,
+          "frequency": 0.003125065250527224
+        },
+        {
+          "label_code": "CCSR_MUS030",
+          "count": 440,
+          "frequency": 0.0030624247443919346
+        },
+        {
+          "label_code": "CCSR_CIR027",
+          "count": 435,
+          "frequency": 0.0030276244632056627
+        },
+        {
+          "label_code": "CCSR_NEO059",
+          "count": 433,
+          "frequency": 0.003013704350731154
+        },
+        {
+          "label_code": "CCSR_CIR004",
+          "count": 433,
+          "frequency": 0.003013704350731154
+        },
+        {
+          "label_code": "CCSR_EYE012",
+          "count": 426,
+          "frequency": 0.002964983957070373
+        },
+        {
+          "label_code": "CCSR_NEO033",
+          "count": 425,
+          "frequency": 0.0029580239008331188
+        },
+        {
+          "label_code": "CCSR_GEN017",
+          "count": 421,
+          "frequency": 0.002930183675884101
+        },
+        {
+          "label_code": "CCSR_MBD020",
+          "count": 418,
+          "frequency": 0.002909303507172338
+        },
+        {
+          "label_code": "CCSR_PRG024",
+          "count": 404,
+          "frequency": 0.0028118627198507763
+        },
+        {
+          "label_code": "CCSR_INJ027",
+          "count": 394,
+          "frequency": 0.0027422621574782324
+        },
+        {
+          "label_code": "CCSR_SKN006",
+          "count": 394,
+          "frequency": 0.0027422621574782324
+        },
+        {
+          "label_code": "CCSR_EAR006",
+          "count": 393,
+          "frequency": 0.002735302101240978
+        },
+        {
+          "label_code": "CCSR_MAL002",
+          "count": 392,
+          "frequency": 0.0027283420450037238
+        },
+        {
+          "label_code": "CCSR_NEO024",
+          "count": 389,
+          "frequency": 0.0027074618762919604
+        },
+        {
+          "label_code": "CCSR_NVS012",
+          "count": 382,
+          "frequency": 0.00265874148263118
+        },
+        {
+          "label_code": "CCSR_MBD011",
+          "count": 382,
+          "frequency": 0.00265874148263118
+        },
+        {
+          "label_code": "CCSR_NEO013",
+          "count": 381,
+          "frequency": 0.002651781426393925
+        },
+        {
+          "label_code": "CCSR_INJ010",
+          "count": 380,
+          "frequency": 0.002644821370156671
+        },
+        {
+          "label_code": "CCSR_MAL004",
+          "count": 380,
+          "frequency": 0.002644821370156671
+        },
+        {
+          "label_code": "CCSR_NEO057",
+          "count": 380,
+          "frequency": 0.002644821370156671
+        },
+        {
+          "label_code": "CCSR_EYE006",
+          "count": 375,
+          "frequency": 0.002610021088970399
+        },
+        {
+          "label_code": "CCSR_MUS032",
+          "count": 350,
+          "frequency": 0.002436019683039039
+        },
+        {
+          "label_code": "CCSR_NEO018",
+          "count": 345,
+          "frequency": 0.002401219401852767
+        },
+        {
+          "label_code": "CCSR_MUS034",
+          "count": 344,
+          "frequency": 0.0023942593456155125
+        },
+        {
+          "label_code": "CCSR_NEO048",
+          "count": 335,
+          "frequency": 0.002331618839480223
+        },
+        {
+          "label_code": "CCSR_PRG026",
+          "count": 331,
+          "frequency": 0.0023037786145312053
+        },
+        {
+          "label_code": "CCSR_PRG011",
+          "count": 324,
+          "frequency": 0.0022550582208704247
+        },
+        {
+          "label_code": "CCSR_MAL010",
+          "count": 321,
+          "frequency": 0.0022341780521586614
+        },
+        {
+          "label_code": "CCSR_NEO064",
+          "count": 320,
+          "frequency": 0.002227217995921407
+        },
+        {
+          "label_code": "CCSR_GEN022",
+          "count": 313,
+          "frequency": 0.002178497602260626
+        },
+        {
+          "label_code": "CCSR_INJ031",
+          "count": 313,
+          "frequency": 0.002178497602260626
+        },
+        {
+          "label_code": "CCSR_GEN021",
+          "count": 311,
+          "frequency": 0.0021645774897861175
+        },
+        {
+          "label_code": "CCSR_RSP013",
+          "count": 311,
+          "frequency": 0.0021645774897861175
+        },
+        {
+          "label_code": "CCSR_INJ001",
+          "count": 309,
+          "frequency": 0.002150657377311609
+        },
+        {
+          "label_code": "CCSR_NEO021",
+          "count": 308,
+          "frequency": 0.002143697321074354
+        },
+        {
+          "label_code": "CCSR_INF009",
+          "count": 302,
+          "frequency": 0.002101936983650828
+        },
+        {
+          "label_code": "CCSR_NEO071",
+          "count": 301,
+          "frequency": 0.0020949769274135736
+        },
+        {
+          "label_code": "CCSR_GEN010",
+          "count": 289,
+          "frequency": 0.0020114562525665207
+        },
+        {
+          "label_code": "CCSR_INJ028",
+          "count": 285,
+          "frequency": 0.001983616027617503
+        },
+        {
+          "label_code": "CCSR_GEN019",
+          "count": 285,
+          "frequency": 0.001983616027617503
+        },
+        {
+          "label_code": "CCSR_NEO012",
+          "count": 280,
+          "frequency": 0.001948815746431231
+        },
+        {
+          "label_code": "CCSR_MUS023",
+          "count": 277,
+          "frequency": 0.001927935577719468
+        },
+        {
+          "label_code": "CCSR_NVS001",
+          "count": 276,
+          "frequency": 0.0019209755214822136
+        },
+        {
+          "label_code": "CCSR_NEO066",
+          "count": 269,
+          "frequency": 0.0018722551278214329
+        },
+        {
+          "label_code": "CCSR_PRG027",
+          "count": 268,
+          "frequency": 0.0018652950715841784
+        },
+        {
+          "label_code": "CCSR_CIR035",
+          "count": 260,
+          "frequency": 0.0018096146216861433
+        },
+        {
+          "label_code": "CCSR_DIG006",
+          "count": 250,
+          "frequency": 0.0017400140593135992
+        },
+        {
+          "label_code": "CCSR_INF011",
+          "count": 250,
+          "frequency": 0.0017400140593135992
+        },
+        {
+          "label_code": "CCSR_DIG009",
+          "count": 245,
+          "frequency": 0.0017052137781273272
+        },
+        {
+          "label_code": "CCSR_NEO035",
+          "count": 240,
+          "frequency": 0.0016704134969410553
+        },
+        {
+          "label_code": "CCSR_PRG016",
+          "count": 235,
+          "frequency": 0.0016356132157547834
+        },
+        {
+          "label_code": "CCSR_PRG019",
+          "count": 224,
+          "frequency": 0.001559052597144985
+        },
+        {
+          "label_code": "CCSR_GEN020",
+          "count": 223,
+          "frequency": 0.0015520925409077306
+        },
+        {
+          "label_code": "CCSR_NEO062",
+          "count": 215,
+          "frequency": 0.0014964120910096954
+        },
+        {
+          "label_code": "CCSR_GEN023",
+          "count": 205,
+          "frequency": 0.0014268115286371515
+        },
+        {
+          "label_code": "CCSR_NEO025",
+          "count": 202,
+          "frequency": 0.0014059313599253881
+        },
+        {
+          "label_code": "CCSR_NVS021",
+          "count": 199,
+          "frequency": 0.001385051191213625
+        },
+        {
+          "label_code": "CCSR_PRG013",
+          "count": 199,
+          "frequency": 0.001385051191213625
+        },
+        {
+          "label_code": "CCSR_INF003",
+          "count": 188,
+          "frequency": 0.0013084905726038266
+        },
+        {
+          "label_code": "CCSR_CIR022",
+          "count": 185,
+          "frequency": 0.0012876104038920635
+        },
+        {
+          "label_code": "CCSR_NVS014",
+          "count": 178,
+          "frequency": 0.0012388900102312827
+        },
+        {
+          "label_code": "CCSR_MBD008",
+          "count": 170,
+          "frequency": 0.0011832095603332474
+        },
+        {
+          "label_code": "CCSR_NEO023",
+          "count": 169,
+          "frequency": 0.0011762495040959931
+        },
+        {
+          "label_code": "CCSR_INJ041",
+          "count": 168,
+          "frequency": 0.0011692894478587386
+        },
+        {
+          "label_code": "CCSR_INJ038",
+          "count": 165,
+          "frequency": 0.0011484092791469755
+        },
+        {
+          "label_code": "CCSR_INJ021",
+          "count": 164,
+          "frequency": 0.0011414492229097212
+        },
+        {
+          "label_code": "CCSR_RSP014",
+          "count": 163,
+          "frequency": 0.0011344891666724667
+        },
+        {
+          "label_code": "CCSR_NEO050",
+          "count": 152,
+          "frequency": 0.0010579285480626682
+        },
+        {
+          "label_code": "CCSR_INJ042",
+          "count": 151,
+          "frequency": 0.001050968491825414
+        },
+        {
+          "label_code": "CCSR_NVS002",
+          "count": 149,
+          "frequency": 0.0010370483793509051
+        },
+        {
+          "label_code": "CCSR_INJ023",
+          "count": 136,
+          "frequency": 0.000946567648266598
+        },
+        {
+          "label_code": "CCSR_MUS029",
+          "count": 129,
+          "frequency": 0.0008978472546058172
+        },
+        {
+          "label_code": "CCSR_PRG017",
+          "count": 128,
+          "frequency": 0.0008908871983685628
+        },
+        {
+          "label_code": "CCSR_MAL009",
+          "count": 128,
+          "frequency": 0.0008908871983685628
+        },
+        {
+          "label_code": "CCSR_EYE004",
+          "count": 127,
+          "frequency": 0.0008839271421313084
+        },
+        {
+          "label_code": "CCSR_EAR001",
+          "count": 118,
+          "frequency": 0.0008212866359960188
+        },
+        {
+          "label_code": "CCSR_FAC003",
+          "count": 116,
+          "frequency": 0.00080736652352151
+        },
+        {
+          "label_code": "CCSR_NEO032",
+          "count": 115,
+          "frequency": 0.0008004064672842557
+        },
+        {
+          "label_code": "CCSR_PRG018",
+          "count": 113,
+          "frequency": 0.0007864863548097469
+        },
+        {
+          "label_code": "CCSR_NEO078",
+          "count": 112,
+          "frequency": 0.0007795262985724925
+        },
+        {
+          "label_code": "CCSR_FAC024",
+          "count": 102,
+          "frequency": 0.0007099257361999485
+        },
+        {
+          "label_code": "CCSR_FAC004",
+          "count": 97,
+          "frequency": 0.0006751254550136765
+        },
+        {
+          "label_code": "CCSR_INJ007",
+          "count": 96,
+          "frequency": 0.0006681653987764221
+        },
+        {
+          "label_code": "CCSR_NEO027",
+          "count": 95,
+          "frequency": 0.0006612053425391677
+        },
+        {
+          "label_code": "CCSR_MUS020",
+          "count": 93,
+          "frequency": 0.0006472852300646589
+        },
+        {
+          "label_code": "CCSR_INJ040",
+          "count": 90,
+          "frequency": 0.0006264050613528958
+        },
+        {
+          "label_code": "CCSR_INJ032",
+          "count": 89,
+          "frequency": 0.0006194450051156414
+        },
+        {
+          "label_code": "CCSR_INF001",
+          "count": 89,
+          "frequency": 0.0006194450051156414
+        },
+        {
+          "label_code": "CCSR_NEO008",
+          "count": 89,
+          "frequency": 0.0006194450051156414
+        },
+        {
+          "label_code": "CCSR_INJ019",
+          "count": 86,
+          "frequency": 0.0005985648364038781
+        },
+        {
+          "label_code": "CCSR_END012",
+          "count": 85,
+          "frequency": 0.0005916047801666237
+        },
+        {
+          "label_code": "CCSR_NEO016",
+          "count": 84,
+          "frequency": 0.0005846447239293693
+        },
+        {
+          "label_code": "CCSR_MUS015",
+          "count": 84,
+          "frequency": 0.0005846447239293693
+        },
+        {
+          "label_code": "CCSR_NEO014",
+          "count": 84,
+          "frequency": 0.0005846447239293693
+        },
+        {
+          "label_code": "CCSR_PRG012",
+          "count": 79,
+          "frequency": 0.0005498444427430974
+        },
+        {
+          "label_code": "CCSR_PRG022",
+          "count": 78,
+          "frequency": 0.0005428843865058429
+        },
+        {
+          "label_code": "CCSR_NEO002",
+          "count": 77,
+          "frequency": 0.0005359243302685885
+        },
+        {
+          "label_code": "CCSR_MAL007",
+          "count": 77,
+          "frequency": 0.0005359243302685885
+        },
+        {
+          "label_code": "CCSR_INJ013",
+          "count": 75,
+          "frequency": 0.0005220042177940798
+        },
+        {
+          "label_code": "CCSR_INJ039",
+          "count": 74,
+          "frequency": 0.0005150441615568254
+        },
+        {
+          "label_code": "CCSR_EAR002",
+          "count": 73,
+          "frequency": 0.000508084105319571
+        },
+        {
+          "label_code": "CCSR_INJ076",
+          "count": 73,
+          "frequency": 0.000508084105319571
+        },
+        {
+          "label_code": "CCSR_NEO020",
+          "count": 72,
+          "frequency": 0.0005011240490823166
+        },
+        {
+          "label_code": "CCSR_MUS004",
+          "count": 67,
+          "frequency": 0.0004663237678960446
+        },
+        {
+          "label_code": "CCSR_INJ075",
+          "count": 67,
+          "frequency": 0.0004663237678960446
+        },
+        {
+          "label_code": "CCSR_FAC013",
+          "count": 66,
+          "frequency": 0.0004593637116587902
+        },
+        {
+          "label_code": "CCSR_NEO028",
+          "count": 66,
+          "frequency": 0.0004593637116587902
+        },
+        {
+          "label_code": "CCSR_NEO019",
+          "count": 64,
+          "frequency": 0.0004454435991842814
+        },
+        {
+          "label_code": "CCSR_INJ069",
+          "count": 61,
+          "frequency": 0.00042456343047251823
+        },
+        {
+          "label_code": "CCSR_MAL005",
+          "count": 57,
+          "frequency": 0.00039672320552350065
+        },
+        {
+          "label_code": "CCSR_MUS017",
+          "count": 56,
+          "frequency": 0.00038976314928624624
+        },
+        {
+          "label_code": "CCSR_NEO034",
+          "count": 56,
+          "frequency": 0.00038976314928624624
+        },
+        {
+          "label_code": "CCSR_INJ025",
+          "count": 55,
+          "frequency": 0.0003828030930489918
+        },
+        {
+          "label_code": "CCSR_RSP015",
+          "count": 54,
+          "frequency": 0.0003758430368117374
+        },
+        {
+          "label_code": "CCSR_NEO044",
+          "count": 53,
+          "frequency": 0.00036888298057448306
+        },
+        {
+          "label_code": "CCSR_EYE007",
+          "count": 52,
+          "frequency": 0.00036192292433722865
+        },
+        {
+          "label_code": "CCSR_NVS022",
+          "count": 51,
+          "frequency": 0.00035496286809997424
+        },
+        {
+          "label_code": "CCSR_NEO031",
+          "count": 51,
+          "frequency": 0.00035496286809997424
+        },
+        {
+          "label_code": "CCSR_INJ043",
+          "count": 48,
+          "frequency": 0.00033408269938821106
+        },
+        {
+          "label_code": "CCSR_RSP004",
+          "count": 48,
+          "frequency": 0.00033408269938821106
+        },
+        {
+          "label_code": "CCSR_NEO026",
+          "count": 48,
+          "frequency": 0.00033408269938821106
+        },
+        {
+          "label_code": "CCSR_NEO069",
+          "count": 47,
+          "frequency": 0.00032712264315095665
+        },
+        {
+          "label_code": "CCSR_PRG014",
+          "count": 45,
+          "frequency": 0.0003132025306764479
+        },
+        {
+          "label_code": "CCSR_INJ072",
+          "count": 43,
+          "frequency": 0.00029928241820193906
+        },
+        {
+          "label_code": "CCSR_NVS003",
+          "count": 39,
+          "frequency": 0.00027144219325292147
+        },
+        {
+          "label_code": "CCSR_EYE009",
+          "count": 38,
+          "frequency": 0.00026448213701566706
+        },
+        {
+          "label_code": "CCSR_NEO040",
+          "count": 38,
+          "frequency": 0.00026448213701566706
+        },
+        {
+          "label_code": "CCSR_CIR010",
+          "count": 36,
+          "frequency": 0.0002505620245411583
+        },
+        {
+          "label_code": "CCSR_MUS035",
+          "count": 36,
+          "frequency": 0.0002505620245411583
+        },
+        {
+          "label_code": "CCSR_PRG021",
+          "count": 34,
+          "frequency": 0.0002366419120666495
+        },
+        {
+          "label_code": "CCSR_GEN011",
+          "count": 34,
+          "frequency": 0.0002366419120666495
+        },
+        {
+          "label_code": "CCSR_NEO010",
+          "count": 33,
+          "frequency": 0.0002296818558293951
+        },
+        {
+          "label_code": "CCSR_INJ071",
+          "count": 33,
+          "frequency": 0.0002296818558293951
+        },
+        {
+          "label_code": "CCSR_FAC020",
+          "count": 32,
+          "frequency": 0.0002227217995921407
+        },
+        {
+          "label_code": "CCSR_PRG009",
+          "count": 32,
+          "frequency": 0.0002227217995921407
+        },
+        {
+          "label_code": "CCSR_NEO036",
+          "count": 32,
+          "frequency": 0.0002227217995921407
+        },
+        {
+          "label_code": "CCSR_NEO052",
+          "count": 30,
+          "frequency": 0.0002088016871176319
+        },
+        {
+          "label_code": "CCSR_INJ045",
+          "count": 30,
+          "frequency": 0.0002088016871176319
+        },
+        {
+          "label_code": "CCSR_MUS008",
+          "count": 30,
+          "frequency": 0.0002088016871176319
+        },
+        {
+          "label_code": "CCSR_INF005",
+          "count": 28,
+          "frequency": 0.00019488157464312312
+        },
+        {
+          "label_code": "CCSR_PRG029",
+          "count": 28,
+          "frequency": 0.00019488157464312312
+        },
+        {
+          "label_code": "CCSR_MUS031",
+          "count": 28,
+          "frequency": 0.00019488157464312312
+        },
+        {
+          "label_code": "CCSR_MBD024",
+          "count": 28,
+          "frequency": 0.00019488157464312312
+        },
+        {
+          "label_code": "CCSR_PNL006",
+          "count": 28,
+          "frequency": 0.00019488157464312312
+        },
+        {
+          "label_code": "CCSR_NEO038",
+          "count": 27,
+          "frequency": 0.0001879215184058687
+        },
+        {
+          "label_code": "CCSR_INJ016",
+          "count": 27,
+          "frequency": 0.0001879215184058687
+        },
+        {
+          "label_code": "CCSR_MUS027",
+          "count": 26,
+          "frequency": 0.00018096146216861432
+        },
+        {
+          "label_code": "CCSR_NEO009",
+          "count": 24,
+          "frequency": 0.00016704134969410553
+        },
+        {
+          "label_code": "CCSR_NEO049",
+          "count": 24,
+          "frequency": 0.00016704134969410553
+        },
+        {
+          "label_code": "CCSR_INJ074",
+          "count": 23,
+          "frequency": 0.00016008129345685112
+        },
+        {
+          "label_code": "CCSR_MBD022",
+          "count": 23,
+          "frequency": 0.00016008129345685112
+        },
+        {
+          "label_code": "CCSR_INJ009",
+          "count": 23,
+          "frequency": 0.00016008129345685112
+        },
+        {
+          "label_code": "CCSR_INJ049",
+          "count": 22,
+          "frequency": 0.00015312123721959674
+        },
+        {
+          "label_code": "CCSR_NEO006",
+          "count": 22,
+          "frequency": 0.00015312123721959674
+        },
+        {
+          "label_code": "CCSR_INJ054",
+          "count": 22,
+          "frequency": 0.00015312123721959674
+        },
+        {
+          "label_code": "CCSR_NEO037",
+          "count": 22,
+          "frequency": 0.00015312123721959674
+        },
+        {
+          "label_code": "CCSR_NEO011",
+          "count": 22,
+          "frequency": 0.00015312123721959674
+        },
+        {
+          "label_code": "CCSR_NEO046",
+          "count": 21,
+          "frequency": 0.00014616118098234232
+        },
+        {
+          "label_code": "CCSR_FAC030",
+          "count": 20,
+          "frequency": 0.00013920112474508794
+        },
+        {
+          "label_code": "CCSR_NEO063",
+          "count": 19,
+          "frequency": 0.00013224106850783353
+        },
+        {
+          "label_code": "CCSR_PRG006",
+          "count": 18,
+          "frequency": 0.00012528101227057915
+        },
+        {
+          "label_code": "CCSR_NEO003",
+          "count": 18,
+          "frequency": 0.00012528101227057915
+        },
+        {
+          "label_code": "CCSR_PRG003",
+          "count": 17,
+          "frequency": 0.00011832095603332475
+        },
+        {
+          "label_code": "CCSR_PRG015",
+          "count": 17,
+          "frequency": 0.00011832095603332475
+        },
+        {
+          "label_code": "CCSR_PRG004",
+          "count": 17,
+          "frequency": 0.00011832095603332475
+        },
+        {
+          "label_code": "CCSR_PRG010",
+          "count": 14,
+          "frequency": 9.744078732156156e-05
+        },
+        {
+          "label_code": "CCSR_GEN024",
+          "count": 14,
+          "frequency": 9.744078732156156e-05
+        },
+        {
+          "label_code": "CCSR_FAC008",
+          "count": 14,
+          "frequency": 9.744078732156156e-05
+        },
+        {
+          "label_code": "CCSR_INJ018",
+          "count": 13,
+          "frequency": 9.048073108430716e-05
+        },
+        {
+          "label_code": "CCSR_NEO029",
+          "count": 13,
+          "frequency": 9.048073108430716e-05
+        },
+        {
+          "label_code": "CCSR_CIR002",
+          "count": 13,
+          "frequency": 9.048073108430716e-05
+        },
+        {
+          "label_code": "CCSR_INJ061",
+          "count": 12,
+          "frequency": 8.352067484705276e-05
+        },
+        {
+          "label_code": "CCSR_NEO007",
+          "count": 12,
+          "frequency": 8.352067484705276e-05
+        },
+        {
+          "label_code": "CCSR_INJ048",
+          "count": 12,
+          "frequency": 8.352067484705276e-05
+        },
+        {
+          "label_code": "CCSR_PRG005",
+          "count": 11,
+          "frequency": 7.656061860979837e-05
+        },
+        {
+          "label_code": "CCSR_PNL015",
+          "count": 10,
+          "frequency": 6.960056237254397e-05
+        },
+        {
+          "label_code": "CCSR_NEO047",
+          "count": 9,
+          "frequency": 6.264050613528957e-05
+        },
+        {
+          "label_code": "CCSR_INJ070",
+          "count": 9,
+          "frequency": 6.264050613528957e-05
+        },
+        {
+          "label_code": "CCSR_PRG007",
+          "count": 9,
+          "frequency": 6.264050613528957e-05
+        },
+        {
+          "label_code": "CCSR_NEO004",
+          "count": 9,
+          "frequency": 6.264050613528957e-05
+        },
+        {
+          "label_code": "CCSR_INJ047",
+          "count": 8,
+          "frequency": 5.5680449898035177e-05
+        },
+        {
+          "label_code": "CCSR_PRG025",
+          "count": 8,
+          "frequency": 5.5680449898035177e-05
+        },
+        {
+          "label_code": "CCSR_INJ064",
+          "count": 7,
+          "frequency": 4.872039366078078e-05
+        },
+        {
+          "label_code": "CCSR_MUS036",
+          "count": 7,
+          "frequency": 4.872039366078078e-05
+        },
+        {
+          "label_code": "CCSR_INJ056",
+          "count": 6,
+          "frequency": 4.176033742352638e-05
+        },
+        {
+          "label_code": "CCSR_NEO041",
+          "count": 6,
+          "frequency": 4.176033742352638e-05
+        },
+        {
+          "label_code": "CCSR_EYE011",
+          "count": 6,
+          "frequency": 4.176033742352638e-05
+        },
+        {
+          "label_code": "CCSR_INJ046",
+          "count": 6,
+          "frequency": 4.176033742352638e-05
+        },
+        {
+          "label_code": "CCSR_MUS012",
+          "count": 6,
+          "frequency": 4.176033742352638e-05
+        },
+        {
+          "label_code": "CCSR_NEO001",
+          "count": 6,
+          "frequency": 4.176033742352638e-05
+        },
+        {
+          "label_code": "CCSR_PNL010",
+          "count": 5,
+          "frequency": 3.4800281186271985e-05
+        },
+        {
+          "label_code": "CCSR_NEO056",
+          "count": 5,
+          "frequency": 3.4800281186271985e-05
+        },
+        {
+          "label_code": "CCSR_INJ065",
+          "count": 5,
+          "frequency": 3.4800281186271985e-05
+        },
+        {
+          "label_code": "CCSR_NEO005",
+          "count": 5,
+          "frequency": 3.4800281186271985e-05
+        },
+        {
+          "label_code": "CCSR_INJ050",
+          "count": 4,
+          "frequency": 2.7840224949017588e-05
+        },
+        {
+          "label_code": "CCSR_MBD034",
+          "count": 4,
+          "frequency": 2.7840224949017588e-05
+        },
+        {
+          "label_code": "CCSR_INJ067",
+          "count": 4,
+          "frequency": 2.7840224949017588e-05
+        },
+        {
+          "label_code": "CCSR_NEO042",
+          "count": 3,
+          "frequency": 2.088016871176319e-05
+        },
+        {
+          "label_code": "CCSR_PNL004",
+          "count": 3,
+          "frequency": 2.088016871176319e-05
+        },
+        {
+          "label_code": "CCSR_MBD027",
+          "count": 3,
+          "frequency": 2.088016871176319e-05
+        },
+        {
+          "label_code": "CCSR_NEO067",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_INJ062",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_MUS005",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_SYM009",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_INJ059",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_END017",
+          "count": 2,
+          "frequency": 1.3920112474508794e-05
+        },
+        {
+          "label_code": "CCSR_NEO055",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_GEN015",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_PNL013",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ068",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ014",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_NEO054",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ060",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        },
+        {
+          "label_code": "CCSR_INJ063",
+          "count": 1,
+          "frequency": 6.960056237254397e-06
+        }
+      ]
+    },
+    "val": {
+      "total_samples": 17799,
+      "unique_labels_appearing": 424,
+      "labels_never_appearing": 45,
+      "frequency_stats": {
+        "min": 5.618293162537221e-05,
+        "q25": 0.0008989269060059554,
+        "median": 0.0049160065172200685,
+        "q75": 0.020310129782572052,
+        "max": 0.36811056800943875,
+        "mean": 0.022165624102265656
+      },
+      "count_stats": {
+        "min": 1,
+        "q25": 16,
+        "median": 87,
+        "q75": 361,
+        "max": 6552,
+        "mean": 394.5259433962264
+      },
+      "support_distribution": {
+        "ultra_rare_lt10": 77,
+        "very_rare_10_99": 149,
+        "rare_100_999": 155,
+        "common_1k_9k": 43,
+        "very_common_gte10k": 0
+      },
+      "class_imbalance_ratio": 6552.000000000001,
+      "label_density": {
+        "positive_ratio": 0.022165624102265656,
+        "negative_ratio": 0.9778343758977344,
+        "sparsity_ratio": 44.11490384327979
+      },
+      "top_10_diseases": [
+        {
+          "label_code": "CCSR_END010",
+          "count": 6552,
+          "frequency": 0.36811056800943875
+        },
+        {
+          "label_code": "CCSR_CIR007",
+          "count": 6070,
+          "frequency": 0.34103039496600934
+        },
+        {
+          "label_code": "CCSR_FAC025",
+          "count": 5082,
+          "frequency": 0.2855216585201416
+        },
+        {
+          "label_code": "CCSR_DIG004",
+          "count": 4485,
+          "frequency": 0.2519804483397944
+        },
+        {
+          "label_code": "CCSR_GEN003",
+          "count": 4288,
+          "frequency": 0.24091241080959605
+        },
+        {
+          "label_code": "CCSR_CIR011",
+          "count": 4250,
+          "frequency": 0.2387774594078319
+        },
+        {
+          "label_code": "CCSR_END011",
+          "count": 4145,
+          "frequency": 0.23287825158716782
+        },
+        {
+          "label_code": "CCSR_MBD002",
+          "count": 4079,
+          "frequency": 0.22917017809989326
+        },
+        {
+          "label_code": "CCSR_CIR019",
+          "count": 3837,
+          "frequency": 0.21557390864655318
+        },
+        {
+          "label_code": "CCSR_CIR017",
+          "count": 3497,
+          "frequency": 0.19647171189392662
+        }
+      ],
+      "bottom_10_diseases": [
+        {
+          "label_code": "CCSR_NEO047",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_GEN011",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_FAC030",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INF005",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_FAC020",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO010",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_MUS035",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INJ014",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO028",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_MBD027",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        }
+      ],
+      "all_label_stats": [
+        {
+          "label_code": "CCSR_END010",
+          "count": 6552,
+          "frequency": 0.36811056800943875
+        },
+        {
+          "label_code": "CCSR_CIR007",
+          "count": 6070,
+          "frequency": 0.34103039496600934
+        },
+        {
+          "label_code": "CCSR_FAC025",
+          "count": 5082,
+          "frequency": 0.2855216585201416
+        },
+        {
+          "label_code": "CCSR_DIG004",
+          "count": 4485,
+          "frequency": 0.2519804483397944
+        },
+        {
+          "label_code": "CCSR_GEN003",
+          "count": 4288,
+          "frequency": 0.24091241080959605
+        },
+        {
+          "label_code": "CCSR_CIR011",
+          "count": 4250,
+          "frequency": 0.2387774594078319
+        },
+        {
+          "label_code": "CCSR_END011",
+          "count": 4145,
+          "frequency": 0.23287825158716782
+        },
+        {
+          "label_code": "CCSR_MBD002",
+          "count": 4079,
+          "frequency": 0.22917017809989326
+        },
+        {
+          "label_code": "CCSR_CIR019",
+          "count": 3837,
+          "frequency": 0.21557390864655318
+        },
+        {
+          "label_code": "CCSR_CIR017",
+          "count": 3497,
+          "frequency": 0.19647171189392662
+        },
+        {
+          "label_code": "CCSR_END003",
+          "count": 3185,
+          "frequency": 0.1789426372268105
+        },
+        {
+          "label_code": "CCSR_GEN002",
+          "count": 2998,
+          "frequency": 0.1684364290128659
+        },
+        {
+          "label_code": "CCSR_END002",
+          "count": 2807,
+          "frequency": 0.1577054890724198
+        },
+        {
+          "label_code": "CCSR_NVS016",
+          "count": 2685,
+          "frequency": 0.15085117141412438
+        },
+        {
+          "label_code": "CCSR_MBD005",
+          "count": 2439,
+          "frequency": 0.13703017023428282
+        },
+        {
+          "label_code": "CCSR_END001",
+          "count": 2383,
+          "frequency": 0.133883926063262
+        },
+        {
+          "label_code": "CCSR_BLD003",
+          "count": 2160,
+          "frequency": 0.12135513231080398
+        },
+        {
+          "label_code": "CCSR_RSP008",
+          "count": 2052,
+          "frequency": 0.11528737569526377
+        },
+        {
+          "label_code": "CCSR_DIG025",
+          "count": 1908,
+          "frequency": 0.10719703354121018
+        },
+        {
+          "label_code": "CCSR_SYM017",
+          "count": 1895,
+          "frequency": 0.10646665543008034
+        },
+        {
+          "label_code": "CCSR_RSP009",
+          "count": 1862,
+          "frequency": 0.10461261868644306
+        },
+        {
+          "label_code": "CCSR_SYM006",
+          "count": 1818,
+          "frequency": 0.10214056969492669
+        },
+        {
+          "label_code": "CCSR_END009",
+          "count": 1812,
+          "frequency": 0.10180347210517444
+        },
+        {
+          "label_code": "CCSR_GEN004",
+          "count": 1623,
+          "frequency": 0.0911848980279791
+        },
+        {
+          "label_code": "CCSR_BLD006",
+          "count": 1618,
+          "frequency": 0.09090398336985224
+        },
+        {
+          "label_code": "CCSR_MBD017",
+          "count": 1570,
+          "frequency": 0.08820720265183438
+        },
+        {
+          "label_code": "CCSR_DIG019",
+          "count": 1489,
+          "frequency": 0.08365638519017922
+        },
+        {
+          "label_code": "CCSR_SYM013",
+          "count": 1478,
+          "frequency": 0.08303837294230013
+        },
+        {
+          "label_code": "CCSR_NVS019",
+          "count": 1470,
+          "frequency": 0.08258890948929715
+        },
+        {
+          "label_code": "CCSR_END016",
+          "count": 1394,
+          "frequency": 0.07831900668576887
+        },
+        {
+          "label_code": "CCSR_CIR026",
+          "count": 1328,
+          "frequency": 0.0746109331984943
+        },
+        {
+          "label_code": "CCSR_INF007",
+          "count": 1265,
+          "frequency": 0.07107140850609585
+        },
+        {
+          "label_code": "CCSR_NVS009",
+          "count": 1247,
+          "frequency": 0.07006011573683915
+        },
+        {
+          "label_code": "CCSR_SYM016",
+          "count": 1194,
+          "frequency": 0.06708242036069442
+        },
+        {
+          "label_code": "CCSR_MUS010",
+          "count": 1191,
+          "frequency": 0.06691387156581831
+        },
+        {
+          "label_code": "CCSR_NVS020",
+          "count": 1158,
+          "frequency": 0.06505983482218101
+        },
+        {
+          "label_code": "CCSR_GEN012",
+          "count": 1141,
+          "frequency": 0.0641047249845497
+        },
+        {
+          "label_code": "CCSR_BLD001",
+          "count": 1126,
+          "frequency": 0.06326198101016911
+        },
+        {
+          "label_code": "CCSR_NEO070",
+          "count": 1074,
+          "frequency": 0.06034046856564976
+        },
+        {
+          "label_code": "CCSR_MUS006",
+          "count": 1062,
+          "frequency": 0.05966627338614529
+        },
+        {
+          "label_code": "CCSR_MUS033",
+          "count": 1058,
+          "frequency": 0.0594415416596438
+        },
+        {
+          "label_code": "CCSR_RSP002",
+          "count": 1040,
+          "frequency": 0.0584302488903871
+        },
+        {
+          "label_code": "CCSR_CIR031",
+          "count": 1012,
+          "frequency": 0.05685712680487668
+        },
+        {
+          "label_code": "CCSR_NVS010",
+          "count": 980,
+          "frequency": 0.05505927299286477
+        },
+        {
+          "label_code": "CCSR_BLD007",
+          "count": 967,
+          "frequency": 0.05432889488173493
+        },
+        {
+          "label_code": "CCSR_CIR014",
+          "count": 956,
+          "frequency": 0.05371088263385584
+        },
+        {
+          "label_code": "CCSR_SYM011",
+          "count": 955,
+          "frequency": 0.05365469970223046
+        },
+        {
+          "label_code": "CCSR_RSP012",
+          "count": 922,
+          "frequency": 0.05180066295859318
+        },
+        {
+          "label_code": "CCSR_MUS013",
+          "count": 916,
+          "frequency": 0.05146356536884095
+        },
+        {
+          "label_code": "CCSR_MUS011",
+          "count": 914,
+          "frequency": 0.0513511995055902
+        },
+        {
+          "label_code": "CCSR_SYM004",
+          "count": 892,
+          "frequency": 0.050115175009832015
+        },
+        {
+          "label_code": "CCSR_SYM010",
+          "count": 883,
+          "frequency": 0.04960952862520367
+        },
+        {
+          "label_code": "CCSR_END008",
+          "count": 864,
+          "frequency": 0.048542052924321594
+        },
+        {
+          "label_code": "CCSR_NVS011",
+          "count": 863,
+          "frequency": 0.04848586999269622
+        },
+        {
+          "label_code": "CCSR_DIG008",
+          "count": 854,
+          "frequency": 0.04798022360806787
+        },
+        {
+          "label_code": "CCSR_BLD004",
+          "count": 841,
+          "frequency": 0.04724984549693803
+        },
+        {
+          "label_code": "CCSR_SKN001",
+          "count": 837,
+          "frequency": 0.04702511377043654
+        },
+        {
+          "label_code": "CCSR_CIR003",
+          "count": 818,
+          "frequency": 0.04595763806955447
+        },
+        {
+          "label_code": "CCSR_INJ030",
+          "count": 785,
+          "frequency": 0.04410360132591719
+        },
+        {
+          "label_code": "CCSR_MBD001",
+          "count": 785,
+          "frequency": 0.04410360132591719
+        },
+        {
+          "label_code": "CCSR_CIR012",
+          "count": 778,
+          "frequency": 0.04371032080453958
+        },
+        {
+          "label_code": "CCSR_SKN004",
+          "count": 741,
+          "frequency": 0.04163155233440081
+        },
+        {
+          "label_code": "CCSR_MBD012",
+          "count": 723,
+          "frequency": 0.04062025956514411
+        },
+        {
+          "label_code": "CCSR_MBD003",
+          "count": 719,
+          "frequency": 0.04039552783864262
+        },
+        {
+          "label_code": "CCSR_INF002",
+          "count": 717,
+          "frequency": 0.040283161975391876
+        },
+        {
+          "label_code": "CCSR_INJ037",
+          "count": 680,
+          "frequency": 0.038204393505253106
+        },
+        {
+          "label_code": "CCSR_DIG017",
+          "count": 660,
+          "frequency": 0.03708073487274566
+        },
+        {
+          "label_code": "CCSR_END007",
+          "count": 643,
+          "frequency": 0.03612562503511433
+        },
+        {
+          "label_code": "CCSR_DIG022",
+          "count": 631,
+          "frequency": 0.03545142985560987
+        },
+        {
+          "label_code": "CCSR_NEO074",
+          "count": 627,
+          "frequency": 0.03522669812910838
+        },
+        {
+          "label_code": "CCSR_SKN002",
+          "count": 625,
+          "frequency": 0.03511433226585763
+        },
+        {
+          "label_code": "CCSR_END015",
+          "count": 601,
+          "frequency": 0.0337659419068487
+        },
+        {
+          "label_code": "CCSR_SYM012",
+          "count": 597,
+          "frequency": 0.03354121018034721
+        },
+        {
+          "label_code": "CCSR_INJ033",
+          "count": 576,
+          "frequency": 0.032361368616214393
+        },
+        {
+          "label_code": "CCSR_CIR016",
+          "count": 574,
+          "frequency": 0.03224900275296365
+        },
+        {
+          "label_code": "CCSR_CIR005",
+          "count": 565,
+          "frequency": 0.0317433563683353
+        },
+        {
+          "label_code": "CCSR_INJ036",
+          "count": 557,
+          "frequency": 0.03129389291533232
+        },
+        {
+          "label_code": "CCSR_MBD007",
+          "count": 555,
+          "frequency": 0.03118152705208158
+        },
+        {
+          "label_code": "CCSR_FAC010",
+          "count": 553,
+          "frequency": 0.031069161188830834
+        },
+        {
+          "label_code": "CCSR_NEO058",
+          "count": 548,
+          "frequency": 0.030788246530703972
+        },
+        {
+          "label_code": "CCSR_CIR039",
+          "count": 541,
+          "frequency": 0.030394966009326365
+        },
+        {
+          "label_code": "CCSR_DIG021",
+          "count": 529,
+          "frequency": 0.0297207708298219
+        },
+        {
+          "label_code": "CCSR_RSP011",
+          "count": 526,
+          "frequency": 0.029552222034945782
+        },
+        {
+          "label_code": "CCSR_FAC006",
+          "count": 524,
+          "frequency": 0.02943985617169504
+        },
+        {
+          "label_code": "CCSR_GEN006",
+          "count": 521,
+          "frequency": 0.029271307376818923
+        },
+        {
+          "label_code": "CCSR_DIG010",
+          "count": 490,
+          "frequency": 0.027529636496432384
+        },
+        {
+          "label_code": "CCSR_RSP016",
+          "count": 487,
+          "frequency": 0.027361087701556267
+        },
+        {
+          "label_code": "CCSR_DIG011",
+          "count": 486,
+          "frequency": 0.027304904769930895
+        },
+        {
+          "label_code": "CCSR_DIG001",
+          "count": 482,
+          "frequency": 0.027080173043429405
+        },
+        {
+          "label_code": "CCSR_NVS015",
+          "count": 477,
+          "frequency": 0.026799258385302546
+        },
+        {
+          "label_code": "CCSR_EYE003",
+          "count": 477,
+          "frequency": 0.026799258385302546
+        },
+        {
+          "label_code": "CCSR_CIR025",
+          "count": 471,
+          "frequency": 0.02646216079555031
+        },
+        {
+          "label_code": "CCSR_DIG020",
+          "count": 466,
+          "frequency": 0.02618124613742345
+        },
+        {
+          "label_code": "CCSR_DIG013",
+          "count": 463,
+          "frequency": 0.026012697342547336
+        },
+        {
+          "label_code": "CCSR_MUS028",
+          "count": 455,
+          "frequency": 0.025563233889544356
+        },
+        {
+          "label_code": "CCSR_MUS024",
+          "count": 435,
+          "frequency": 0.02443957525703691
+        },
+        {
+          "label_code": "CCSR_INF006",
+          "count": 430,
+          "frequency": 0.024158660598910052
+        },
+        {
+          "label_code": "CCSR_CIR009",
+          "count": 428,
+          "frequency": 0.024046294735659307
+        },
+        {
+          "label_code": "CCSR_DIG012",
+          "count": 427,
+          "frequency": 0.023990111804033935
+        },
+        {
+          "label_code": "CCSR_CIR033",
+          "count": 423,
+          "frequency": 0.023765380077532445
+        },
+        {
+          "label_code": "CCSR_NEO073",
+          "count": 398,
+          "frequency": 0.02236080678689814
+        },
+        {
+          "label_code": "CCSR_MBD021",
+          "count": 397,
+          "frequency": 0.02230462385527277
+        },
+        {
+          "label_code": "CCSR_DIG007",
+          "count": 374,
+          "frequency": 0.021012416427889206
+        },
+        {
+          "label_code": "CCSR_DIG016",
+          "count": 371,
+          "frequency": 0.020843867633013092
+        },
+        {
+          "label_code": "CCSR_CIR001",
+          "count": 369,
+          "frequency": 0.020731501769762347
+        },
+        {
+          "label_code": "CCSR_MUS038",
+          "count": 363,
+          "frequency": 0.020394404180010112
+        },
+        {
+          "label_code": "CCSR_GEN007",
+          "count": 361,
+          "frequency": 0.020282038316759367
+        },
+        {
+          "label_code": "CCSR_BLD008",
+          "count": 361,
+          "frequency": 0.020282038316759367
+        },
+        {
+          "label_code": "CCSR_DIG018",
+          "count": 357,
+          "frequency": 0.02005730659025788
+        },
+        {
+          "label_code": "CCSR_EYE010",
+          "count": 354,
+          "frequency": 0.019888757795381764
+        },
+        {
+          "label_code": "CCSR_MUS026",
+          "count": 347,
+          "frequency": 0.019495477274004157
+        },
+        {
+          "label_code": "CCSR_MUS025",
+          "count": 346,
+          "frequency": 0.019439294342378784
+        },
+        {
+          "label_code": "CCSR_SYM015",
+          "count": 346,
+          "frequency": 0.019439294342378784
+        },
+        {
+          "label_code": "CCSR_MBD018",
+          "count": 343,
+          "frequency": 0.019270745547502667
+        },
+        {
+          "label_code": "CCSR_MBD026",
+          "count": 341,
+          "frequency": 0.019158379684251926
+        },
+        {
+          "label_code": "CCSR_SKN003",
+          "count": 338,
+          "frequency": 0.01898983088937581
+        },
+        {
+          "label_code": "CCSR_MUS003",
+          "count": 330,
+          "frequency": 0.01854036743637283
+        },
+        {
+          "label_code": "CCSR_SYM014",
+          "count": 322,
+          "frequency": 0.018090903983369853
+        },
+        {
+          "label_code": "CCSR_MUS002",
+          "count": 322,
+          "frequency": 0.018090903983369853
+        },
+        {
+          "label_code": "CCSR_RSP010",
+          "count": 308,
+          "frequency": 0.017304342940614642
+        },
+        {
+          "label_code": "CCSR_DIG024",
+          "count": 302,
+          "frequency": 0.016967245350862407
+        },
+        {
+          "label_code": "CCSR_NVS017",
+          "count": 299,
+          "frequency": 0.01679869655598629
+        },
+        {
+          "label_code": "CCSR_SYM001",
+          "count": 297,
+          "frequency": 0.016686330692735545
+        },
+        {
+          "label_code": "CCSR_GEN008",
+          "count": 296,
+          "frequency": 0.016630147761110176
+        },
+        {
+          "label_code": "CCSR_SYM005",
+          "count": 292,
+          "frequency": 0.016405416034608686
+        },
+        {
+          "label_code": "CCSR_MBD009",
+          "count": 291,
+          "frequency": 0.016349233102983314
+        },
+        {
+          "label_code": "CCSR_CIR036",
+          "count": 289,
+          "frequency": 0.01623686723973257
+        },
+        {
+          "label_code": "CCSR_GEN009",
+          "count": 281,
+          "frequency": 0.015787403786729593
+        },
+        {
+          "label_code": "CCSR_FAC016",
+          "count": 272,
+          "frequency": 0.015281757402101241
+        },
+        {
+          "label_code": "CCSR_RSP007",
+          "count": 267,
+          "frequency": 0.01500084274397438
+        },
+        {
+          "label_code": "CCSR_NEO072",
+          "count": 266,
+          "frequency": 0.014944659812349008
+        },
+        {
+          "label_code": "CCSR_CIR029",
+          "count": 262,
+          "frequency": 0.01471992808584752
+        },
+        {
+          "label_code": "CCSR_DIG014",
+          "count": 261,
+          "frequency": 0.014663745154222148
+        },
+        {
+          "label_code": "CCSR_END013",
+          "count": 261,
+          "frequency": 0.014663745154222148
+        },
+        {
+          "label_code": "CCSR_FAC014",
+          "count": 261,
+          "frequency": 0.014663745154222148
+        },
+        {
+          "label_code": "CCSR_DIG003",
+          "count": 256,
+          "frequency": 0.014382830496095286
+        },
+        {
+          "label_code": "CCSR_SYM007",
+          "count": 250,
+          "frequency": 0.014045732906343053
+        },
+        {
+          "label_code": "CCSR_NVS008",
+          "count": 242,
+          "frequency": 0.013596269453340075
+        },
+        {
+          "label_code": "CCSR_INF008",
+          "count": 242,
+          "frequency": 0.013596269453340075
+        },
+        {
+          "label_code": "CCSR_MBD014",
+          "count": 240,
+          "frequency": 0.01348390359008933
+        },
+        {
+          "label_code": "CCSR_INJ017",
+          "count": 235,
+          "frequency": 0.01320298893196247
+        },
+        {
+          "label_code": "CCSR_MBD019",
+          "count": 233,
+          "frequency": 0.013090623068711725
+        },
+        {
+          "label_code": "CCSR_CIR023",
+          "count": 224,
+          "frequency": 0.012584976684083376
+        },
+        {
+          "label_code": "CCSR_SKN007",
+          "count": 222,
+          "frequency": 0.012472610820832631
+        },
+        {
+          "label_code": "CCSR_END014",
+          "count": 220,
+          "frequency": 0.012360244957581886
+        },
+        {
+          "label_code": "CCSR_NEO065",
+          "count": 217,
+          "frequency": 0.012191696162705769
+        },
+        {
+          "label_code": "CCSR_MUS007",
+          "count": 211,
+          "frequency": 0.011854598572953536
+        },
+        {
+          "label_code": "CCSR_NVS006",
+          "count": 210,
+          "frequency": 0.011798415641328164
+        },
+        {
+          "label_code": "CCSR_DIG023",
+          "count": 203,
+          "frequency": 0.011405135119950558
+        },
+        {
+          "label_code": "CCSR_EAR004",
+          "count": 202,
+          "frequency": 0.011348952188325186
+        },
+        {
+          "label_code": "CCSR_DIG005",
+          "count": 195,
+          "frequency": 0.01095567166694758
+        },
+        {
+          "label_code": "CCSR_NEO022",
+          "count": 194,
+          "frequency": 0.01089948873532221
+        },
+        {
+          "label_code": "CCSR_SYM003",
+          "count": 193,
+          "frequency": 0.010843305803696838
+        },
+        {
+          "label_code": "CCSR_INF004",
+          "count": 181,
+          "frequency": 0.01016911062419237
+        },
+        {
+          "label_code": "CCSR_NEO015",
+          "count": 180,
+          "frequency": 0.010112927692566998
+        },
+        {
+          "label_code": "CCSR_EYE005",
+          "count": 172,
+          "frequency": 0.00966346423956402
+        },
+        {
+          "label_code": "CCSR_RSP006",
+          "count": 171,
+          "frequency": 0.009607281307938649
+        },
+        {
+          "label_code": "CCSR_MBD004",
+          "count": 171,
+          "frequency": 0.009607281307938649
+        },
+        {
+          "label_code": "CCSR_SYM002",
+          "count": 170,
+          "frequency": 0.009551098376313277
+        },
+        {
+          "label_code": "CCSR_NVS004",
+          "count": 170,
+          "frequency": 0.009551098376313277
+        },
+        {
+          "label_code": "CCSR_MBD025",
+          "count": 169,
+          "frequency": 0.009494915444687904
+        },
+        {
+          "label_code": "CCSR_CIR020",
+          "count": 158,
+          "frequency": 0.008876903196808809
+        },
+        {
+          "label_code": "CCSR_GEN005",
+          "count": 153,
+          "frequency": 0.008595988538681949
+        },
+        {
+          "label_code": "CCSR_NEO017",
+          "count": 148,
+          "frequency": 0.008315073880555088
+        },
+        {
+          "label_code": "CCSR_CIR013",
+          "count": 144,
+          "frequency": 0.008090342154053598
+        },
+        {
+          "label_code": "CCSR_DIG015",
+          "count": 142,
+          "frequency": 0.007977976290802853
+        },
+        {
+          "label_code": "CCSR_CIR032",
+          "count": 142,
+          "frequency": 0.007977976290802853
+        },
+        {
+          "label_code": "CCSR_BLD009",
+          "count": 141,
+          "frequency": 0.007921793359177481
+        },
+        {
+          "label_code": "CCSR_NEO060",
+          "count": 140,
+          "frequency": 0.00786561042755211
+        },
+        {
+          "label_code": "CCSR_NEO039",
+          "count": 136,
+          "frequency": 0.007640878701050621
+        },
+        {
+          "label_code": "CCSR_PRG028",
+          "count": 136,
+          "frequency": 0.007640878701050621
+        },
+        {
+          "label_code": "CCSR_NVS013",
+          "count": 134,
+          "frequency": 0.007528512837799877
+        },
+        {
+          "label_code": "CCSR_INJ034",
+          "count": 132,
+          "frequency": 0.007416146974549132
+        },
+        {
+          "label_code": "CCSR_NVS005",
+          "count": 131,
+          "frequency": 0.00735996404292376
+        },
+        {
+          "label_code": "CCSR_MAL003",
+          "count": 130,
+          "frequency": 0.007303781111298388
+        },
+        {
+          "label_code": "CCSR_CIR038",
+          "count": 128,
+          "frequency": 0.007191415248047643
+        },
+        {
+          "label_code": "CCSR_NEO030",
+          "count": 127,
+          "frequency": 0.007135232316422271
+        },
+        {
+          "label_code": "CCSR_RSP017",
+          "count": 126,
+          "frequency": 0.007079049384796899
+        },
+        {
+          "label_code": "CCSR_CIR024",
+          "count": 126,
+          "frequency": 0.007079049384796899
+        },
+        {
+          "label_code": "CCSR_MAL001",
+          "count": 125,
+          "frequency": 0.007022866453171526
+        },
+        {
+          "label_code": "CCSR_CIR006",
+          "count": 124,
+          "frequency": 0.006966683521546154
+        },
+        {
+          "label_code": "CCSR_CIR015",
+          "count": 122,
+          "frequency": 0.00685431765829541
+        },
+        {
+          "label_code": "CCSR_MBD023",
+          "count": 115,
+          "frequency": 0.0064610371369178046
+        },
+        {
+          "label_code": "CCSR_INJ035",
+          "count": 114,
+          "frequency": 0.006404854205292432
+        },
+        {
+          "label_code": "CCSR_INJ073",
+          "count": 113,
+          "frequency": 0.00634867127366706
+        },
+        {
+          "label_code": "CCSR_NEO075",
+          "count": 113,
+          "frequency": 0.00634867127366706
+        },
+        {
+          "label_code": "CCSR_BLD005",
+          "count": 112,
+          "frequency": 0.006292488342041688
+        },
+        {
+          "label_code": "CCSR_INF012",
+          "count": 112,
+          "frequency": 0.006292488342041688
+        },
+        {
+          "label_code": "CCSR_NEO061",
+          "count": 111,
+          "frequency": 0.006236305410416316
+        },
+        {
+          "label_code": "CCSR_INJ022",
+          "count": 111,
+          "frequency": 0.006236305410416316
+        },
+        {
+          "label_code": "CCSR_SKN005",
+          "count": 108,
+          "frequency": 0.006067756615540199
+        },
+        {
+          "label_code": "CCSR_GEN025",
+          "count": 106,
+          "frequency": 0.005955390752289454
+        },
+        {
+          "label_code": "CCSR_FAC009",
+          "count": 106,
+          "frequency": 0.005955390752289454
+        },
+        {
+          "label_code": "CCSR_CIR008",
+          "count": 106,
+          "frequency": 0.005955390752289454
+        },
+        {
+          "label_code": "CCSR_BLD002",
+          "count": 106,
+          "frequency": 0.005955390752289454
+        },
+        {
+          "label_code": "CCSR_FAC022",
+          "count": 103,
+          "frequency": 0.005786841957413338
+        },
+        {
+          "label_code": "CCSR_INJ004",
+          "count": 102,
+          "frequency": 0.0057306590257879654
+        },
+        {
+          "label_code": "CCSR_MBD006",
+          "count": 100,
+          "frequency": 0.005618293162537221
+        },
+        {
+          "label_code": "CCSR_EYE002",
+          "count": 99,
+          "frequency": 0.005562110230911849
+        },
+        {
+          "label_code": "CCSR_EAR003",
+          "count": 98,
+          "frequency": 0.0055059272992864765
+        },
+        {
+          "label_code": "CCSR_CIR021",
+          "count": 98,
+          "frequency": 0.0055059272992864765
+        },
+        {
+          "label_code": "CCSR_INJ011",
+          "count": 97,
+          "frequency": 0.005449744367661105
+        },
+        {
+          "label_code": "CCSR_RSP001",
+          "count": 97,
+          "frequency": 0.005449744367661105
+        },
+        {
+          "label_code": "CCSR_GEN018",
+          "count": 95,
+          "frequency": 0.00533737850441036
+        },
+        {
+          "label_code": "CCSR_EYE001",
+          "count": 95,
+          "frequency": 0.00533737850441036
+        },
+        {
+          "label_code": "CCSR_MBD013",
+          "count": 95,
+          "frequency": 0.00533737850441036
+        },
+        {
+          "label_code": "CCSR_RSP003",
+          "count": 92,
+          "frequency": 0.005168829709534244
+        },
+        {
+          "label_code": "CCSR_INJ003",
+          "count": 91,
+          "frequency": 0.005112646777908871
+        },
+        {
+          "label_code": "CCSR_MUS037",
+          "count": 90,
+          "frequency": 0.005056463846283499
+        },
+        {
+          "label_code": "CCSR_INJ005",
+          "count": 90,
+          "frequency": 0.005056463846283499
+        },
+        {
+          "label_code": "CCSR_NEO045",
+          "count": 88,
+          "frequency": 0.004944097983032755
+        },
+        {
+          "label_code": "CCSR_MUS016",
+          "count": 88,
+          "frequency": 0.004944097983032755
+        },
+        {
+          "label_code": "CCSR_PRG023",
+          "count": 87,
+          "frequency": 0.004887915051407382
+        },
+        {
+          "label_code": "CCSR_SYM008",
+          "count": 86,
+          "frequency": 0.00483173211978201
+        },
+        {
+          "label_code": "CCSR_NEO013",
+          "count": 83,
+          "frequency": 0.004663183324905893
+        },
+        {
+          "label_code": "CCSR_GEN001",
+          "count": 83,
+          "frequency": 0.004663183324905893
+        },
+        {
+          "label_code": "CCSR_NEO051",
+          "count": 83,
+          "frequency": 0.004663183324905893
+        },
+        {
+          "label_code": "CCSR_GEN017",
+          "count": 83,
+          "frequency": 0.004663183324905893
+        },
+        {
+          "label_code": "CCSR_INJ002",
+          "count": 80,
+          "frequency": 0.004494634530029777
+        },
+        {
+          "label_code": "CCSR_INJ024",
+          "count": 80,
+          "frequency": 0.004494634530029777
+        },
+        {
+          "label_code": "CCSR_INJ020",
+          "count": 80,
+          "frequency": 0.004494634530029777
+        },
+        {
+          "label_code": "CCSR_GEN016",
+          "count": 80,
+          "frequency": 0.004494634530029777
+        },
+        {
+          "label_code": "CCSR_SYM018",
+          "count": 78,
+          "frequency": 0.004382268666779033
+        },
+        {
+          "label_code": "CCSR_NEO033",
+          "count": 77,
+          "frequency": 0.0043260857351536605
+        },
+        {
+          "label_code": "CCSR_NEO043",
+          "count": 76,
+          "frequency": 0.004269902803528288
+        },
+        {
+          "label_code": "CCSR_BLD010",
+          "count": 75,
+          "frequency": 0.004213719871902916
+        },
+        {
+          "label_code": "CCSR_DIG002",
+          "count": 74,
+          "frequency": 0.004157536940277544
+        },
+        {
+          "label_code": "CCSR_CIR034",
+          "count": 74,
+          "frequency": 0.004157536940277544
+        },
+        {
+          "label_code": "CCSR_INJ006",
+          "count": 74,
+          "frequency": 0.004157536940277544
+        },
+        {
+          "label_code": "CCSR_INJ008",
+          "count": 73,
+          "frequency": 0.004101354008652172
+        },
+        {
+          "label_code": "CCSR_CIR030",
+          "count": 73,
+          "frequency": 0.004101354008652172
+        },
+        {
+          "label_code": "CCSR_MUS014",
+          "count": 72,
+          "frequency": 0.004045171077026799
+        },
+        {
+          "label_code": "CCSR_MUS022",
+          "count": 71,
+          "frequency": 0.003988988145401427
+        },
+        {
+          "label_code": "CCSR_MUS021",
+          "count": 70,
+          "frequency": 0.003932805213776055
+        },
+        {
+          "label_code": "CCSR_GEN013",
+          "count": 69,
+          "frequency": 0.0038766222821506827
+        },
+        {
+          "label_code": "CCSR_CIR028",
+          "count": 68,
+          "frequency": 0.0038204393505253103
+        },
+        {
+          "label_code": "CCSR_GEN026",
+          "count": 67,
+          "frequency": 0.0037642564188999383
+        },
+        {
+          "label_code": "CCSR_MUS009",
+          "count": 67,
+          "frequency": 0.0037642564188999383
+        },
+        {
+          "label_code": "CCSR_NVS018",
+          "count": 63,
+          "frequency": 0.0035395246923984494
+        },
+        {
+          "label_code": "CCSR_MBD020",
+          "count": 61,
+          "frequency": 0.003427158829147705
+        },
+        {
+          "label_code": "CCSR_NEO068",
+          "count": 61,
+          "frequency": 0.003427158829147705
+        },
+        {
+          "label_code": "CCSR_PRG024",
+          "count": 60,
+          "frequency": 0.0033709758975223325
+        },
+        {
+          "label_code": "CCSR_NVS012",
+          "count": 60,
+          "frequency": 0.0033709758975223325
+        },
+        {
+          "label_code": "CCSR_RSP005",
+          "count": 58,
+          "frequency": 0.0032586100342715885
+        },
+        {
+          "label_code": "CCSR_INJ012",
+          "count": 58,
+          "frequency": 0.0032586100342715885
+        },
+        {
+          "label_code": "CCSR_NEO024",
+          "count": 58,
+          "frequency": 0.0032586100342715885
+        },
+        {
+          "label_code": "CCSR_NVS007",
+          "count": 58,
+          "frequency": 0.0032586100342715885
+        },
+        {
+          "label_code": "CCSR_CIR018",
+          "count": 55,
+          "frequency": 0.0030900612393954716
+        },
+        {
+          "label_code": "CCSR_MBD011",
+          "count": 54,
+          "frequency": 0.0030338783077700996
+        },
+        {
+          "label_code": "CCSR_GEN019",
+          "count": 54,
+          "frequency": 0.0030338783077700996
+        },
+        {
+          "label_code": "CCSR_INF010",
+          "count": 53,
+          "frequency": 0.002977695376144727
+        },
+        {
+          "label_code": "CCSR_NEO066",
+          "count": 53,
+          "frequency": 0.002977695376144727
+        },
+        {
+          "label_code": "CCSR_MAL008",
+          "count": 53,
+          "frequency": 0.002977695376144727
+        },
+        {
+          "label_code": "CCSR_MAL002",
+          "count": 52,
+          "frequency": 0.002921512444519355
+        },
+        {
+          "label_code": "CCSR_EYE012",
+          "count": 52,
+          "frequency": 0.002921512444519355
+        },
+        {
+          "label_code": "CCSR_MUS032",
+          "count": 51,
+          "frequency": 0.0028653295128939827
+        },
+        {
+          "label_code": "CCSR_NEO018",
+          "count": 51,
+          "frequency": 0.0028653295128939827
+        },
+        {
+          "label_code": "CCSR_MBD010",
+          "count": 50,
+          "frequency": 0.0028091465812686107
+        },
+        {
+          "label_code": "CCSR_PRG020",
+          "count": 50,
+          "frequency": 0.0028091465812686107
+        },
+        {
+          "label_code": "CCSR_GEN022",
+          "count": 49,
+          "frequency": 0.0027529636496432383
+        },
+        {
+          "label_code": "CCSR_NEO035",
+          "count": 49,
+          "frequency": 0.0027529636496432383
+        },
+        {
+          "label_code": "CCSR_CIR004",
+          "count": 48,
+          "frequency": 0.0026967807180178663
+        },
+        {
+          "label_code": "CCSR_EAR006",
+          "count": 47,
+          "frequency": 0.002640597786392494
+        },
+        {
+          "label_code": "CCSR_PRG019",
+          "count": 47,
+          "frequency": 0.002640597786392494
+        },
+        {
+          "label_code": "CCSR_GEN021",
+          "count": 47,
+          "frequency": 0.002640597786392494
+        },
+        {
+          "label_code": "CCSR_INF009",
+          "count": 46,
+          "frequency": 0.002584414854767122
+        },
+        {
+          "label_code": "CCSR_PRG011",
+          "count": 45,
+          "frequency": 0.0025282319231417494
+        },
+        {
+          "label_code": "CCSR_EYE006",
+          "count": 44,
+          "frequency": 0.0024720489915163774
+        },
+        {
+          "label_code": "CCSR_PRG026",
+          "count": 44,
+          "frequency": 0.0024720489915163774
+        },
+        {
+          "label_code": "CCSR_INJ031",
+          "count": 43,
+          "frequency": 0.002415866059891005
+        },
+        {
+          "label_code": "CCSR_SKN006",
+          "count": 43,
+          "frequency": 0.002415866059891005
+        },
+        {
+          "label_code": "CCSR_MUS034",
+          "count": 43,
+          "frequency": 0.002415866059891005
+        },
+        {
+          "label_code": "CCSR_EYE008",
+          "count": 43,
+          "frequency": 0.002415866059891005
+        },
+        {
+          "label_code": "CCSR_NEO048",
+          "count": 42,
+          "frequency": 0.002359683128265633
+        },
+        {
+          "label_code": "CCSR_INJ026",
+          "count": 41,
+          "frequency": 0.0023035001966402605
+        },
+        {
+          "label_code": "CCSR_INJ028",
+          "count": 39,
+          "frequency": 0.0021911343333895165
+        },
+        {
+          "label_code": "CCSR_MUS001",
+          "count": 37,
+          "frequency": 0.002078768470138772
+        },
+        {
+          "label_code": "CCSR_DIG009",
+          "count": 37,
+          "frequency": 0.002078768470138772
+        },
+        {
+          "label_code": "CCSR_NEO064",
+          "count": 36,
+          "frequency": 0.0020225855385133996
+        },
+        {
+          "label_code": "CCSR_INJ001",
+          "count": 36,
+          "frequency": 0.0020225855385133996
+        },
+        {
+          "label_code": "CCSR_INJ027",
+          "count": 35,
+          "frequency": 0.0019664026068880276
+        },
+        {
+          "label_code": "CCSR_NEO021",
+          "count": 35,
+          "frequency": 0.0019664026068880276
+        },
+        {
+          "label_code": "CCSR_INJ010",
+          "count": 35,
+          "frequency": 0.0019664026068880276
+        },
+        {
+          "label_code": "CCSR_MBD008",
+          "count": 35,
+          "frequency": 0.0019664026068880276
+        },
+        {
+          "label_code": "CCSR_MAL009",
+          "count": 34,
+          "frequency": 0.0019102196752626551
+        },
+        {
+          "label_code": "CCSR_PRG016",
+          "count": 33,
+          "frequency": 0.001854036743637283
+        },
+        {
+          "label_code": "CCSR_GEN010",
+          "count": 32,
+          "frequency": 0.0017978538120119107
+        },
+        {
+          "label_code": "CCSR_NEO057",
+          "count": 32,
+          "frequency": 0.0017978538120119107
+        },
+        {
+          "label_code": "CCSR_PRG027",
+          "count": 31,
+          "frequency": 0.0017416708803865385
+        },
+        {
+          "label_code": "CCSR_MUS030",
+          "count": 31,
+          "frequency": 0.0017416708803865385
+        },
+        {
+          "label_code": "CCSR_NEO059",
+          "count": 31,
+          "frequency": 0.0017416708803865385
+        },
+        {
+          "label_code": "CCSR_GEN014",
+          "count": 30,
+          "frequency": 0.0016854879487611663
+        },
+        {
+          "label_code": "CCSR_GEN023",
+          "count": 30,
+          "frequency": 0.0016854879487611663
+        },
+        {
+          "label_code": "CCSR_NVS021",
+          "count": 30,
+          "frequency": 0.0016854879487611663
+        },
+        {
+          "label_code": "CCSR_CIR027",
+          "count": 30,
+          "frequency": 0.0016854879487611663
+        },
+        {
+          "label_code": "CCSR_PRG013",
+          "count": 28,
+          "frequency": 0.001573122085510422
+        },
+        {
+          "label_code": "CCSR_INF003",
+          "count": 27,
+          "frequency": 0.0015169391538850498
+        },
+        {
+          "label_code": "CCSR_NEO062",
+          "count": 27,
+          "frequency": 0.0015169391538850498
+        },
+        {
+          "label_code": "CCSR_NEO071",
+          "count": 26,
+          "frequency": 0.0014607562222596776
+        },
+        {
+          "label_code": "CCSR_NEO012",
+          "count": 26,
+          "frequency": 0.0014607562222596776
+        },
+        {
+          "label_code": "CCSR_NEO025",
+          "count": 26,
+          "frequency": 0.0014607562222596776
+        },
+        {
+          "label_code": "CCSR_NVS001",
+          "count": 25,
+          "frequency": 0.0014045732906343054
+        },
+        {
+          "label_code": "CCSR_DIG006",
+          "count": 25,
+          "frequency": 0.0014045732906343054
+        },
+        {
+          "label_code": "CCSR_CIR022",
+          "count": 24,
+          "frequency": 0.0013483903590089331
+        },
+        {
+          "label_code": "CCSR_INF011",
+          "count": 24,
+          "frequency": 0.0013483903590089331
+        },
+        {
+          "label_code": "CCSR_CIR035",
+          "count": 23,
+          "frequency": 0.001292207427383561
+        },
+        {
+          "label_code": "CCSR_MUS023",
+          "count": 22,
+          "frequency": 0.0012360244957581887
+        },
+        {
+          "label_code": "CCSR_GEN020",
+          "count": 22,
+          "frequency": 0.0012360244957581887
+        },
+        {
+          "label_code": "CCSR_NEO027",
+          "count": 21,
+          "frequency": 0.0011798415641328165
+        },
+        {
+          "label_code": "CCSR_PRG017",
+          "count": 20,
+          "frequency": 0.0011236586325074442
+        },
+        {
+          "label_code": "CCSR_MUS029",
+          "count": 19,
+          "frequency": 0.001067475700882072
+        },
+        {
+          "label_code": "CCSR_MAL010",
+          "count": 18,
+          "frequency": 0.0010112927692566998
+        },
+        {
+          "label_code": "CCSR_INJ021",
+          "count": 17,
+          "frequency": 0.0009551098376313276
+        },
+        {
+          "label_code": "CCSR_PRG018",
+          "count": 16,
+          "frequency": 0.0008989269060059554
+        },
+        {
+          "label_code": "CCSR_INJ042",
+          "count": 16,
+          "frequency": 0.0008989269060059554
+        },
+        {
+          "label_code": "CCSR_EAR001",
+          "count": 16,
+          "frequency": 0.0008989269060059554
+        },
+        {
+          "label_code": "CCSR_NEO038",
+          "count": 16,
+          "frequency": 0.0008989269060059554
+        },
+        {
+          "label_code": "CCSR_PRG022",
+          "count": 16,
+          "frequency": 0.0008989269060059554
+        },
+        {
+          "label_code": "CCSR_INJ038",
+          "count": 16,
+          "frequency": 0.0008989269060059554
+        },
+        {
+          "label_code": "CCSR_INJ041",
+          "count": 16,
+          "frequency": 0.0008989269060059554
+        },
+        {
+          "label_code": "CCSR_NEO020",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_NEO023",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_INJ007",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_NVS014",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_RSP004",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_PRG012",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_NVS002",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_NEO050",
+          "count": 15,
+          "frequency": 0.0008427439743805831
+        },
+        {
+          "label_code": "CCSR_RSP013",
+          "count": 14,
+          "frequency": 0.000786561042755211
+        },
+        {
+          "label_code": "CCSR_MUS015",
+          "count": 14,
+          "frequency": 0.000786561042755211
+        },
+        {
+          "label_code": "CCSR_RSP014",
+          "count": 14,
+          "frequency": 0.000786561042755211
+        },
+        {
+          "label_code": "CCSR_NEO019",
+          "count": 14,
+          "frequency": 0.000786561042755211
+        },
+        {
+          "label_code": "CCSR_PRG014",
+          "count": 14,
+          "frequency": 0.000786561042755211
+        },
+        {
+          "label_code": "CCSR_FAC013",
+          "count": 13,
+          "frequency": 0.0007303781111298388
+        },
+        {
+          "label_code": "CCSR_MAL004",
+          "count": 13,
+          "frequency": 0.0007303781111298388
+        },
+        {
+          "label_code": "CCSR_INJ013",
+          "count": 12,
+          "frequency": 0.0006741951795044666
+        },
+        {
+          "label_code": "CCSR_INJ043",
+          "count": 12,
+          "frequency": 0.0006741951795044666
+        },
+        {
+          "label_code": "CCSR_FAC004",
+          "count": 12,
+          "frequency": 0.0006741951795044666
+        },
+        {
+          "label_code": "CCSR_FAC024",
+          "count": 12,
+          "frequency": 0.0006741951795044666
+        },
+        {
+          "label_code": "CCSR_INJ019",
+          "count": 12,
+          "frequency": 0.0006741951795044666
+        },
+        {
+          "label_code": "CCSR_INJ076",
+          "count": 12,
+          "frequency": 0.0006741951795044666
+        },
+        {
+          "label_code": "CCSR_NEO008",
+          "count": 11,
+          "frequency": 0.0006180122478790943
+        },
+        {
+          "label_code": "CCSR_INJ023",
+          "count": 11,
+          "frequency": 0.0006180122478790943
+        },
+        {
+          "label_code": "CCSR_INJ039",
+          "count": 11,
+          "frequency": 0.0006180122478790943
+        },
+        {
+          "label_code": "CCSR_NEO032",
+          "count": 11,
+          "frequency": 0.0006180122478790943
+        },
+        {
+          "label_code": "CCSR_FAC003",
+          "count": 10,
+          "frequency": 0.0005618293162537221
+        },
+        {
+          "label_code": "CCSR_MUS020",
+          "count": 10,
+          "frequency": 0.0005618293162537221
+        },
+        {
+          "label_code": "CCSR_NEO034",
+          "count": 9,
+          "frequency": 0.0005056463846283499
+        },
+        {
+          "label_code": "CCSR_EAR002",
+          "count": 9,
+          "frequency": 0.0005056463846283499
+        },
+        {
+          "label_code": "CCSR_MUS004",
+          "count": 9,
+          "frequency": 0.0005056463846283499
+        },
+        {
+          "label_code": "CCSR_EYE004",
+          "count": 9,
+          "frequency": 0.0005056463846283499
+        },
+        {
+          "label_code": "CCSR_NEO002",
+          "count": 9,
+          "frequency": 0.0005056463846283499
+        },
+        {
+          "label_code": "CCSR_INJ040",
+          "count": 8,
+          "frequency": 0.0004494634530029777
+        },
+        {
+          "label_code": "CCSR_NEO046",
+          "count": 8,
+          "frequency": 0.0004494634530029777
+        },
+        {
+          "label_code": "CCSR_NEO044",
+          "count": 8,
+          "frequency": 0.0004494634530029777
+        },
+        {
+          "label_code": "CCSR_INJ072",
+          "count": 7,
+          "frequency": 0.0003932805213776055
+        },
+        {
+          "label_code": "CCSR_INJ069",
+          "count": 7,
+          "frequency": 0.0003932805213776055
+        },
+        {
+          "label_code": "CCSR_EYE007",
+          "count": 7,
+          "frequency": 0.0003932805213776055
+        },
+        {
+          "label_code": "CCSR_MAL007",
+          "count": 7,
+          "frequency": 0.0003932805213776055
+        },
+        {
+          "label_code": "CCSR_NEO016",
+          "count": 7,
+          "frequency": 0.0003932805213776055
+        },
+        {
+          "label_code": "CCSR_NEO078",
+          "count": 6,
+          "frequency": 0.0003370975897522333
+        },
+        {
+          "label_code": "CCSR_NEO036",
+          "count": 6,
+          "frequency": 0.0003370975897522333
+        },
+        {
+          "label_code": "CCSR_INJ032",
+          "count": 6,
+          "frequency": 0.0003370975897522333
+        },
+        {
+          "label_code": "CCSR_NEO031",
+          "count": 6,
+          "frequency": 0.0003370975897522333
+        },
+        {
+          "label_code": "CCSR_RSP015",
+          "count": 5,
+          "frequency": 0.00028091465812686106
+        },
+        {
+          "label_code": "CCSR_NEO029",
+          "count": 5,
+          "frequency": 0.00028091465812686106
+        },
+        {
+          "label_code": "CCSR_INF001",
+          "count": 5,
+          "frequency": 0.00028091465812686106
+        },
+        {
+          "label_code": "CCSR_CIR010",
+          "count": 5,
+          "frequency": 0.00028091465812686106
+        },
+        {
+          "label_code": "CCSR_NVS003",
+          "count": 5,
+          "frequency": 0.00028091465812686106
+        },
+        {
+          "label_code": "CCSR_INJ045",
+          "count": 5,
+          "frequency": 0.00028091465812686106
+        },
+        {
+          "label_code": "CCSR_GEN024",
+          "count": 5,
+          "frequency": 0.00028091465812686106
+        },
+        {
+          "label_code": "CCSR_INJ009",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_MUS017",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_MAL005",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_NEO014",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_NEO001",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_MBD024",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_INJ016",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_NVS022",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_PRG003",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_INJ075",
+          "count": 4,
+          "frequency": 0.00022473172650148884
+        },
+        {
+          "label_code": "CCSR_NEO011",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_PNL010",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_INJ025",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_PRG021",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_NEO040",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_INJ071",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_MUS012",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_NEO052",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_NEO069",
+          "count": 3,
+          "frequency": 0.00016854879487611664
+        },
+        {
+          "label_code": "CCSR_MUS008",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_MUS031",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_PRG015",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_PRG009",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_MUS005",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_END012",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_INJ056",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_CIR002",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_PRG029",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_PRG004",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_PRG006",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_INJ067",
+          "count": 2,
+          "frequency": 0.00011236586325074442
+        },
+        {
+          "label_code": "CCSR_FAC008",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO006",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INJ074",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO026",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INJ064",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INJ065",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INJ048",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO007",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INJ068",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO003",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_EYE009",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_PRG007",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO047",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_GEN011",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_FAC030",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INF005",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_FAC020",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO010",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_MUS035",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_INJ014",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_NEO028",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        },
+        {
+          "label_code": "CCSR_MBD027",
+          "count": 1,
+          "frequency": 5.618293162537221e-05
+        }
+      ]
+    },
+    "test": {
+      "total_samples": 18237,
+      "unique_labels_appearing": 430,
+      "labels_never_appearing": 39,
+      "frequency_stats": {
+        "min": 5.483358008444371e-05,
+        "q25": 0.0008910456763722103,
+        "median": 0.0044689367768821625,
+        "q75": 0.021028677962384165,
+        "max": 0.34095520096507104,
+        "mean": 0.021552402412167444
+      },
+      "count_stats": {
+        "min": 1,
+        "q25": 16,
+        "median": 81,
+        "q75": 383,
+        "max": 6218,
+        "mean": 393.0511627906977
+      },
+      "support_distribution": {
+        "ultra_rare_lt10": 84,
+        "very_rare_10_99": 146,
+        "rare_100_999": 158,
+        "common_1k_9k": 42,
+        "very_common_gte10k": 0
+      },
+      "class_imbalance_ratio": 6218.000000000001,
+      "label_density": {
+        "positive_ratio": 0.021552402412167444,
+        "negative_ratio": 0.9784475975878325,
+        "sparsity_ratio": 45.398539748656894
+      },
+      "top_10_diseases": [
+        {
+          "label_code": "CCSR_END010",
+          "count": 6218,
+          "frequency": 0.34095520096507104
+        },
+        {
+          "label_code": "CCSR_CIR007",
+          "count": 6198,
+          "frequency": 0.3398585293633821
+        },
+        {
+          "label_code": "CCSR_FAC025",
+          "count": 5100,
+          "frequency": 0.27965125843066296
+        },
+        {
+          "label_code": "CCSR_DIG004",
+          "count": 4529,
+          "frequency": 0.24834128420244558
+        },
+        {
+          "label_code": "CCSR_CIR011",
+          "count": 4142,
+          "frequency": 0.22712068870976587
+        },
+        {
+          "label_code": "CCSR_GEN003",
+          "count": 4061,
+          "frequency": 0.22267916872292592
+        },
+        {
+          "label_code": "CCSR_END011",
+          "count": 4057,
+          "frequency": 0.22245983440258815
+        },
+        {
+          "label_code": "CCSR_CIR019",
+          "count": 4023,
+          "frequency": 0.22059549267971706
+        },
+        {
+          "label_code": "CCSR_MBD002",
+          "count": 3819,
+          "frequency": 0.20940944234249054
+        },
+        {
+          "label_code": "CCSR_CIR017",
+          "count": 3800,
+          "frequency": 0.2083676043208861
+        }
+      ],
+      "bottom_10_diseases": [
+        {
+          "label_code": "CCSR_END017",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_INJ047",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_NEO046",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_INJ050",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_PRG003",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_NEO036",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_PRG005",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_NEO044",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_INJ048",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_RSP015",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        }
+      ],
+      "all_label_stats": [
+        {
+          "label_code": "CCSR_END010",
+          "count": 6218,
+          "frequency": 0.34095520096507104
+        },
+        {
+          "label_code": "CCSR_CIR007",
+          "count": 6198,
+          "frequency": 0.3398585293633821
+        },
+        {
+          "label_code": "CCSR_FAC025",
+          "count": 5100,
+          "frequency": 0.27965125843066296
+        },
+        {
+          "label_code": "CCSR_DIG004",
+          "count": 4529,
+          "frequency": 0.24834128420244558
+        },
+        {
+          "label_code": "CCSR_CIR011",
+          "count": 4142,
+          "frequency": 0.22712068870976587
+        },
+        {
+          "label_code": "CCSR_GEN003",
+          "count": 4061,
+          "frequency": 0.22267916872292592
+        },
+        {
+          "label_code": "CCSR_END011",
+          "count": 4057,
+          "frequency": 0.22245983440258815
+        },
+        {
+          "label_code": "CCSR_CIR019",
+          "count": 4023,
+          "frequency": 0.22059549267971706
+        },
+        {
+          "label_code": "CCSR_MBD002",
+          "count": 3819,
+          "frequency": 0.20940944234249054
+        },
+        {
+          "label_code": "CCSR_CIR017",
+          "count": 3800,
+          "frequency": 0.2083676043208861
+        },
+        {
+          "label_code": "CCSR_END003",
+          "count": 3180,
+          "frequency": 0.174370784668531
+        },
+        {
+          "label_code": "CCSR_END002",
+          "count": 2941,
+          "frequency": 0.16126555902834896
+        },
+        {
+          "label_code": "CCSR_GEN002",
+          "count": 2906,
+          "frequency": 0.15934638372539342
+        },
+        {
+          "label_code": "CCSR_NVS016",
+          "count": 2649,
+          "frequency": 0.1452541536436914
+        },
+        {
+          "label_code": "CCSR_END001",
+          "count": 2430,
+          "frequency": 0.13324559960519822
+        },
+        {
+          "label_code": "CCSR_RSP008",
+          "count": 2411,
+          "frequency": 0.1322037615835938
+        },
+        {
+          "label_code": "CCSR_MBD005",
+          "count": 2329,
+          "frequency": 0.1277074080166694
+        },
+        {
+          "label_code": "CCSR_BLD003",
+          "count": 2222,
+          "frequency": 0.12184021494763393
+        },
+        {
+          "label_code": "CCSR_MBD017",
+          "count": 1990,
+          "frequency": 0.10911882436804299
+        },
+        {
+          "label_code": "CCSR_RSP009",
+          "count": 1984,
+          "frequency": 0.10878982288753633
+        },
+        {
+          "label_code": "CCSR_SYM006",
+          "count": 1906,
+          "frequency": 0.10451280364094971
+        },
+        {
+          "label_code": "CCSR_SYM017",
+          "count": 1900,
+          "frequency": 0.10418380216044305
+        },
+        {
+          "label_code": "CCSR_END009",
+          "count": 1867,
+          "frequency": 0.10237429401765641
+        },
+        {
+          "label_code": "CCSR_DIG025",
+          "count": 1804,
+          "frequency": 0.09891977847233646
+        },
+        {
+          "label_code": "CCSR_GEN004",
+          "count": 1633,
+          "frequency": 0.08954323627789658
+        },
+        {
+          "label_code": "CCSR_BLD006",
+          "count": 1590,
+          "frequency": 0.0871853923342655
+        },
+        {
+          "label_code": "CCSR_NVS019",
+          "count": 1587,
+          "frequency": 0.08702089159401218
+        },
+        {
+          "label_code": "CCSR_SYM013",
+          "count": 1504,
+          "frequency": 0.08246970444700334
+        },
+        {
+          "label_code": "CCSR_DIG019",
+          "count": 1414,
+          "frequency": 0.07753468223940341
+        },
+        {
+          "label_code": "CCSR_END016",
+          "count": 1352,
+          "frequency": 0.0741350002741679
+        },
+        {
+          "label_code": "CCSR_CIR026",
+          "count": 1299,
+          "frequency": 0.07122882052969239
+        },
+        {
+          "label_code": "CCSR_SYM016",
+          "count": 1244,
+          "frequency": 0.06821297362504798
+        },
+        {
+          "label_code": "CCSR_INF007",
+          "count": 1198,
+          "frequency": 0.06569062894116356
+        },
+        {
+          "label_code": "CCSR_NVS020",
+          "count": 1183,
+          "frequency": 0.0648681252398969
+        },
+        {
+          "label_code": "CCSR_BLD001",
+          "count": 1169,
+          "frequency": 0.0641004551187147
+        },
+        {
+          "label_code": "CCSR_MUS010",
+          "count": 1151,
+          "frequency": 0.06311345067719472
+        },
+        {
+          "label_code": "CCSR_GEN012",
+          "count": 1143,
+          "frequency": 0.06267478203651916
+        },
+        {
+          "label_code": "CCSR_MUS011",
+          "count": 1122,
+          "frequency": 0.061523276854745845
+        },
+        {
+          "label_code": "CCSR_RSP002",
+          "count": 1073,
+          "frequency": 0.058836431430608106
+        },
+        {
+          "label_code": "CCSR_CIR031",
+          "count": 1051,
+          "frequency": 0.05763009266875034
+        },
+        {
+          "label_code": "CCSR_MUS006",
+          "count": 1005,
+          "frequency": 0.05510774798486593
+        },
+        {
+          "label_code": "CCSR_SYM011",
+          "count": 1004,
+          "frequency": 0.05505291440478149
+        },
+        {
+          "label_code": "CCSR_CIR014",
+          "count": 994,
+          "frequency": 0.05450457860393705
+        },
+        {
+          "label_code": "CCSR_BLD007",
+          "count": 990,
+          "frequency": 0.05428524428359928
+        },
+        {
+          "label_code": "CCSR_MUS033",
+          "count": 981,
+          "frequency": 0.053791742062839286
+        },
+        {
+          "label_code": "CCSR_NVS009",
+          "count": 967,
+          "frequency": 0.05302407194165707
+        },
+        {
+          "label_code": "CCSR_RSP012",
+          "count": 964,
+          "frequency": 0.05285957120140374
+        },
+        {
+          "label_code": "CCSR_NVS010",
+          "count": 952,
+          "frequency": 0.05220156824039041
+        },
+        {
+          "label_code": "CCSR_NEO070",
+          "count": 952,
+          "frequency": 0.05220156824039041
+        },
+        {
+          "label_code": "CCSR_DIG008",
+          "count": 910,
+          "frequency": 0.04989855787684378
+        },
+        {
+          "label_code": "CCSR_SKN001",
+          "count": 901,
+          "frequency": 0.04940505565608379
+        },
+        {
+          "label_code": "CCSR_MUS013",
+          "count": 893,
+          "frequency": 0.04896638701540824
+        },
+        {
+          "label_code": "CCSR_SYM010",
+          "count": 891,
+          "frequency": 0.04885671985523935
+        },
+        {
+          "label_code": "CCSR_SYM004",
+          "count": 886,
+          "frequency": 0.04858255195481713
+        },
+        {
+          "label_code": "CCSR_CIR003",
+          "count": 855,
+          "frequency": 0.04688271097219938
+        },
+        {
+          "label_code": "CCSR_END008",
+          "count": 804,
+          "frequency": 0.044086198387892746
+        },
+        {
+          "label_code": "CCSR_INF002",
+          "count": 800,
+          "frequency": 0.043866864067554974
+        },
+        {
+          "label_code": "CCSR_NVS011",
+          "count": 785,
+          "frequency": 0.043044360366288316
+        },
+        {
+          "label_code": "CCSR_BLD004",
+          "count": 771,
+          "frequency": 0.0422766902451061
+        },
+        {
+          "label_code": "CCSR_MBD003",
+          "count": 759,
+          "frequency": 0.04161868728409278
+        },
+        {
+          "label_code": "CCSR_DIG020",
+          "count": 759,
+          "frequency": 0.04161868728409278
+        },
+        {
+          "label_code": "CCSR_INJ037",
+          "count": 739,
+          "frequency": 0.040522015682403906
+        },
+        {
+          "label_code": "CCSR_MBD001",
+          "count": 733,
+          "frequency": 0.04019301420189724
+        },
+        {
+          "label_code": "CCSR_MBD012",
+          "count": 720,
+          "frequency": 0.039480177660799476
+        },
+        {
+          "label_code": "CCSR_CIR012",
+          "count": 713,
+          "frequency": 0.03909634260020837
+        },
+        {
+          "label_code": "CCSR_SKN004",
+          "count": 709,
+          "frequency": 0.03887700827987059
+        },
+        {
+          "label_code": "CCSR_DIG022",
+          "count": 703,
+          "frequency": 0.03854800679936393
+        },
+        {
+          "label_code": "CCSR_SKN002",
+          "count": 695,
+          "frequency": 0.03810933815868838
+        },
+        {
+          "label_code": "CCSR_MBD007",
+          "count": 693,
+          "frequency": 0.037999670998519496
+        },
+        {
+          "label_code": "CCSR_DIG017",
+          "count": 691,
+          "frequency": 0.0378900038383506
+        },
+        {
+          "label_code": "CCSR_INJ030",
+          "count": 674,
+          "frequency": 0.036957832976915066
+        },
+        {
+          "label_code": "CCSR_SYM012",
+          "count": 643,
+          "frequency": 0.03525799199429731
+        },
+        {
+          "label_code": "CCSR_NEO058",
+          "count": 638,
+          "frequency": 0.03498382409387509
+        },
+        {
+          "label_code": "CCSR_CIR039",
+          "count": 636,
+          "frequency": 0.0348741569337062
+        },
+        {
+          "label_code": "CCSR_END015",
+          "count": 617,
+          "frequency": 0.03383231891210177
+        },
+        {
+          "label_code": "CCSR_CIR005",
+          "count": 614,
+          "frequency": 0.03366781817184844
+        },
+        {
+          "label_code": "CCSR_END007",
+          "count": 602,
+          "frequency": 0.03300981521083512
+        },
+        {
+          "label_code": "CCSR_GEN006",
+          "count": 556,
+          "frequency": 0.030487470526950704
+        },
+        {
+          "label_code": "CCSR_NEO074",
+          "count": 553,
+          "frequency": 0.030322969786697372
+        },
+        {
+          "label_code": "CCSR_DIG001",
+          "count": 552,
+          "frequency": 0.03026813620661293
+        },
+        {
+          "label_code": "CCSR_NVS015",
+          "count": 542,
+          "frequency": 0.029719800405768493
+        },
+        {
+          "label_code": "CCSR_CIR016",
+          "count": 535,
+          "frequency": 0.029335965345177385
+        },
+        {
+          "label_code": "CCSR_INF006",
+          "count": 533,
+          "frequency": 0.0292262981850085
+        },
+        {
+          "label_code": "CCSR_DIG021",
+          "count": 526,
+          "frequency": 0.028842463124417392
+        },
+        {
+          "label_code": "CCSR_CIR025",
+          "count": 518,
+          "frequency": 0.028403794483741845
+        },
+        {
+          "label_code": "CCSR_RSP016",
+          "count": 518,
+          "frequency": 0.028403794483741845
+        },
+        {
+          "label_code": "CCSR_MBD018",
+          "count": 503,
+          "frequency": 0.027581290782475187
+        },
+        {
+          "label_code": "CCSR_FAC006",
+          "count": 498,
+          "frequency": 0.02730712288205297
+        },
+        {
+          "label_code": "CCSR_INJ033",
+          "count": 497,
+          "frequency": 0.027252289301968526
+        },
+        {
+          "label_code": "CCSR_EYE003",
+          "count": 497,
+          "frequency": 0.027252289301968526
+        },
+        {
+          "label_code": "CCSR_DIG010",
+          "count": 496,
+          "frequency": 0.027197455721884083
+        },
+        {
+          "label_code": "CCSR_CIR033",
+          "count": 494,
+          "frequency": 0.027087788561715193
+        },
+        {
+          "label_code": "CCSR_FAC010",
+          "count": 492,
+          "frequency": 0.026978121401546307
+        },
+        {
+          "label_code": "CCSR_INJ036",
+          "count": 484,
+          "frequency": 0.026539452760870757
+        },
+        {
+          "label_code": "CCSR_RSP011",
+          "count": 483,
+          "frequency": 0.026484619180786314
+        },
+        {
+          "label_code": "CCSR_MUS038",
+          "count": 472,
+          "frequency": 0.02588144979985743
+        },
+        {
+          "label_code": "CCSR_MBD021",
+          "count": 464,
+          "frequency": 0.025442781159181884
+        },
+        {
+          "label_code": "CCSR_MUS024",
+          "count": 444,
+          "frequency": 0.024346109557493008
+        },
+        {
+          "label_code": "CCSR_MUS003",
+          "count": 442,
+          "frequency": 0.024236442397324122
+        },
+        {
+          "label_code": "CCSR_CIR009",
+          "count": 426,
+          "frequency": 0.02335910511597302
+        },
+        {
+          "label_code": "CCSR_DIG011",
+          "count": 419,
+          "frequency": 0.022975270055381917
+        },
+        {
+          "label_code": "CCSR_DIG012",
+          "count": 408,
+          "frequency": 0.022372100674453034
+        },
+        {
+          "label_code": "CCSR_MUS028",
+          "count": 408,
+          "frequency": 0.022372100674453034
+        },
+        {
+          "label_code": "CCSR_BLD008",
+          "count": 405,
+          "frequency": 0.022207599934199705
+        },
+        {
+          "label_code": "CCSR_NEO073",
+          "count": 404,
+          "frequency": 0.02215276635411526
+        },
+        {
+          "label_code": "CCSR_DIG016",
+          "count": 396,
+          "frequency": 0.02171409771343971
+        },
+        {
+          "label_code": "CCSR_SKN003",
+          "count": 392,
+          "frequency": 0.021494763393101936
+        },
+        {
+          "label_code": "CCSR_MBD009",
+          "count": 385,
+          "frequency": 0.02111092833251083
+        },
+        {
+          "label_code": "CCSR_RSP007",
+          "count": 379,
+          "frequency": 0.020781926852004168
+        },
+        {
+          "label_code": "CCSR_DIG007",
+          "count": 377,
+          "frequency": 0.02067225969183528
+        },
+        {
+          "label_code": "CCSR_MUS026",
+          "count": 372,
+          "frequency": 0.02039809179141306
+        },
+        {
+          "label_code": "CCSR_CIR001",
+          "count": 371,
+          "frequency": 0.020343258211328617
+        },
+        {
+          "label_code": "CCSR_DIG013",
+          "count": 369,
+          "frequency": 0.02023359105115973
+        },
+        {
+          "label_code": "CCSR_SYM014",
+          "count": 354,
+          "frequency": 0.019411087349893073
+        },
+        {
+          "label_code": "CCSR_MUS025",
+          "count": 349,
+          "frequency": 0.019136919449470855
+        },
+        {
+          "label_code": "CCSR_MUS002",
+          "count": 334,
+          "frequency": 0.0183144157482042
+        },
+        {
+          "label_code": "CCSR_EYE010",
+          "count": 330,
+          "frequency": 0.018095081427866425
+        },
+        {
+          "label_code": "CCSR_CIR036",
+          "count": 324,
+          "frequency": 0.017766079947359764
+        },
+        {
+          "label_code": "CCSR_NVS017",
+          "count": 307,
+          "frequency": 0.01683390908592422
+        },
+        {
+          "label_code": "CCSR_SYM005",
+          "count": 301,
+          "frequency": 0.01650490760541756
+        },
+        {
+          "label_code": "CCSR_DIG018",
+          "count": 301,
+          "frequency": 0.01650490760541756
+        },
+        {
+          "label_code": "CCSR_SYM015",
+          "count": 299,
+          "frequency": 0.01639524044524867
+        },
+        {
+          "label_code": "CCSR_GEN008",
+          "count": 292,
+          "frequency": 0.016011405384657566
+        },
+        {
+          "label_code": "CCSR_NEO072",
+          "count": 286,
+          "frequency": 0.0156824039041509
+        },
+        {
+          "label_code": "CCSR_MBD014",
+          "count": 284,
+          "frequency": 0.015572736743982015
+        },
+        {
+          "label_code": "CCSR_SYM001",
+          "count": 280,
+          "frequency": 0.01535340242364424
+        },
+        {
+          "label_code": "CCSR_DIG003",
+          "count": 278,
+          "frequency": 0.015243735263475352
+        },
+        {
+          "label_code": "CCSR_GEN007",
+          "count": 277,
+          "frequency": 0.01518890168339091
+        },
+        {
+          "label_code": "CCSR_MBD026",
+          "count": 276,
+          "frequency": 0.015134068103306465
+        },
+        {
+          "label_code": "CCSR_SKN007",
+          "count": 273,
+          "frequency": 0.014969567363053134
+        },
+        {
+          "label_code": "CCSR_FAC014",
+          "count": 271,
+          "frequency": 0.014859900202884246
+        },
+        {
+          "label_code": "CCSR_DIG024",
+          "count": 271,
+          "frequency": 0.014859900202884246
+        },
+        {
+          "label_code": "CCSR_GEN009",
+          "count": 268,
+          "frequency": 0.014695399462630916
+        },
+        {
+          "label_code": "CCSR_RSP010",
+          "count": 266,
+          "frequency": 0.014585732302462028
+        },
+        {
+          "label_code": "CCSR_NVS008",
+          "count": 264,
+          "frequency": 0.01447606514229314
+        },
+        {
+          "label_code": "CCSR_MBD025",
+          "count": 262,
+          "frequency": 0.014366397982124253
+        },
+        {
+          "label_code": "CCSR_FAC016",
+          "count": 260,
+          "frequency": 0.014256730821955365
+        },
+        {
+          "label_code": "CCSR_DIG014",
+          "count": 260,
+          "frequency": 0.014256730821955365
+        },
+        {
+          "label_code": "CCSR_INJ017",
+          "count": 260,
+          "frequency": 0.014256730821955365
+        },
+        {
+          "label_code": "CCSR_MUS007",
+          "count": 247,
+          "frequency": 0.013543894280857597
+        },
+        {
+          "label_code": "CCSR_CIR029",
+          "count": 242,
+          "frequency": 0.013269726380435378
+        },
+        {
+          "label_code": "CCSR_SYM007",
+          "count": 237,
+          "frequency": 0.01299555848001316
+        },
+        {
+          "label_code": "CCSR_NEO022",
+          "count": 222,
+          "frequency": 0.012173054778746504
+        },
+        {
+          "label_code": "CCSR_DIG023",
+          "count": 218,
+          "frequency": 0.011953720458408729
+        },
+        {
+          "label_code": "CCSR_INF008",
+          "count": 215,
+          "frequency": 0.011789219718155398
+        },
+        {
+          "label_code": "CCSR_MBD019",
+          "count": 211,
+          "frequency": 0.011569885397817623
+        },
+        {
+          "label_code": "CCSR_NVS004",
+          "count": 205,
+          "frequency": 0.011240883917310962
+        },
+        {
+          "label_code": "CCSR_RSP006",
+          "count": 195,
+          "frequency": 0.010692548116466524
+        },
+        {
+          "label_code": "CCSR_RSP017",
+          "count": 193,
+          "frequency": 0.010582880956297636
+        },
+        {
+          "label_code": "CCSR_MBD004",
+          "count": 193,
+          "frequency": 0.010582880956297636
+        },
+        {
+          "label_code": "CCSR_CIR023",
+          "count": 189,
+          "frequency": 0.010363546635959862
+        },
+        {
+          "label_code": "CCSR_END013",
+          "count": 186,
+          "frequency": 0.01019904589570653
+        },
+        {
+          "label_code": "CCSR_SYM003",
+          "count": 184,
+          "frequency": 0.010089378735537642
+        },
+        {
+          "label_code": "CCSR_GEN005",
+          "count": 181,
+          "frequency": 0.009924877995284312
+        },
+        {
+          "label_code": "CCSR_NEO065",
+          "count": 180,
+          "frequency": 0.009870044415199869
+        },
+        {
+          "label_code": "CCSR_DIG005",
+          "count": 180,
+          "frequency": 0.009870044415199869
+        },
+        {
+          "label_code": "CCSR_CIR020",
+          "count": 177,
+          "frequency": 0.009705543674946537
+        },
+        {
+          "label_code": "CCSR_INF004",
+          "count": 173,
+          "frequency": 0.009486209354608763
+        },
+        {
+          "label_code": "CCSR_CIR013",
+          "count": 172,
+          "frequency": 0.009431375774524318
+        },
+        {
+          "label_code": "CCSR_MAL001",
+          "count": 170,
+          "frequency": 0.00932170861435543
+        },
+        {
+          "label_code": "CCSR_NVS006",
+          "count": 169,
+          "frequency": 0.009266875034270988
+        },
+        {
+          "label_code": "CCSR_SYM002",
+          "count": 166,
+          "frequency": 0.009102374294017656
+        },
+        {
+          "label_code": "CCSR_EAR004",
+          "count": 165,
+          "frequency": 0.009047540713933213
+        },
+        {
+          "label_code": "CCSR_NEO060",
+          "count": 161,
+          "frequency": 0.008828206393595437
+        },
+        {
+          "label_code": "CCSR_INJ034",
+          "count": 156,
+          "frequency": 0.00855403849317322
+        },
+        {
+          "label_code": "CCSR_NEO051",
+          "count": 154,
+          "frequency": 0.008444371333004332
+        },
+        {
+          "label_code": "CCSR_END014",
+          "count": 152,
+          "frequency": 0.008334704172835444
+        },
+        {
+          "label_code": "CCSR_BLD009",
+          "count": 147,
+          "frequency": 0.008060536272413226
+        },
+        {
+          "label_code": "CCSR_EYE005",
+          "count": 147,
+          "frequency": 0.008060536272413226
+        },
+        {
+          "label_code": "CCSR_NEO017",
+          "count": 144,
+          "frequency": 0.007896035532159895
+        },
+        {
+          "label_code": "CCSR_MUS037",
+          "count": 140,
+          "frequency": 0.00767670121182212
+        },
+        {
+          "label_code": "CCSR_CIR006",
+          "count": 136,
+          "frequency": 0.007457366891484345
+        },
+        {
+          "label_code": "CCSR_CIR038",
+          "count": 131,
+          "frequency": 0.0071831989910621265
+        },
+        {
+          "label_code": "CCSR_NEO015",
+          "count": 126,
+          "frequency": 0.006909031090639908
+        },
+        {
+          "label_code": "CCSR_CIR015",
+          "count": 125,
+          "frequency": 0.0068541975105554645
+        },
+        {
+          "label_code": "CCSR_BLD005",
+          "count": 122,
+          "frequency": 0.006689696770302133
+        },
+        {
+          "label_code": "CCSR_INJ035",
+          "count": 122,
+          "frequency": 0.006689696770302133
+        },
+        {
+          "label_code": "CCSR_CIR024",
+          "count": 121,
+          "frequency": 0.006634863190217689
+        },
+        {
+          "label_code": "CCSR_DIG015",
+          "count": 119,
+          "frequency": 0.006525196030048802
+        },
+        {
+          "label_code": "CCSR_NEO030",
+          "count": 118,
+          "frequency": 0.006470362449964358
+        },
+        {
+          "label_code": "CCSR_MBD023",
+          "count": 115,
+          "frequency": 0.006305861709711027
+        },
+        {
+          "label_code": "CCSR_SKN005",
+          "count": 115,
+          "frequency": 0.006305861709711027
+        },
+        {
+          "label_code": "CCSR_NVS013",
+          "count": 113,
+          "frequency": 0.00619619454954214
+        },
+        {
+          "label_code": "CCSR_CIR032",
+          "count": 111,
+          "frequency": 0.006086527389373252
+        },
+        {
+          "label_code": "CCSR_INJ022",
+          "count": 111,
+          "frequency": 0.006086527389373252
+        },
+        {
+          "label_code": "CCSR_RSP001",
+          "count": 111,
+          "frequency": 0.006086527389373252
+        },
+        {
+          "label_code": "CCSR_BLD010",
+          "count": 110,
+          "frequency": 0.006031693809288808
+        },
+        {
+          "label_code": "CCSR_EYE002",
+          "count": 109,
+          "frequency": 0.005976860229204364
+        },
+        {
+          "label_code": "CCSR_GEN025",
+          "count": 108,
+          "frequency": 0.005922026649119921
+        },
+        {
+          "label_code": "CCSR_INJ003",
+          "count": 108,
+          "frequency": 0.005922026649119921
+        },
+        {
+          "label_code": "CCSR_CIR034",
+          "count": 105,
+          "frequency": 0.00575752590886659
+        },
+        {
+          "label_code": "CCSR_INF012",
+          "count": 104,
+          "frequency": 0.005702692328782146
+        },
+        {
+          "label_code": "CCSR_GEN018",
+          "count": 103,
+          "frequency": 0.005647858748697702
+        },
+        {
+          "label_code": "CCSR_NEO039",
+          "count": 103,
+          "frequency": 0.005647858748697702
+        },
+        {
+          "label_code": "CCSR_CIR021",
+          "count": 103,
+          "frequency": 0.005647858748697702
+        },
+        {
+          "label_code": "CCSR_FAC009",
+          "count": 102,
+          "frequency": 0.0055930251686132585
+        },
+        {
+          "label_code": "CCSR_NEO068",
+          "count": 101,
+          "frequency": 0.005538191588528815
+        },
+        {
+          "label_code": "CCSR_NEO061",
+          "count": 101,
+          "frequency": 0.005538191588528815
+        },
+        {
+          "label_code": "CCSR_MUS009",
+          "count": 100,
+          "frequency": 0.005483358008444372
+        },
+        {
+          "label_code": "CCSR_EAR003",
+          "count": 100,
+          "frequency": 0.005483358008444372
+        },
+        {
+          "label_code": "CCSR_CIR008",
+          "count": 99,
+          "frequency": 0.005428524428359928
+        },
+        {
+          "label_code": "CCSR_PRG028",
+          "count": 99,
+          "frequency": 0.005428524428359928
+        },
+        {
+          "label_code": "CCSR_INJ005",
+          "count": 97,
+          "frequency": 0.00531885726819104
+        },
+        {
+          "label_code": "CCSR_MBD011",
+          "count": 96,
+          "frequency": 0.0052640236881065965
+        },
+        {
+          "label_code": "CCSR_MUS016",
+          "count": 94,
+          "frequency": 0.005154356527937709
+        },
+        {
+          "label_code": "CCSR_RSP003",
+          "count": 90,
+          "frequency": 0.0049350222075999345
+        },
+        {
+          "label_code": "CCSR_MBD020",
+          "count": 88,
+          "frequency": 0.004825355047431047
+        },
+        {
+          "label_code": "CCSR_GEN001",
+          "count": 87,
+          "frequency": 0.004770521467346603
+        },
+        {
+          "label_code": "CCSR_INJ020",
+          "count": 86,
+          "frequency": 0.004715687887262159
+        },
+        {
+          "label_code": "CCSR_MBD013",
+          "count": 86,
+          "frequency": 0.004715687887262159
+        },
+        {
+          "label_code": "CCSR_INJ002",
+          "count": 84,
+          "frequency": 0.004606020727093272
+        },
+        {
+          "label_code": "CCSR_FAC022",
+          "count": 83,
+          "frequency": 0.004551187147008828
+        },
+        {
+          "label_code": "CCSR_CIR028",
+          "count": 83,
+          "frequency": 0.004551187147008828
+        },
+        {
+          "label_code": "CCSR_RSP005",
+          "count": 82,
+          "frequency": 0.004496353566924385
+        },
+        {
+          "label_code": "CCSR_EYE001",
+          "count": 82,
+          "frequency": 0.004496353566924385
+        },
+        {
+          "label_code": "CCSR_SYM008",
+          "count": 81,
+          "frequency": 0.004441519986839941
+        },
+        {
+          "label_code": "CCSR_BLD002",
+          "count": 81,
+          "frequency": 0.004441519986839941
+        },
+        {
+          "label_code": "CCSR_NEO075",
+          "count": 80,
+          "frequency": 0.004386686406755497
+        },
+        {
+          "label_code": "CCSR_NEO033",
+          "count": 80,
+          "frequency": 0.004386686406755497
+        },
+        {
+          "label_code": "CCSR_NVS005",
+          "count": 79,
+          "frequency": 0.004331852826671053
+        },
+        {
+          "label_code": "CCSR_DIG002",
+          "count": 78,
+          "frequency": 0.00427701924658661
+        },
+        {
+          "label_code": "CCSR_MUS021",
+          "count": 76,
+          "frequency": 0.004167352086417722
+        },
+        {
+          "label_code": "CCSR_NEO057",
+          "count": 76,
+          "frequency": 0.004167352086417722
+        },
+        {
+          "label_code": "CCSR_GEN026",
+          "count": 75,
+          "frequency": 0.004112518506333278
+        },
+        {
+          "label_code": "CCSR_INJ011",
+          "count": 75,
+          "frequency": 0.004112518506333278
+        },
+        {
+          "label_code": "CCSR_MBD010",
+          "count": 75,
+          "frequency": 0.004112518506333278
+        },
+        {
+          "label_code": "CCSR_MUS022",
+          "count": 74,
+          "frequency": 0.004057684926248835
+        },
+        {
+          "label_code": "CCSR_PRG023",
+          "count": 74,
+          "frequency": 0.004057684926248835
+        },
+        {
+          "label_code": "CCSR_NVS018",
+          "count": 73,
+          "frequency": 0.004002851346164391
+        },
+        {
+          "label_code": "CCSR_INJ026",
+          "count": 72,
+          "frequency": 0.003948017766079948
+        },
+        {
+          "label_code": "CCSR_MUS001",
+          "count": 69,
+          "frequency": 0.003783517025826616
+        },
+        {
+          "label_code": "CCSR_INJ004",
+          "count": 69,
+          "frequency": 0.003783517025826616
+        },
+        {
+          "label_code": "CCSR_INJ012",
+          "count": 69,
+          "frequency": 0.003783517025826616
+        },
+        {
+          "label_code": "CCSR_INJ073",
+          "count": 68,
+          "frequency": 0.0037286834457421723
+        },
+        {
+          "label_code": "CCSR_SYM018",
+          "count": 68,
+          "frequency": 0.0037286834457421723
+        },
+        {
+          "label_code": "CCSR_NEO045",
+          "count": 67,
+          "frequency": 0.003673849865657729
+        },
+        {
+          "label_code": "CCSR_CIR018",
+          "count": 67,
+          "frequency": 0.003673849865657729
+        },
+        {
+          "label_code": "CCSR_CIR030",
+          "count": 65,
+          "frequency": 0.0035641827054888413
+        },
+        {
+          "label_code": "CCSR_INJ024",
+          "count": 65,
+          "frequency": 0.0035641827054888413
+        },
+        {
+          "label_code": "CCSR_GEN013",
+          "count": 65,
+          "frequency": 0.0035641827054888413
+        },
+        {
+          "label_code": "CCSR_GEN014",
+          "count": 65,
+          "frequency": 0.0035641827054888413
+        },
+        {
+          "label_code": "CCSR_MBD006",
+          "count": 64,
+          "frequency": 0.0035093491254043975
+        },
+        {
+          "label_code": "CCSR_INJ008",
+          "count": 64,
+          "frequency": 0.0035093491254043975
+        },
+        {
+          "label_code": "CCSR_EYE012",
+          "count": 63,
+          "frequency": 0.003454515545319954
+        },
+        {
+          "label_code": "CCSR_MAL010",
+          "count": 62,
+          "frequency": 0.0033996819652355103
+        },
+        {
+          "label_code": "CCSR_INJ006",
+          "count": 62,
+          "frequency": 0.0033996819652355103
+        },
+        {
+          "label_code": "CCSR_EYE008",
+          "count": 59,
+          "frequency": 0.003235181224982179
+        },
+        {
+          "label_code": "CCSR_GEN016",
+          "count": 59,
+          "frequency": 0.003235181224982179
+        },
+        {
+          "label_code": "CCSR_NVS007",
+          "count": 58,
+          "frequency": 0.0031803476448977355
+        },
+        {
+          "label_code": "CCSR_NEO013",
+          "count": 58,
+          "frequency": 0.0031803476448977355
+        },
+        {
+          "label_code": "CCSR_NEO018",
+          "count": 58,
+          "frequency": 0.0031803476448977355
+        },
+        {
+          "label_code": "CCSR_INF011",
+          "count": 58,
+          "frequency": 0.0031803476448977355
+        },
+        {
+          "label_code": "CCSR_CIR027",
+          "count": 57,
+          "frequency": 0.0031255140648132917
+        },
+        {
+          "label_code": "CCSR_GEN017",
+          "count": 56,
+          "frequency": 0.003070680484728848
+        },
+        {
+          "label_code": "CCSR_PRG011",
+          "count": 55,
+          "frequency": 0.003015846904644404
+        },
+        {
+          "label_code": "CCSR_MAL003",
+          "count": 55,
+          "frequency": 0.003015846904644404
+        },
+        {
+          "label_code": "CCSR_NEO064",
+          "count": 54,
+          "frequency": 0.0029610133245599607
+        },
+        {
+          "label_code": "CCSR_MUS030",
+          "count": 52,
+          "frequency": 0.002851346164391073
+        },
+        {
+          "label_code": "CCSR_INJ010",
+          "count": 51,
+          "frequency": 0.0027965125843066293
+        },
+        {
+          "label_code": "CCSR_SKN006",
+          "count": 51,
+          "frequency": 0.0027965125843066293
+        },
+        {
+          "label_code": "CCSR_EAR006",
+          "count": 49,
+          "frequency": 0.002686845424137742
+        },
+        {
+          "label_code": "CCSR_MUS014",
+          "count": 48,
+          "frequency": 0.0026320118440532982
+        },
+        {
+          "label_code": "CCSR_MAL002",
+          "count": 47,
+          "frequency": 0.0025771782639688544
+        },
+        {
+          "label_code": "CCSR_PRG024",
+          "count": 46,
+          "frequency": 0.0025223446838844106
+        },
+        {
+          "label_code": "CCSR_DIG006",
+          "count": 45,
+          "frequency": 0.0024675111037999672
+        },
+        {
+          "label_code": "CCSR_PRG026",
+          "count": 44,
+          "frequency": 0.0024126775237155234
+        },
+        {
+          "label_code": "CCSR_INF010",
+          "count": 43,
+          "frequency": 0.0023578439436310796
+        },
+        {
+          "label_code": "CCSR_INJ031",
+          "count": 43,
+          "frequency": 0.0023578439436310796
+        },
+        {
+          "label_code": "CCSR_CIR004",
+          "count": 43,
+          "frequency": 0.0023578439436310796
+        },
+        {
+          "label_code": "CCSR_NEO021",
+          "count": 43,
+          "frequency": 0.0023578439436310796
+        },
+        {
+          "label_code": "CCSR_INJ027",
+          "count": 43,
+          "frequency": 0.0023578439436310796
+        },
+        {
+          "label_code": "CCSR_NEO035",
+          "count": 42,
+          "frequency": 0.002303010363546636
+        },
+        {
+          "label_code": "CCSR_NVS012",
+          "count": 42,
+          "frequency": 0.002303010363546636
+        },
+        {
+          "label_code": "CCSR_INF009",
+          "count": 42,
+          "frequency": 0.002303010363546636
+        },
+        {
+          "label_code": "CCSR_NEO043",
+          "count": 42,
+          "frequency": 0.002303010363546636
+        },
+        {
+          "label_code": "CCSR_GEN022",
+          "count": 40,
+          "frequency": 0.0021933432033777486
+        },
+        {
+          "label_code": "CCSR_PRG020",
+          "count": 40,
+          "frequency": 0.0021933432033777486
+        },
+        {
+          "label_code": "CCSR_INJ028",
+          "count": 38,
+          "frequency": 0.002083676043208861
+        },
+        {
+          "label_code": "CCSR_MUS034",
+          "count": 38,
+          "frequency": 0.002083676043208861
+        },
+        {
+          "label_code": "CCSR_NEO048",
+          "count": 38,
+          "frequency": 0.002083676043208861
+        },
+        {
+          "label_code": "CCSR_MUS023",
+          "count": 37,
+          "frequency": 0.0020288424631244176
+        },
+        {
+          "label_code": "CCSR_MAL008",
+          "count": 36,
+          "frequency": 0.001974008883039974
+        },
+        {
+          "label_code": "CCSR_GEN021",
+          "count": 35,
+          "frequency": 0.00191917530295553
+        },
+        {
+          "label_code": "CCSR_DIG009",
+          "count": 35,
+          "frequency": 0.00191917530295553
+        },
+        {
+          "label_code": "CCSR_NEO071",
+          "count": 35,
+          "frequency": 0.00191917530295553
+        },
+        {
+          "label_code": "CCSR_PRG027",
+          "count": 33,
+          "frequency": 0.0018095081427866426
+        },
+        {
+          "label_code": "CCSR_PRG016",
+          "count": 33,
+          "frequency": 0.0018095081427866426
+        },
+        {
+          "label_code": "CCSR_EYE006",
+          "count": 33,
+          "frequency": 0.0018095081427866426
+        },
+        {
+          "label_code": "CCSR_MUS032",
+          "count": 33,
+          "frequency": 0.0018095081427866426
+        },
+        {
+          "label_code": "CCSR_NEO024",
+          "count": 32,
+          "frequency": 0.0017546745627021988
+        },
+        {
+          "label_code": "CCSR_CIR035",
+          "count": 32,
+          "frequency": 0.0017546745627021988
+        },
+        {
+          "label_code": "CCSR_CIR022",
+          "count": 32,
+          "frequency": 0.0017546745627021988
+        },
+        {
+          "label_code": "CCSR_INJ001",
+          "count": 31,
+          "frequency": 0.0016998409826177552
+        },
+        {
+          "label_code": "CCSR_NVS014",
+          "count": 30,
+          "frequency": 0.0016450074025333114
+        },
+        {
+          "label_code": "CCSR_EYE004",
+          "count": 29,
+          "frequency": 0.0015901738224488678
+        },
+        {
+          "label_code": "CCSR_NVS001",
+          "count": 28,
+          "frequency": 0.001535340242364424
+        },
+        {
+          "label_code": "CCSR_NEO062",
+          "count": 28,
+          "frequency": 0.001535340242364424
+        },
+        {
+          "label_code": "CCSR_INJ021",
+          "count": 27,
+          "frequency": 0.0014805066622799803
+        },
+        {
+          "label_code": "CCSR_MBD008",
+          "count": 27,
+          "frequency": 0.0014805066622799803
+        },
+        {
+          "label_code": "CCSR_MAL009",
+          "count": 27,
+          "frequency": 0.0014805066622799803
+        },
+        {
+          "label_code": "CCSR_NEO032",
+          "count": 27,
+          "frequency": 0.0014805066622799803
+        },
+        {
+          "label_code": "CCSR_GEN010",
+          "count": 26,
+          "frequency": 0.0014256730821955365
+        },
+        {
+          "label_code": "CCSR_GEN020",
+          "count": 26,
+          "frequency": 0.0014256730821955365
+        },
+        {
+          "label_code": "CCSR_GEN019",
+          "count": 26,
+          "frequency": 0.0014256730821955365
+        },
+        {
+          "label_code": "CCSR_END012",
+          "count": 26,
+          "frequency": 0.0014256730821955365
+        },
+        {
+          "label_code": "CCSR_NEO066",
+          "count": 25,
+          "frequency": 0.001370839502111093
+        },
+        {
+          "label_code": "CCSR_PRG019",
+          "count": 25,
+          "frequency": 0.001370839502111093
+        },
+        {
+          "label_code": "CCSR_EAR001",
+          "count": 24,
+          "frequency": 0.0013160059220266491
+        },
+        {
+          "label_code": "CCSR_NEO012",
+          "count": 24,
+          "frequency": 0.0013160059220266491
+        },
+        {
+          "label_code": "CCSR_NVS021",
+          "count": 24,
+          "frequency": 0.0013160059220266491
+        },
+        {
+          "label_code": "CCSR_RSP014",
+          "count": 22,
+          "frequency": 0.0012063387618577617
+        },
+        {
+          "label_code": "CCSR_INJ042",
+          "count": 22,
+          "frequency": 0.0012063387618577617
+        },
+        {
+          "label_code": "CCSR_INJ038",
+          "count": 21,
+          "frequency": 0.001151505181773318
+        },
+        {
+          "label_code": "CCSR_NEO011",
+          "count": 21,
+          "frequency": 0.001151505181773318
+        },
+        {
+          "label_code": "CCSR_NEO023",
+          "count": 20,
+          "frequency": 0.0010966716016888743
+        },
+        {
+          "label_code": "CCSR_INJ023",
+          "count": 19,
+          "frequency": 0.0010418380216044305
+        },
+        {
+          "label_code": "CCSR_RSP013",
+          "count": 19,
+          "frequency": 0.0010418380216044305
+        },
+        {
+          "label_code": "CCSR_GEN023",
+          "count": 19,
+          "frequency": 0.0010418380216044305
+        },
+        {
+          "label_code": "CCSR_PRG013",
+          "count": 18,
+          "frequency": 0.000987004441519987
+        },
+        {
+          "label_code": "CCSR_NVS002",
+          "count": 18,
+          "frequency": 0.000987004441519987
+        },
+        {
+          "label_code": "CCSR_INF003",
+          "count": 17,
+          "frequency": 0.0009321708614355431
+        },
+        {
+          "label_code": "CCSR_INJ007",
+          "count": 17,
+          "frequency": 0.0009321708614355431
+        },
+        {
+          "label_code": "CCSR_NEO026",
+          "count": 16,
+          "frequency": 0.0008773372813510994
+        },
+        {
+          "label_code": "CCSR_NEO025",
+          "count": 16,
+          "frequency": 0.0008773372813510994
+        },
+        {
+          "label_code": "CCSR_NEO050",
+          "count": 16,
+          "frequency": 0.0008773372813510994
+        },
+        {
+          "label_code": "CCSR_NEO031",
+          "count": 15,
+          "frequency": 0.0008225037012666557
+        },
+        {
+          "label_code": "CCSR_INJ041",
+          "count": 14,
+          "frequency": 0.000767670121182212
+        },
+        {
+          "label_code": "CCSR_MUS015",
+          "count": 14,
+          "frequency": 0.000767670121182212
+        },
+        {
+          "label_code": "CCSR_FAC024",
+          "count": 14,
+          "frequency": 0.000767670121182212
+        },
+        {
+          "label_code": "CCSR_NEO027",
+          "count": 14,
+          "frequency": 0.000767670121182212
+        },
+        {
+          "label_code": "CCSR_INJ040",
+          "count": 13,
+          "frequency": 0.0007128365410977683
+        },
+        {
+          "label_code": "CCSR_NEO014",
+          "count": 13,
+          "frequency": 0.0007128365410977683
+        },
+        {
+          "label_code": "CCSR_INJ032",
+          "count": 13,
+          "frequency": 0.0007128365410977683
+        },
+        {
+          "label_code": "CCSR_MAL004",
+          "count": 13,
+          "frequency": 0.0007128365410977683
+        },
+        {
+          "label_code": "CCSR_FAC003",
+          "count": 12,
+          "frequency": 0.0006580029610133246
+        },
+        {
+          "label_code": "CCSR_EYE007",
+          "count": 12,
+          "frequency": 0.0006580029610133246
+        },
+        {
+          "label_code": "CCSR_NEO016",
+          "count": 12,
+          "frequency": 0.0006580029610133246
+        },
+        {
+          "label_code": "CCSR_INJ039",
+          "count": 12,
+          "frequency": 0.0006580029610133246
+        },
+        {
+          "label_code": "CCSR_NVS022",
+          "count": 12,
+          "frequency": 0.0006580029610133246
+        },
+        {
+          "label_code": "CCSR_NEO028",
+          "count": 11,
+          "frequency": 0.0006031693809288809
+        },
+        {
+          "label_code": "CCSR_PRG022",
+          "count": 11,
+          "frequency": 0.0006031693809288809
+        },
+        {
+          "label_code": "CCSR_NEO059",
+          "count": 11,
+          "frequency": 0.0006031693809288809
+        },
+        {
+          "label_code": "CCSR_INJ043",
+          "count": 11,
+          "frequency": 0.0006031693809288809
+        },
+        {
+          "label_code": "CCSR_MUS029",
+          "count": 11,
+          "frequency": 0.0006031693809288809
+        },
+        {
+          "label_code": "CCSR_PRG017",
+          "count": 11,
+          "frequency": 0.0006031693809288809
+        },
+        {
+          "label_code": "CCSR_MUS020",
+          "count": 10,
+          "frequency": 0.0005483358008444372
+        },
+        {
+          "label_code": "CCSR_RSP004",
+          "count": 9,
+          "frequency": 0.0004935022207599934
+        },
+        {
+          "label_code": "CCSR_INJ069",
+          "count": 9,
+          "frequency": 0.0004935022207599934
+        },
+        {
+          "label_code": "CCSR_PRG012",
+          "count": 8,
+          "frequency": 0.0004386686406755497
+        },
+        {
+          "label_code": "CCSR_NEO008",
+          "count": 8,
+          "frequency": 0.0004386686406755497
+        },
+        {
+          "label_code": "CCSR_NVS003",
+          "count": 8,
+          "frequency": 0.0004386686406755497
+        },
+        {
+          "label_code": "CCSR_NEO020",
+          "count": 8,
+          "frequency": 0.0004386686406755497
+        },
+        {
+          "label_code": "CCSR_INJ013",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_FAC004",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_INJ074",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_NEO002",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_NEO009",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_INJ009",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_INJ075",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_FAC030",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_PRG018",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_NEO038",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_MUS035",
+          "count": 7,
+          "frequency": 0.000383835060591106
+        },
+        {
+          "label_code": "CCSR_INJ025",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_PRG021",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_EAR002",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_INJ076",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_MUS004",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_NEO019",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_INJ019",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_PRG014",
+          "count": 6,
+          "frequency": 0.0003290014805066623
+        },
+        {
+          "label_code": "CCSR_INJ016",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_MUS017",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_NEO040",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_NEO004",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_NEO006",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_INJ045",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_NEO037",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_EYE009",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_PRG009",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_FAC013",
+          "count": 5,
+          "frequency": 0.0002741679004222186
+        },
+        {
+          "label_code": "CCSR_MAL007",
+          "count": 4,
+          "frequency": 0.00021933432033777484
+        },
+        {
+          "label_code": "CCSR_INJ072",
+          "count": 4,
+          "frequency": 0.00021933432033777484
+        },
+        {
+          "label_code": "CCSR_MUS008",
+          "count": 4,
+          "frequency": 0.00021933432033777484
+        },
+        {
+          "label_code": "CCSR_INJ071",
+          "count": 4,
+          "frequency": 0.00021933432033777484
+        },
+        {
+          "label_code": "CCSR_CIR002",
+          "count": 4,
+          "frequency": 0.00021933432033777484
+        },
+        {
+          "label_code": "CCSR_INJ049",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_CIR010",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_FAC020",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_NEO069",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_NEO041",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_NEO078",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_MBD024",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_INJ018",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_PRG010",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_PRG029",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_NEO034",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_PRG015",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_MAL005",
+          "count": 3,
+          "frequency": 0.00016450074025333114
+        },
+        {
+          "label_code": "CCSR_INF001",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_MBD022",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_INJ054",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_MUS027",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_NEO003",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_PRG006",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_MUS036",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_GEN011",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_NEO029",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_NEO063",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_INJ056",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_SYM009",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_NEO049",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_FAC008",
+          "count": 2,
+          "frequency": 0.00010966716016888742
+        },
+        {
+          "label_code": "CCSR_INJ070",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_PRG004",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_INF005",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_GEN024",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_MUS031",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_NEO010",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_PRG007",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_END017",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_INJ047",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_NEO046",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_INJ050",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_PRG003",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_NEO036",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_PRG005",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_NEO044",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_INJ048",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        },
+        {
+          "label_code": "CCSR_RSP015",
+          "count": 1,
+          "frequency": 5.483358008444371e-05
+        }
+      ]
+    }
+  }
+}
