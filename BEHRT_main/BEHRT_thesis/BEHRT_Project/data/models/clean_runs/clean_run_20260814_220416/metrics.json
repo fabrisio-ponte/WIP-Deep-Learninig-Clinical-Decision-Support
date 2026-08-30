@@ -1,0 +1,41 @@
+{
+  "run_id": "clean_run_20260814_220416",
+  "data": {
+    "train": "train_nextvisit_ccsr_clean.parquet",
+    "val": "val_nextvisit_ccsr_clean.parquet",
+    "test": "test_nextvisit_ccsr_clean.parquet",
+    "vocab": "vocab_ccsr_clean.pkl"
+  },
+  "model_config": {
+    "vocab_size": 477,
+    "hidden_size": 288,
+    "seg_vocab_size": 2,
+    "age_vocab_size": 1322,
+    "max_position_embedding": 64,
+    "hidden_dropout_prob": 0.1,
+    "num_hidden_layers": 6,
+    "num_attention_heads": 12,
+    "attention_probs_dropout_prob": 0.1,
+    "intermediate_size": 256,
+    "hidden_act": "gelu",
+    "initializer_range": 0.02
+  },
+  "training": {
+    "epochs": 3,
+    "batch_size": 64
+  },
+  "run_controls": {
+    "sample_limit": 3000,
+    "log_every": 150,
+    "seed": 42,
+    "use_pos_weight": false,
+    "max_pos_weight": 30.0
+  },
+  "metrics": {
+    "sample_wise_aps": 0.24317994282642444,
+    "sample_wise_auc": 0.8698238523843638
+  },
+  "artifacts": {
+    "best_model": "data/models/clean_runs/clean_run_20260814_220416/behrt_nextvisit_ccsr_clean_best.pt"
+  }
+}

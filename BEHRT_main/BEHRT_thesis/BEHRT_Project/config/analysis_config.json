@@ -1,0 +1,17 @@
+{
+  "vocab_path": "data/processed/vocab_ccsr_clean",
+  "test_data_path": "data/processed/test_nextvisit_ccsr_clean.parquet",
+  "model_path": "data/models/clean_runs/clean_run_20260826_133741/behrt_nextvisit_ccsr_clean_best.pt",
+  "device": "cpu",
+  "max_age": 110,
+  "month": 1,
+  "age_symbol": null,
+  "max_len_seq": 64,
+  "batch_size": 32,
+  "hidden_size": 288,
+  "num_hidden_layers": 6,
+  "num_attention_heads": 12,
+  "hidden_dropout_prob": 0.1,
+  "attention_probs_dropout_prob": 0.1,
+  "intermediate_size": 256
+}

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/telaclaimstech/Desktop/BEHRT_WIP/BEHRT_run/BEHRT_Project/mlruns/670172331374010431/0a782c01790b4f3ea1cebbe8e725bd0e/artifacts
+end_time: 1787756791027
+entry_point_name: ''
+experiment_id: '670172331374010431'
+lifecycle_stage: active
+run_id: 0a782c01790b4f3ea1cebbe8e725bd0e
+run_name: clean_run_20260826_110626
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1787756786911
+status: 3
+tags: []
+user_id: telaclaimstech
