@@ -6,7 +6,7 @@
 
 ---
 
-## 📁 Workspace Organization
+## Workspace Organization
 
 This workspace contains multiple BEHRT-related projects organized by purpose:
 
@@ -33,14 +33,14 @@ BEHRT_WIP/
 
 ---
 
-## 🎯 Project Directories
+## Project Directories
 
-### 1️⃣ BEHRT_main/
+### 1. BEHRT_main/
 **Purpose:** Primary thesis work with real MIMIC-IV data
 
 **Subdirectories:**
 - **`BEHRT_core/`** - Original BEHRT implementation (base model, utilities)
-- **`BEHRT_thesis/`** - **← ACTIVE WORK HERE**
+- **`BEHRT_thesis/`** - **ACTIVE WORK HERE**
   - Next-visit clinical code prediction
   - Cleaned CCSR-coded sequences
   - Positive-class weighting experiments
@@ -49,11 +49,11 @@ BEHRT_WIP/
 
 **Key Focus:** Clinical code recurrence prediction for multimorbid adults (70% recurrence, 30% new diagnoses)
 
-📖 **See:** `BEHRT_main/BEHRT_thesis/README.md` for detailed thesis work
+**See:** `BEHRT_main/BEHRT_thesis/README.md` for detailed thesis work
 
 ---
 
-### 2️⃣ BEHRT_controlled_experiments/
+### 2. BEHRT_controlled_experiments/
 **Purpose:** Synthetic data experiments for understanding model behavior
 
 **Contents:**
@@ -64,11 +64,11 @@ BEHRT_WIP/
 
 **Status:** Completed exploratory experiments
 
-📖 **See:** `BEHRT_controlled_experiments/REVERSE_ENGINEERING_RESULTS.md`
+**See:** `BEHRT_controlled_experiments/REVERSE_ENGINEERING_RESULTS.md`
 
 ---
 
-### 3️⃣ BEHRT_mechanism_interpretability/
+### 3. BEHRT_mechanism_interpretability/
 **Purpose:** Future work on model interpretability (not started)
 
 **Planned Work:**
@@ -77,17 +77,17 @@ BEHRT_WIP/
 - Mechanism discovery
 - Clinical decision justification
 
-**Status:** 🔄 Not started (deprioritized per publication strategy)
+**Status:** Not started (deprioritized per publication strategy)
 
 **Note:** Per `docs/publication_readiness_summary.md`, deep mechanistic interpretability has lower ROI for thesis timeline. Focus remains on rigorous evaluation and honest limitations.
 
 ---
 
-### 4️⃣ docs/
+### 4. docs/
 **Purpose:** All project documentation
 
 **Key Documents:**
-- **`publication_readiness_summary.md`** - **← READ THIS FIRST**
+- **`publication_readiness_summary.md`** - **READ THIS FIRST**
   - Comprehensive thesis strategy after EDA findings
   - What we can/cannot claim
   - Limitations to state
@@ -99,9 +99,9 @@ BEHRT_WIP/
 
 ---
 
-## 🔬 Current Work Status
+## Current Work Status
 
-### ✅ Completed
+### Completed
 - [x] Baseline training run (no pos_weight, AUC 0.891, APS 0.262)
 - [x] Pos_weight training run (MAX_POS_WEIGHT=30, AUC 0.901, APS 0.274)
 - [x] EDA Step 1: Dataset structure analysis
@@ -109,13 +109,13 @@ BEHRT_WIP/
 - [x] EDA Step 3: Label support & class imbalance (found 52,559:1 ratio)
 - [x] Publication readiness strategy document
 
-### 🔄 In Progress
+### In Progress
 - [ ] EDA Step 4: Temporal structure analysis
 - [ ] EDA Step 5: Label co-occurrence patterns
 - [ ] EDA Step 6: Split representativeness
 - [ ] EDA Step 7: Cleaning impact analysis
 
-### 📋 Next Priorities
+### Next Priorities
 1. Complete remaining EDA (steps 4-7)
 2. Create comparison table: Baseline vs pos_weight
 3. Disease-level performance breakdown
@@ -124,7 +124,7 @@ BEHRT_WIP/
 
 ---
 
-## 🎓 Key Findings (August 2026)
+## Key Findings (August 2026)
 
 ### Critical Dataset Insights
 - **179,713 samples** from **~25,000 patients** (~7 snapshots each)
@@ -147,7 +147,7 @@ BEHRT_WIP/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Work on Thesis Project
 ```bash
@@ -174,13 +174,13 @@ cat docs/publication_readiness_summary.md | less
 
 ---
 
-## 📚 References
+## References
 
 **Key Insight:** Similar published papers (Clinical BERT, BEHRT, Hi-BEHRT) all predict code recurrence/readmission, NOT pure disease onset. Our honest framing aligns with established literature.
 
 ---
 
-## 📝 Development Guidelines
+## Development Guidelines
 
 ### Where to Work
 - **Thesis experiments** → `BEHRT_main/BEHRT_thesis/`
@@ -198,7 +198,7 @@ Using conventional commits (see `.gitmemory`):
 
 ---
 
-## 🤝 Project Context
+## Project Context
 
 This workspace supports a thesis on transformer-based clinical code prediction. The work has been reframed (August 2026) from "disease onset prediction" to the more accurate and defensible "next-visit clinical code recurrence prediction for multimorbid adults" based on comprehensive EDA findings.
 

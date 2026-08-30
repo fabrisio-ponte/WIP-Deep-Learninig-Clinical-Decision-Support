@@ -4,7 +4,7 @@ This directory contains the main thesis work using real MIMIC-IV data for next-v
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 BEHRT_main/
@@ -15,7 +15,7 @@ BEHRT_main/
 │   ├── preprocess/      # Preprocessing
 │   └── task/            # Task-specific notebooks
 │
-├── BEHRT_thesis/        # 🎯 ACTIVE THESIS WORK
+├── BEHRT_thesis/        # ACTIVE THESIS WORK
 │   ├── data/
 │   │   ├── processed/   # Cleaned CCSR parquet files
 │   │   └── models/      # Saved model checkpoints
@@ -36,7 +36,7 @@ BEHRT_main/
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 ### BEHRT_core/
 - **Original BEHRT implementation** from the paper
@@ -46,7 +46,7 @@ BEHRT_main/
 
 **Use when:** Need base BEHRT model or utilities
 
-### BEHRT_thesis/ ⭐
+### BEHRT_thesis/
 - **Primary thesis work** - next-visit clinical code prediction
 - Cleaned CCSR-coded MIMIC-IV sequences
 - Positive-class weighting experiments
@@ -61,7 +61,7 @@ BEHRT_main/
 
 ---
 
-## 🔄 Workflow
+## Workflow
 
 ### 1. Data Flow
 ```
@@ -90,7 +90,7 @@ ls data/models/clean_runs/  # Check latest run
 
 ---
 
-## 📊 Current Status
+## Current Status
 
 **Completed:**
 - ✅ Data preprocessing (CCSR-coded, cleaned)
@@ -99,16 +99,16 @@ ls data/models/clean_runs/  # Check latest run
 - ✅ EDA Steps 1-3 (dataset structure, patient-level, class imbalance)
 
 **In Progress:**
-- 🔄 EDA Steps 4-7 (temporal, co-occurrence, representativeness, cleaning impact)
+- EDA Steps 4-7 (temporal, co-occurrence, representativeness, cleaning impact)
 
 **Next:**
-- 📋 Comparison table creation
-- 📋 Disease-level performance analysis
-- 📋 NEW vs RECURRING stratified evaluation
+- Comparison table creation
+- Disease-level performance analysis
+- NEW vs RECURRING stratified evaluation
 
 ---
 
-## 🎓 Key Finding
+## Key Finding
 
 This is **NOT** disease onset prediction — it's **clinical code recurrence prediction** for multimorbid adults:
 - 70% of predictions are recurrent (already in patient history)
@@ -119,7 +119,7 @@ See `../../docs/publication_readiness_summary.md` for complete thesis strategy.
 
 ---
 
-## 📖 Documentation
+## Documentation
 
 **Detailed README:** `BEHRT_thesis/README.md`  
 **Publication Strategy:** `../../docs/publication_readiness_summary.md`  

@@ -6,18 +6,18 @@
 
 This is the **primary thesis work** for next-visit clinical code prediction using BEHRT-style transformers on MIMIC-IV data.
 
-> **📖 Navigation:**  
+> **Navigation:**  
 > - **Workspace overview:** `../../README.md`  
 > - **BEHRT_main structure:** `../README.md`  
-> - **Publication strategy:** `../../docs/publication_readiness_summary.md` **← READ THIS**
+> - **Publication strategy:** `../../docs/publication_readiness_summary.md` **READ THIS**
 
 ---
 
-## 🎯 Project Overview
+## Project Overview
 
 A BEHRT-style transformer model for **next-visit clinical code prediction** in multimorbid adult patients. The model learns temporal patterns from longitudinal EHR sequences to predict which clinical codes (diagnoses, symptoms, encounters) will appear at a patient's next visit.
 
-### ⚠️ Important Reframing (August 2026)
+### Important Reframing (August 2026)
 
 **Original concept:** Disease onset prediction  
 **Actual task (discovered through EDA):** Clinical code recurrence prediction
@@ -30,7 +30,7 @@ This is a **care coordination and chronic disease management** tool, NOT a gener
 
 ---
 
-## 📊 Dataset Characteristics
+## Dataset Characteristics
 
 **Source:** MIMIC-IV → CCSR-coded diagnoses → Cleaned multilabel sequences
 
@@ -65,13 +65,13 @@ This is a **care coordination and chronic disease management** tool, NOT a gener
 ### Top 5 Most Common Codes
 1. **CCSR_END010** (36.6%) - Diabetes without complication
 2. **CCSR_CIR007** (35.3%) - Hypertension
-3. **CCSR_FAC025** (28.0%) - Encounter for general exam/checkup ⚠️ (admin code)
+3. **CCSR_FAC025** (28.0%) - Encounter for general exam/checkup (admin code)
 4. **CCSR_DIG004** (26.4%) - Esophageal disorders
 5. **CCSR_CIR011** (23.5%) - Cardiac dysrhythmias
 
 ---
 
-## 🏗️ Model Architecture
+## Model Architecture
 
 **Type:** BEHRT-style transformer for longitudinal EHR  
 **Framework:** PyTorch
@@ -92,7 +92,7 @@ Each sample contains:
 
 ---
 
-## 🧪 Experimental Results
+## Experimental Results
 
 ### Baseline vs Positive-Class Weighting Comparison
 
@@ -105,10 +105,10 @@ Each sample contains:
 | **Configuration** | USE_POS_WEIGHT=0 | USE_POS_WEIGHT=1, MAX_POS_WEIGHT=30.0 | |
 
 ### Key Findings
-- ✅ **Positive-class weighting improves rare code detection** (4.2% APS gain)
-- ✅ **Maintains strong ranking performance** (AUC 0.90)
-- ⚠️ **Performance dominated by common diseases** (top 5 codes drive most signal)
-- ⚠️ **Rare diseases (<100 samples) remain difficult** despite weighting
+- **Positive-class weighting improves rare code detection** (4.2% APS gain)
+- **Maintains strong ranking performance** (AUC 0.90)
+- **Performance dominated by common diseases** (top 5 codes drive most signal)
+- **Rare diseases (<100 samples) remain difficult** despite weighting
 
 ### Why pos_weight helps
 Without weighting, model optimally predicts "always absent" for rare codes (99.9% accuracy).  
@@ -116,9 +116,9 @@ With `pos_weight = min(neg_count/pos_count, 30)`, rare disease errors get 30x mo
 
 ---
 
-## 📈 Exploratory Data Analysis (Completed)
+## Exploratory Data Analysis (Completed)
 
-### ✅ Step 1: Dataset Structure Analysis
+### COMPLETED: Step 1: Dataset Structure Analysis
 **File:** `eda/01_dataset_structure.py`
 
 **Findings:**
@@ -127,7 +127,7 @@ With `pos_weight = min(neg_count/pos_count, 30)`, rare disease errors get 30x mo
 - No missing values across all splits
 - Proper 80/10/10 split ratio maintained
 
-### ✅ Step 2: Patient-Level Analysis
+### COMPLETED: Step 2: Patient-Level Analysis
 **File:** `eda/02_patient_level_analysis.py`
 
 **Findings:**
@@ -137,7 +137,7 @@ With `pos_weight = min(neg_count/pos_count, 30)`, rare disease errors get 30x mo
 - **Label count:** 64% predict 6-15 simultaneous conditions (true multilabel challenge)
 - **Age distribution:** Heavily skewed to older adults (median 62), zero pediatric patients
 
-### ✅ Step 3: Label Support & Class Imbalance Analysis
+### COMPLETED: Step 3: Label Support & Class Imbalance Analysis
 **File:** `eda/03_label_support_analysis.py`
 
 **Findings:**
@@ -147,43 +147,43 @@ With `pos_weight = min(neg_count/pos_count, 30)`, rare disease errors get 30x mo
 - **Cross-split validation:** All val/test labels appear in training set ✓
 - **Recurrence pattern:** 70% of target codes already in patient history (discovered)
 
-### 🔄 Step 4: Temporal Structure Analysis [PENDING]
+### PENDING: Step 4: Temporal Structure Analysis
 - Time gaps between visits
 - Sequence length evolution over time
 - Code addition/removal patterns
 
-### 🔄 Step 5: Label Co-occurrence Patterns [PENDING]
+### PENDING: Step 5: Label Co-occurrence Patterns
 - Which diseases co-occur frequently
 - Comorbidity networks
 - Conditional probabilities
 
-### 🔄 Step 6: Split Representativeness [PENDING]
+### PENDING: Step 6: Split Representativeness
 - Distribution comparisons across splits
 - Statistical tests for similarity
 
-### 🔄 Step 7: Cleaning Impact Analysis [PENDING]
+### PENDING: Step 7: Cleaning Impact Analysis
 - Compare label vs label_original
 - Assess information loss from cleaning
 
 ---
 
-## 🎓 Publication Strategy
+## Publication Strategy
 
 See `../../docs/publication_readiness_summary.md` for comprehensive strategy.
 
 ### What We CAN Claim
-✅ Next-visit clinical code prediction for multimorbid adults  
-✅ Learns temporal recurrence patterns (70%) with some new diagnosis detection (30%)  
-✅ Demonstrates transformer effectiveness on longitudinal EHR with extreme class imbalance  
-✅ Positive-class weighting improves rare code detection by 4.2% APS  
-✅ Supports care coordination and resource allocation for complex patients  
+- Next-visit clinical code prediction for multimorbid adults  
+- Learns temporal recurrence patterns (70%) with some new diagnosis detection (30%)  
+- Demonstrates transformer effectiveness on longitudinal EHR with extreme class imbalance  
+- Positive-class weighting improves rare code detection by 4.2% APS  
+- Supports care coordination and resource allocation for complex patients  
 
 ### What We CANNOT Claim
-❌ General disease prediction model  
-❌ Predicts new disease onset (it's primarily recurrence)  
-❌ Learns disease mechanisms or causal pathways  
-❌ Generalizes to pediatric, young adult, or healthy populations  
-❌ Solves rare disease prediction (fundamental data limitation)  
+- General disease prediction model  
+- Predicts new disease onset (it's primarily recurrence)  
+- Learns disease mechanisms or causal pathways  
+- Generalizes to pediatric, young adult, or healthy populations  
+- Solves rare disease prediction (fundamental data limitation)  
 
 ### Key Limitations to State
 1. **Task is recurrence prediction (70%), not onset prediction**
@@ -200,7 +200,7 @@ See `../../docs/publication_readiness_summary.md` for comprehensive strategy.
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 BEHRT_thesis/  (current directory)
@@ -217,9 +217,9 @@ BEHRT_thesis/  (current directory)
 ├── scripts/
 │   └── train_nextvisit_clean.py           # Main training script
 ├── eda/
-│   ├── 01_dataset_structure.py            # ✅ Completed
-│   ├── 02_patient_level_analysis.py       # ✅ Completed
-│   ├── 03_label_support_analysis.py       # ✅ Completed
+│   ├── 01_dataset_structure.py            # Completed
+│   ├── 02_patient_level_analysis.py       # Completed
+│   ├── 03_label_support_analysis.py       # Completed
 │   └── results/
 │       ├── 01_dataset_structure.json
 │       ├── 02_patient_level_analysis.json
@@ -232,7 +232,7 @@ BEHRT_thesis/  (current directory)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Training with Positive-Class Weighting
 ```bash
@@ -259,7 +259,7 @@ python3.12 eda/03_label_support_analysis.py
 
 ---
 
-## 📋 Next Steps (Priority Order)
+## Next Steps (Priority Order)
 
 ### Immediate Priorities
 1. **[ ] Complete remaining EDA** (steps 4-7)
@@ -280,14 +280,14 @@ python3.12 eda/03_label_support_analysis.py
 4. **[ ] Calibration analysis** - Threshold sensitivity, per-class calibration
 
 ### What NOT to Do
-- ❌ Deep mechanistic interpretability (low ROI for thesis timeline)
-- ❌ Architecture experiments without clear hypothesis
-- ❌ Trying to fundamentally solve 52,559:1 imbalance (it's a data limit)
-- ❌ Overclaiming about rare disease prediction
+- Deep mechanistic interpretability (low ROI for thesis timeline)
+- Architecture experiments without clear hypothesis
+- Trying to fundamentally solve 52,559:1 imbalance (it's a data limit)
+- Overclaiming about rare disease prediction
 
 ---
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Environment
 - **Python:** 3.12
@@ -309,7 +309,7 @@ python3.12 eda/03_label_support_analysis.py
 
 ---
 
-## 📚 References
+## References
 
 **Similar published work (honest recurrence/code prediction):**
 - **Clinical BERT** - Predicts hospital readmission (recurrence task)
@@ -320,7 +320,7 @@ None of these are "pure onset prediction" — all work with existing patient pop
 
 ---
 
-## 📝 Notes & Insights
+## Notes & Insights
 
 ### Why This Is Still Valuable Research
 Even though it's primarily recurrence prediction (not onset), this has **real clinical utility**:
@@ -338,7 +338,7 @@ Reviewers will appreciate:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is a thesis project. Analysis and experiments follow the publication readiness strategy outlined in `../../docs/publication_readiness_summary.md`.
 

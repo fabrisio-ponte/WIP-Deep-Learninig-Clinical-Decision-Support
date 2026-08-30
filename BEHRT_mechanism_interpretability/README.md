@@ -1,17 +1,17 @@
 # BEHRT Mechanism Interpretability
 
-**Status:** 🔄 Not Started (Future Work)  
+**Status:** Not Started (Future Work)  
 **Priority:** Low (per publication strategy)
 
 ---
 
-## 📋 Purpose
+## Purpose
 
 This directory is reserved for future work on understanding BEHRT model internals through interpretability methods.
 
 ---
 
-## 🎯 Planned Work (Deprioritized)
+## Planned Work (Deprioritized)
 
 ### Attention Analysis
 - Visualize attention patterns across temporal sequences
@@ -35,7 +35,7 @@ This directory is reserved for future work on understanding BEHRT model internal
 
 ---
 
-## ⚠️ Why Not Started
+## Why Not Started
 
 Per `../docs/publication_readiness_summary.md`:
 
@@ -52,7 +52,7 @@ Per `../docs/publication_readiness_summary.md`:
 
 ---
 
-## 📊 When This Becomes Relevant
+## When This Becomes Relevant
 
 **After thesis completion:**
 - If model is deployed in clinical practice
@@ -66,7 +66,7 @@ Per `../docs/publication_readiness_summary.md`:
 
 ---
 
-## 🔬 Potential Methods (Reference)
+## Potential Methods (Reference)
 
 ### Tools to Consider
 - **Captum** (PyTorch interpretability library)
@@ -82,7 +82,7 @@ Per `../docs/publication_readiness_summary.md`:
 
 ---
 
-## 📝 Notes
+## Notes
 
 This folder exists to:
 1. Acknowledge interpretability as important future work
