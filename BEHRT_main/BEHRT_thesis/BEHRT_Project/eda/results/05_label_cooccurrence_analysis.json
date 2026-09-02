@@ -1,0 +1,1833 @@
+{
+  "step": 5,
+  "title": "Label Co-occurrence Analysis",
+  "datasets": {
+    "train": {
+      "samples_analyzed": 143677,
+      "unique_labels_observed": 463,
+      "top_labels": [
+        {
+          "label": "CCSR_END010",
+          "count": 52559,
+          "sample_fraction": 0.36581359577385386
+        },
+        {
+          "label": "CCSR_CIR007",
+          "count": 50748,
+          "sample_fraction": 0.35320893392818614
+        },
+        {
+          "label": "CCSR_FAC025",
+          "count": 40269,
+          "sample_fraction": 0.2802745046179973
+        },
+        {
+          "label": "CCSR_DIG004",
+          "count": 37866,
+          "sample_fraction": 0.263549489479875
+        },
+        {
+          "label": "CCSR_CIR011",
+          "count": 33828,
+          "sample_fraction": 0.23544478239384176
+        },
+        {
+          "label": "CCSR_GEN003",
+          "count": 33581,
+          "sample_fraction": 0.2337256485032399
+        },
+        {
+          "label": "CCSR_END011",
+          "count": 33400,
+          "sample_fraction": 0.23246587832429685
+        },
+        {
+          "label": "CCSR_MBD002",
+          "count": 31593,
+          "sample_fraction": 0.21988905670357817
+        },
+        {
+          "label": "CCSR_CIR019",
+          "count": 30752,
+          "sample_fraction": 0.21403564940804723
+        },
+        {
+          "label": "CCSR_CIR017",
+          "count": 28801,
+          "sample_fraction": 0.2004565796891639
+        },
+        {
+          "label": "CCSR_END003",
+          "count": 25097,
+          "sample_fraction": 0.1746765313863736
+        },
+        {
+          "label": "CCSR_GEN002",
+          "count": 24391,
+          "sample_fraction": 0.169762731682872
+        },
+        {
+          "label": "CCSR_END002",
+          "count": 22685,
+          "sample_fraction": 0.157888875742116
+        },
+        {
+          "label": "CCSR_NVS016",
+          "count": 22021,
+          "sample_fraction": 0.15326739840057907
+        },
+        {
+          "label": "CCSR_END001",
+          "count": 20293,
+          "sample_fraction": 0.14124042122260347
+        },
+        {
+          "label": "CCSR_MBD005",
+          "count": 20233,
+          "sample_fraction": 0.14082281784836823
+        },
+        {
+          "label": "CCSR_BLD003",
+          "count": 17834,
+          "sample_fraction": 0.12412564293519492
+        },
+        {
+          "label": "CCSR_RSP008",
+          "count": 16660,
+          "sample_fraction": 0.11595453691265825
+        },
+        {
+          "label": "CCSR_SYM017",
+          "count": 15469,
+          "sample_fraction": 0.10766510993408827
+        },
+        {
+          "label": "CCSR_END009",
+          "count": 15269,
+          "sample_fraction": 0.10627309868663738
+        },
+        {
+          "label": "CCSR_SYM006",
+          "count": 15116,
+          "sample_fraction": 0.10520821008233747
+        },
+        {
+          "label": "CCSR_DIG025",
+          "count": 14470,
+          "sample_fraction": 0.10071201375307112
+        },
+        {
+          "label": "CCSR_RSP009",
+          "count": 14348,
+          "sample_fraction": 0.0998628868921261
+        },
+        {
+          "label": "CCSR_GEN004",
+          "count": 13586,
+          "sample_fraction": 0.09455932403933824
+        },
+        {
+          "label": "CCSR_BLD006",
+          "count": 13108,
+          "sample_fraction": 0.09123241715793064
+        },
+        {
+          "label": "CCSR_NVS019",
+          "count": 13029,
+          "sample_fraction": 0.09068257271518754
+        },
+        {
+          "label": "CCSR_MBD017",
+          "count": 12960,
+          "sample_fraction": 0.09020232883481699
+        },
+        {
+          "label": "CCSR_DIG019",
+          "count": 12933,
+          "sample_fraction": 0.09001440731641111
+        },
+        {
+          "label": "CCSR_SYM013",
+          "count": 12158,
+          "sample_fraction": 0.08462036373253896
+        },
+        {
+          "label": "CCSR_END016",
+          "count": 11320,
+          "sample_fraction": 0.07878783660571978
+        }
+      ],
+      "top_cooccurrence_pairs": [
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END010",
+          "count": 25044,
+          "sample_fraction": 0.17430764840579913,
+          "p_a_given_b": 0.49349728068101206,
+          "p_b_given_a": 0.47649308396278467,
+          "jaccard": 0.31999795561120836
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_FAC025",
+          "count": 21590,
+          "sample_fraction": 0.15026761416232243,
+          "p_a_given_b": 0.4107764607393596,
+          "p_b_given_a": 0.536144428716879,
+          "jaccard": 0.30306858699008954
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_END010",
+          "count": 21091,
+          "sample_fraction": 0.14679454609993248,
+          "p_a_given_b": 0.6234775925269008,
+          "p_b_given_a": 0.4012823683860043,
+          "jaccard": 0.3230060034305317
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_END010",
+          "count": 17949,
+          "sample_fraction": 0.12492604940247917,
+          "p_a_given_b": 0.47401362700047533,
+          "p_b_given_a": 0.34150193116307387,
+          "jaccard": 0.24765439593796568
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_GEN003",
+          "count": 17672,
+          "sample_fraction": 0.1229981138247597,
+          "p_a_given_b": 0.33623166346391675,
+          "p_b_given_a": 0.5262499627765701,
+          "jaccard": 0.2581059765145762
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END010",
+          "count": 17319,
+          "sample_fraction": 0.1205412139730089,
+          "p_a_given_b": 0.5631828824141519,
+          "p_b_given_a": 0.32951540173899807,
+          "jaccard": 0.26244090192750635
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_GEN003",
+          "count": 16143,
+          "sample_fraction": 0.11235618783799774,
+          "p_a_given_b": 0.5249414672216441,
+          "p_b_given_a": 0.48071826330365386,
+          "jaccard": 0.3349865117244242
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_CIR019",
+          "count": 16099,
+          "sample_fraction": 0.11204994536355854,
+          "p_a_given_b": 0.4759075322218281,
+          "p_b_given_a": 0.5235106659729448,
+          "jaccard": 0.3320682329159877
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_FAC025",
+          "count": 16093,
+          "sample_fraction": 0.11200818502613501,
+          "p_a_given_b": 0.6412320197633183,
+          "p_b_given_a": 0.39963743822791725,
+          "jaccard": 0.3266088933087086
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_GEN003",
+          "count": 15842,
+          "sample_fraction": 0.11026121091058416,
+          "p_a_given_b": 0.3934043557078646,
+          "p_b_given_a": 0.471754861379947,
+          "jaccard": 0.27310026203282306
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_FAC025",
+          "count": 15519,
+          "sample_fraction": 0.10801311274595099,
+          "p_a_given_b": 0.5046501040582726,
+          "p_b_given_a": 0.3853832973254861,
+          "jaccard": 0.2796115455298908
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_DIG004",
+          "count": 15196,
+          "sample_fraction": 0.10576501458131782,
+          "p_a_given_b": 0.2994403720343659,
+          "p_b_given_a": 0.4013098822162362,
+          "jaccard": 0.2069792149064262
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_CIR019",
+          "count": 15160,
+          "sample_fraction": 0.10551445255677666,
+          "p_a_given_b": 0.5263706121315233,
+          "p_b_given_a": 0.4929760665972945,
+          "jaccard": 0.34149528078751157
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_END010",
+          "count": 15122,
+          "sample_fraction": 0.10524997041976099,
+          "p_a_given_b": 0.5250512134995312,
+          "p_b_given_a": 0.2877147586521814,
+          "jaccard": 0.2282979558561551
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_FAC025",
+          "count": 15012,
+          "sample_fraction": 0.104484364233663,
+          "p_a_given_b": 0.44377438808087977,
+          "p_b_given_a": 0.3727929672949415,
+          "jaccard": 0.2540746382330541
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_FAC025",
+          "count": 14912,
+          "sample_fraction": 0.10378835860993757,
+          "p_a_given_b": 0.5177598000069442,
+          "p_b_given_a": 0.3703096674861556,
+          "jaccard": 0.2753425163410761
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_END010",
+          "count": 14536,
+          "sample_fraction": 0.10117137746472991,
+          "p_a_given_b": 0.5791927321990676,
+          "p_b_given_a": 0.27656538366407274,
+          "jaccard": 0.2302915082382763
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_FAC025",
+          "count": 14268,
+          "sample_fraction": 0.09930608239314574,
+          "p_a_given_b": 0.2811539371009695,
+          "p_b_given_a": 0.3543172167175743,
+          "jaccard": 0.18590470234139858
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_GEN003",
+          "count": 14225,
+          "sample_fraction": 0.0990067999749438,
+          "p_a_given_b": 0.5668008128461569,
+          "p_b_given_a": 0.42360263244096363,
+          "jaccard": 0.32000089982678337
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_GEN003",
+          "count": 14038,
+          "sample_fraction": 0.09770526945857723,
+          "p_a_given_b": 0.41498167198770247,
+          "p_b_given_a": 0.418034007325571,
+          "jaccard": 0.26302673736673476
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_END011",
+          "count": 13538,
+          "sample_fraction": 0.09422524133995003,
+          "p_a_given_b": 0.2575771989573622,
+          "p_b_given_a": 0.40532934131736525,
+          "jaccard": 0.1869347288769832
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_GEN002",
+          "count": 13174,
+          "sample_fraction": 0.09169178086958943,
+          "p_a_given_b": 0.3944311377245509,
+          "p_b_given_a": 0.5401172563650527,
+          "jaccard": 0.2952686195844633
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_CIR011",
+          "count": 12945,
+          "sample_fraction": 0.09009792799125817,
+          "p_a_given_b": 0.2550839441948451,
+          "p_b_given_a": 0.3826711599858106,
+          "jaccard": 0.18071784562549734
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_FAC025",
+          "count": 12370,
+          "sample_fraction": 0.08609589565483688,
+          "p_a_given_b": 0.3266782865895526,
+          "p_b_given_a": 0.30718418634681766,
+          "jaccard": 0.18809397095719607
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_CIR017",
+          "count": 12239,
+          "sample_fraction": 0.08518412828775657,
+          "p_a_given_b": 0.36180087501478064,
+          "p_b_given_a": 0.4249505225513003,
+          "jaccard": 0.24288549315340346
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END002",
+          "count": 12112,
+          "sample_fraction": 0.08430020114562525,
+          "p_a_given_b": 0.23866950421691496,
+          "p_b_given_a": 0.5339210932334142,
+          "jaccard": 0.1975179791588526
+        },
+        {
+          "label_a": "CCSR_GEN002",
+          "label_b": "CCSR_GEN003",
+          "count": 11898,
+          "sample_fraction": 0.08281074911085282,
+          "p_a_given_b": 0.48780287811077855,
+          "p_b_given_a": 0.35430749530984784,
+          "jaccard": 0.2582367495767678
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_GEN003",
+          "count": 11823,
+          "sample_fraction": 0.08228874489305874,
+          "p_a_given_b": 0.3539820359281437,
+          "p_b_given_a": 0.35207408951490426,
+          "jaccard": 0.21434787338192102
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_FAC025",
+          "count": 11760,
+          "sample_fraction": 0.08185026135011171,
+          "p_a_given_b": 0.3520958083832335,
+          "p_b_given_a": 0.2920360575132236,
+          "jaccard": 0.18995622607375343
+        },
+        {
+          "label_a": "CCSR_END002",
+          "label_b": "CCSR_END010",
+          "count": 11722,
+          "sample_fraction": 0.08158577921309604,
+          "p_a_given_b": 0.5167291161560502,
+          "p_b_given_a": 0.22302555223653417,
+          "jaccard": 0.18453449198702812
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_MBD002",
+          "count": 11610,
+          "sample_fraction": 0.08080625291452355,
+          "p_a_given_b": 0.22089461367225405,
+          "p_b_given_a": 0.3674864685215079,
+          "jaccard": 0.16004521518568554
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_GEN002",
+          "count": 11552,
+          "sample_fraction": 0.0804025696527628,
+          "p_a_given_b": 0.21979109191575183,
+          "p_b_given_a": 0.47361731786314626,
+          "jaccard": 0.17664148750726322
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_GEN003",
+          "count": 11256,
+          "sample_fraction": 0.07834239300653549,
+          "p_a_given_b": 0.3908197632026666,
+          "p_b_given_a": 0.3351895417051309,
+          "jaccard": 0.2201619528224387
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_NVS016",
+          "count": 11210,
+          "sample_fraction": 0.0780222304196218,
+          "p_a_given_b": 0.21328411879982495,
+          "p_b_given_a": 0.5090595340811044,
+          "jaccard": 0.17689758560833202
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_DIG004",
+          "count": 11079,
+          "sample_fraction": 0.07711046305254146,
+          "p_a_given_b": 0.3275097552323519,
+          "p_b_given_a": 0.2925843764855015,
+          "jaccard": 0.1827765404602821
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END011",
+          "count": 10935,
+          "sample_fraction": 0.07610821495437683,
+          "p_a_given_b": 0.2154764719791913,
+          "p_b_given_a": 0.32739520958083834,
+          "jaccard": 0.14935872044582246
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_MBD002",
+          "count": 10825,
+          "sample_fraction": 0.07534260876827885,
+          "p_a_given_b": 0.21330889887286197,
+          "p_b_given_a": 0.34263919222612604,
+          "jaccard": 0.15136472957100508
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_MBD002",
+          "count": 10636,
+          "sample_fraction": 0.07402715813943776,
+          "p_a_given_b": 0.28088522685258543,
+          "p_b_given_a": 0.3366568543664736,
+          "jaccard": 0.18081362732264591
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_END011",
+          "count": 10508,
+          "sample_fraction": 0.0731362709410692,
+          "p_a_given_b": 0.27750488564939524,
+          "p_b_given_a": 0.31461077844311375,
+          "jaccard": 0.1729484183152836
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_END003",
+          "count": 10306,
+          "sample_fraction": 0.07173033958114382,
+          "p_a_given_b": 0.30465886248078516,
+          "p_b_given_a": 0.4106466908395426,
+          "jaccard": 0.21197474238466443
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END003",
+          "count": 10237,
+          "sample_fraction": 0.07125009570077326,
+          "p_a_given_b": 0.3328889177939646,
+          "p_b_given_a": 0.40789735824999,
+          "jaccard": 0.22443655178461808
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_GEN002",
+          "count": 10135,
+          "sample_fraction": 0.07054016996457331,
+          "p_a_given_b": 0.25168243562045245,
+          "p_b_given_a": 0.4155221188143168,
+          "jaccard": 0.18587803759743238
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_GEN002",
+          "count": 10043,
+          "sample_fraction": 0.06989984479074592,
+          "p_a_given_b": 0.32658038501560877,
+          "p_b_given_a": 0.411750235742692,
+          "jaccard": 0.2226829268292683
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_GEN003",
+          "count": 10025,
+          "sample_fraction": 0.06977456377847532,
+          "p_a_given_b": 0.2647493793904822,
+          "p_b_given_a": 0.29853190792412376,
+          "jaccard": 0.16321513464231058
+        },
+        {
+          "label_a": "CCSR_MBD002",
+          "label_b": "CCSR_MBD005",
+          "count": 10009,
+          "sample_fraction": 0.06966320287867926,
+          "p_a_given_b": 0.3168106859114361,
+          "p_b_given_a": 0.49468689764246526,
+          "jaccard": 0.23935241648133534
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_DIG004",
+          "count": 9897,
+          "sample_fraction": 0.06888367658010677,
+          "p_a_given_b": 0.321832726326743,
+          "p_b_given_a": 0.261369038187292,
+          "jaccard": 0.168542770048194
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_CIR017",
+          "count": 9863,
+          "sample_fraction": 0.06864703466804012,
+          "p_a_given_b": 0.19435248679750927,
+          "p_b_given_a": 0.34245338703517236,
+          "jaccard": 0.14153488505582182
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END011",
+          "count": 9800,
+          "sample_fraction": 0.0682085511250931,
+          "p_a_given_b": 0.31867845993756505,
+          "p_b_given_a": 0.2934131736526946,
+          "jaccard": 0.18030615248748896
+        },
+        {
+          "label_a": "CCSR_END001",
+          "label_b": "CCSR_END010",
+          "count": 9574,
+          "sample_fraction": 0.0666355784154736,
+          "p_a_given_b": 0.47178830138471395,
+          "p_b_given_a": 0.18215719477159004,
+          "jaccard": 0.1513006100066374
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_MBD002",
+          "count": 9380,
+          "sample_fraction": 0.06528532750544624,
+          "p_a_given_b": 0.2329335220641188,
+          "p_b_given_a": 0.29690121229386257,
+          "jaccard": 0.15012323549182163
+        }
+      ],
+      "pair_count_total": 59923
+    },
+    "val": {
+      "samples_analyzed": 17799,
+      "unique_labels_observed": 424,
+      "top_labels": [
+        {
+          "label": "CCSR_END010",
+          "count": 6552,
+          "sample_fraction": 0.36811056800943875
+        },
+        {
+          "label": "CCSR_CIR007",
+          "count": 6070,
+          "sample_fraction": 0.34103039496600934
+        },
+        {
+          "label": "CCSR_FAC025",
+          "count": 5082,
+          "sample_fraction": 0.2855216585201416
+        },
+        {
+          "label": "CCSR_DIG004",
+          "count": 4485,
+          "sample_fraction": 0.2519804483397944
+        },
+        {
+          "label": "CCSR_GEN003",
+          "count": 4288,
+          "sample_fraction": 0.24091241080959605
+        },
+        {
+          "label": "CCSR_CIR011",
+          "count": 4250,
+          "sample_fraction": 0.2387774594078319
+        },
+        {
+          "label": "CCSR_END011",
+          "count": 4145,
+          "sample_fraction": 0.23287825158716782
+        },
+        {
+          "label": "CCSR_MBD002",
+          "count": 4079,
+          "sample_fraction": 0.22917017809989326
+        },
+        {
+          "label": "CCSR_CIR019",
+          "count": 3837,
+          "sample_fraction": 0.21557390864655318
+        },
+        {
+          "label": "CCSR_CIR017",
+          "count": 3497,
+          "sample_fraction": 0.19647171189392662
+        },
+        {
+          "label": "CCSR_END003",
+          "count": 3185,
+          "sample_fraction": 0.1789426372268105
+        },
+        {
+          "label": "CCSR_GEN002",
+          "count": 2998,
+          "sample_fraction": 0.1684364290128659
+        },
+        {
+          "label": "CCSR_END002",
+          "count": 2807,
+          "sample_fraction": 0.1577054890724198
+        },
+        {
+          "label": "CCSR_NVS016",
+          "count": 2685,
+          "sample_fraction": 0.15085117141412438
+        },
+        {
+          "label": "CCSR_MBD005",
+          "count": 2439,
+          "sample_fraction": 0.13703017023428282
+        },
+        {
+          "label": "CCSR_END001",
+          "count": 2383,
+          "sample_fraction": 0.133883926063262
+        },
+        {
+          "label": "CCSR_BLD003",
+          "count": 2160,
+          "sample_fraction": 0.12135513231080398
+        },
+        {
+          "label": "CCSR_RSP008",
+          "count": 2052,
+          "sample_fraction": 0.11528737569526377
+        },
+        {
+          "label": "CCSR_DIG025",
+          "count": 1908,
+          "sample_fraction": 0.10719703354121018
+        },
+        {
+          "label": "CCSR_SYM017",
+          "count": 1895,
+          "sample_fraction": 0.10646665543008034
+        },
+        {
+          "label": "CCSR_RSP009",
+          "count": 1862,
+          "sample_fraction": 0.10461261868644306
+        },
+        {
+          "label": "CCSR_SYM006",
+          "count": 1818,
+          "sample_fraction": 0.10214056969492669
+        },
+        {
+          "label": "CCSR_END009",
+          "count": 1812,
+          "sample_fraction": 0.10180347210517444
+        },
+        {
+          "label": "CCSR_GEN004",
+          "count": 1623,
+          "sample_fraction": 0.0911848980279791
+        },
+        {
+          "label": "CCSR_BLD006",
+          "count": 1618,
+          "sample_fraction": 0.09090398336985224
+        },
+        {
+          "label": "CCSR_MBD017",
+          "count": 1570,
+          "sample_fraction": 0.08820720265183438
+        },
+        {
+          "label": "CCSR_DIG019",
+          "count": 1489,
+          "sample_fraction": 0.08365638519017922
+        },
+        {
+          "label": "CCSR_SYM013",
+          "count": 1478,
+          "sample_fraction": 0.08303837294230013
+        },
+        {
+          "label": "CCSR_NVS019",
+          "count": 1470,
+          "sample_fraction": 0.08258890948929715
+        },
+        {
+          "label": "CCSR_END016",
+          "count": 1394,
+          "sample_fraction": 0.07831900668576887
+        }
+      ],
+      "top_cooccurrence_pairs": [
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END010",
+          "count": 3024,
+          "sample_fraction": 0.16989718523512556,
+          "p_a_given_b": 0.4981878088962109,
+          "p_b_given_a": 0.46153846153846156,
+          "jaccard": 0.3150656386747239
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_END010",
+          "count": 2700,
+          "sample_fraction": 0.15169391538850496,
+          "p_a_given_b": 0.6352941176470588,
+          "p_b_given_a": 0.41208791208791207,
+          "jaccard": 0.33325104912367315
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_FAC025",
+          "count": 2636,
+          "sample_fraction": 0.14809820776448115,
+          "p_a_given_b": 0.40231990231990233,
+          "p_b_given_a": 0.5186934277843369,
+          "jaccard": 0.2929539897755057
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_GEN003",
+          "count": 2328,
+          "sample_fraction": 0.1307938648238665,
+          "p_a_given_b": 0.3553113553113553,
+          "p_b_given_a": 0.542910447761194,
+          "jaccard": 0.27349624060150374
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END010",
+          "count": 2216,
+          "sample_fraction": 0.12450137648182483,
+          "p_a_given_b": 0.5775345321866041,
+          "p_b_given_a": 0.33821733821733824,
+          "jaccard": 0.2711366695215955
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_CIR019",
+          "count": 2118,
+          "sample_fraction": 0.11899544918253835,
+          "p_a_given_b": 0.4983529411764706,
+          "p_b_given_a": 0.5519937451133698,
+          "jaccard": 0.35483330541129166
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_GEN003",
+          "count": 2106,
+          "sample_fraction": 0.11832125400303388,
+          "p_a_given_b": 0.41440377804014167,
+          "p_b_given_a": 0.49113805970149255,
+          "jaccard": 0.2899229074889868
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_END010",
+          "count": 2093,
+          "sample_fraction": 0.11759087589190403,
+          "p_a_given_b": 0.4666666666666667,
+          "p_b_given_a": 0.3194444444444444,
+          "jaccard": 0.23401162790697674
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_GEN003",
+          "count": 2063,
+          "sample_fraction": 0.11590538794314287,
+          "p_a_given_b": 0.5376596299192077,
+          "p_b_given_a": 0.48111007462686567,
+          "jaccard": 0.34031672715275485
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_FAC025",
+          "count": 2039,
+          "sample_fraction": 0.11455699758413394,
+          "p_a_given_b": 0.6401883830455259,
+          "p_b_given_a": 0.40121999212908305,
+          "jaccard": 0.3273924213230572
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_FAC025",
+          "count": 1996,
+          "sample_fraction": 0.11214113152424293,
+          "p_a_given_b": 0.5201980714099557,
+          "p_b_given_a": 0.39275875639512003,
+          "jaccard": 0.2883143146034956
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_FAC025",
+          "count": 1927,
+          "sample_fraction": 0.10826450924209226,
+          "p_a_given_b": 0.45341176470588235,
+          "p_b_given_a": 0.3791814246359701,
+          "jaccard": 0.26022957461174884
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_GEN003",
+          "count": 1909,
+          "sample_fraction": 0.10725321647283555,
+          "p_a_given_b": 0.5993720565149137,
+          "p_b_given_a": 0.4451958955223881,
+          "jaccard": 0.343098490294752
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_FAC025",
+          "count": 1868,
+          "sample_fraction": 0.10494971627619529,
+          "p_a_given_b": 0.5341721475550472,
+          "p_b_given_a": 0.3675718221172767,
+          "jaccard": 0.27834897928773655
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_END010",
+          "count": 1855,
+          "sample_fraction": 0.10421933816506546,
+          "p_a_given_b": 0.530454675436088,
+          "p_b_given_a": 0.2831196581196581,
+          "jaccard": 0.22638515987307786
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_END010",
+          "count": 1795,
+          "sample_fraction": 0.10084836226754312,
+          "p_a_given_b": 0.5635792778649922,
+          "p_b_given_a": 0.273962148962149,
+          "jaccard": 0.22601359858977588
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_CIR019",
+          "count": 1793,
+          "sample_fraction": 0.10073599640429237,
+          "p_a_given_b": 0.5127251930225908,
+          "p_b_given_a": 0.46729215532968466,
+          "jaccard": 0.32358780003609455
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_GEN003",
+          "count": 1761,
+          "sample_fraction": 0.09893814259228047,
+          "p_a_given_b": 0.4143529411764706,
+          "p_b_given_a": 0.41068097014925375,
+          "jaccard": 0.2598494909251881
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_DIG004",
+          "count": 1734,
+          "sample_fraction": 0.09742120343839542,
+          "p_a_given_b": 0.285667215815486,
+          "p_b_given_a": 0.3866220735785953,
+          "jaccard": 0.1965763518875411
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_END011",
+          "count": 1682,
+          "sample_fraction": 0.09449969099387606,
+          "p_a_given_b": 0.2567155067155067,
+          "p_b_given_a": 0.40579010856453557,
+          "jaccard": 0.1865779256794232
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_CIR011",
+          "count": 1672,
+          "sample_fraction": 0.09393786167762234,
+          "p_a_given_b": 0.27545304777594726,
+          "p_b_given_a": 0.39341176470588235,
+          "jaccard": 0.1933395004625347
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_FAC025",
+          "count": 1662,
+          "sample_fraction": 0.09337603236136861,
+          "p_a_given_b": 0.27380560131795717,
+          "p_b_given_a": 0.3270365997638725,
+          "jaccard": 0.175131717597471
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_GEN002",
+          "count": 1627,
+          "sample_fraction": 0.0914096297544806,
+          "p_a_given_b": 0.39252110977080823,
+          "p_b_given_a": 0.5426951300867244,
+          "jaccard": 0.2949601160261059
+        },
+        {
+          "label_a": "CCSR_GEN002",
+          "label_b": "CCSR_GEN003",
+          "count": 1559,
+          "sample_fraction": 0.08758919040395528,
+          "p_a_given_b": 0.5200133422281521,
+          "p_b_given_a": 0.36357276119402987,
+          "jaccard": 0.27221931203073163
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_MBD002",
+          "count": 1521,
+          "sample_fraction": 0.08545423900219114,
+          "p_a_given_b": 0.23214285714285715,
+          "p_b_given_a": 0.37288551115469476,
+          "jaccard": 0.16695938529088913
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_CIR017",
+          "count": 1516,
+          "sample_fraction": 0.08517332434406427,
+          "p_a_given_b": 0.35670588235294115,
+          "p_b_given_a": 0.4335144409493852,
+          "jaccard": 0.2432996308778687
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_GEN003",
+          "count": 1504,
+          "sample_fraction": 0.0844991291645598,
+          "p_a_given_b": 0.3628468033775633,
+          "p_b_given_a": 0.35074626865671643,
+          "jaccard": 0.21705873863472364
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_FAC025",
+          "count": 1477,
+          "sample_fraction": 0.08298219001067475,
+          "p_a_given_b": 0.3563329312424608,
+          "p_b_given_a": 0.290633608815427,
+          "jaccard": 0.19058064516129034
+        },
+        {
+          "label_a": "CCSR_END002",
+          "label_b": "CCSR_END010",
+          "count": 1457,
+          "sample_fraction": 0.08185853137816732,
+          "p_a_given_b": 0.5190594941218383,
+          "p_b_given_a": 0.22237484737484736,
+          "jaccard": 0.18438370032903062
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_FAC025",
+          "count": 1455,
+          "sample_fraction": 0.08174616551491656,
+          "p_a_given_b": 0.32441471571906355,
+          "p_b_given_a": 0.28630460448642264,
+          "jaccard": 0.17936390532544377
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END002",
+          "count": 1444,
+          "sample_fraction": 0.08112815326703747,
+          "p_a_given_b": 0.23789126853377265,
+          "p_b_given_a": 0.5144282151763448,
+          "jaccard": 0.19426880129153773
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_GEN002",
+          "count": 1427,
+          "sample_fraction": 0.08017304342940615,
+          "p_a_given_b": 0.2177960927960928,
+          "p_b_given_a": 0.4759839893262175,
+          "jaccard": 0.1756740120645082
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_MBD002",
+          "count": 1413,
+          "sample_fraction": 0.07938648238665094,
+          "p_a_given_b": 0.2327841845140033,
+          "p_b_given_a": 0.3464084334395685,
+          "jaccard": 0.1617445054945055
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_GEN003",
+          "count": 1362,
+          "sample_fraction": 0.07652115287375695,
+          "p_a_given_b": 0.38947669430940807,
+          "p_b_given_a": 0.31763059701492535,
+          "jaccard": 0.21205044371788884
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_MBD002",
+          "count": 1355,
+          "sample_fraction": 0.07612787235237935,
+          "p_a_given_b": 0.30211817168338906,
+          "p_b_given_a": 0.33218926207403776,
+          "jaccard": 0.18795949507559995
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_NVS016",
+          "count": 1337,
+          "sample_fraction": 0.07511657958312265,
+          "p_a_given_b": 0.20405982905982906,
+          "p_b_given_a": 0.49795158286778396,
+          "jaccard": 0.16924050632911392
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_GEN002",
+          "count": 1335,
+          "sample_fraction": 0.0750042137198719,
+          "p_a_given_b": 0.34792806880375293,
+          "p_b_given_a": 0.44529686457638423,
+          "jaccard": 0.24272727272727274
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_GEN002",
+          "count": 1320,
+          "sample_fraction": 0.07416146974549132,
+          "p_a_given_b": 0.2597402597402597,
+          "p_b_given_a": 0.4402935290193462,
+          "jaccard": 0.1952662721893491
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END003",
+          "count": 1301,
+          "sample_fraction": 0.07309399404460924,
+          "p_a_given_b": 0.33906697941099817,
+          "p_b_given_a": 0.4084772370486656,
+          "jaccard": 0.22740779583988813
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_GEN003",
+          "count": 1301,
+          "sample_fraction": 0.07309399404460924,
+          "p_a_given_b": 0.29007803790412484,
+          "p_b_given_a": 0.30340485074626866,
+          "jaccard": 0.1741167023554604
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END011",
+          "count": 1291,
+          "sample_fraction": 0.07253216472835552,
+          "p_a_given_b": 0.2126853377265239,
+          "p_b_given_a": 0.31145958986731004,
+          "jaccard": 0.144666069027342
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_END003",
+          "count": 1287,
+          "sample_fraction": 0.07230743300185404,
+          "p_a_given_b": 0.3028235294117647,
+          "p_b_given_a": 0.40408163265306124,
+          "jaccard": 0.20933636955107351
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END011",
+          "count": 1279,
+          "sample_fraction": 0.07185796954885106,
+          "p_a_given_b": 0.3333333333333333,
+          "p_b_given_a": 0.3085645355850422,
+          "jaccard": 0.1908100850365508
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_DIG004",
+          "count": 1275,
+          "sample_fraction": 0.07163323782234957,
+          "p_a_given_b": 0.3,
+          "p_b_given_a": 0.2842809364548495,
+          "jaccard": 0.17091152815013405
+        },
+        {
+          "label_a": "CCSR_MBD002",
+          "label_b": "CCSR_MBD005",
+          "count": 1269,
+          "sample_fraction": 0.07129614023259734,
+          "p_a_given_b": 0.3111056631527335,
+          "p_b_given_a": 0.5202952029520295,
+          "jaccard": 0.24176033530196228
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_END011",
+          "count": 1252,
+          "sample_fraction": 0.070341030394966,
+          "p_a_given_b": 0.27915273132664437,
+          "p_b_given_a": 0.3020506634499397,
+          "jaccard": 0.16969368392518297
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_CIR017",
+          "count": 1210,
+          "sample_fraction": 0.06798134726670038,
+          "p_a_given_b": 0.19934102141680396,
+          "p_b_given_a": 0.3460108664569631,
+          "jaccard": 0.14478879980854373
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_MBD002",
+          "count": 1185,
+          "sample_fraction": 0.06657677397606607,
+          "p_a_given_b": 0.23317591499409682,
+          "p_b_given_a": 0.2905123804854131,
+          "jaccard": 0.14857071213640924
+        },
+        {
+          "label_a": "CCSR_END002",
+          "label_b": "CCSR_FAC025",
+          "count": 1165,
+          "sample_fraction": 0.06545311534355863,
+          "p_a_given_b": 0.41503384396152476,
+          "p_b_given_a": 0.22924045651318378,
+          "jaccard": 0.17325996430696014
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_DIG004",
+          "count": 1141,
+          "sample_fraction": 0.0641047249845497,
+          "p_a_given_b": 0.2973677352097993,
+          "p_b_given_a": 0.25440356744704573,
+          "jaccard": 0.15889151928700737
+        }
+      ],
+      "pair_count_total": 37212
+    },
+    "test": {
+      "samples_analyzed": 18237,
+      "unique_labels_observed": 430,
+      "top_labels": [
+        {
+          "label": "CCSR_END010",
+          "count": 6218,
+          "sample_fraction": 0.34095520096507104
+        },
+        {
+          "label": "CCSR_CIR007",
+          "count": 6198,
+          "sample_fraction": 0.3398585293633821
+        },
+        {
+          "label": "CCSR_FAC025",
+          "count": 5100,
+          "sample_fraction": 0.27965125843066296
+        },
+        {
+          "label": "CCSR_DIG004",
+          "count": 4529,
+          "sample_fraction": 0.24834128420244558
+        },
+        {
+          "label": "CCSR_CIR011",
+          "count": 4142,
+          "sample_fraction": 0.22712068870976587
+        },
+        {
+          "label": "CCSR_GEN003",
+          "count": 4061,
+          "sample_fraction": 0.22267916872292592
+        },
+        {
+          "label": "CCSR_END011",
+          "count": 4057,
+          "sample_fraction": 0.22245983440258815
+        },
+        {
+          "label": "CCSR_CIR019",
+          "count": 4023,
+          "sample_fraction": 0.22059549267971706
+        },
+        {
+          "label": "CCSR_MBD002",
+          "count": 3819,
+          "sample_fraction": 0.20940944234249054
+        },
+        {
+          "label": "CCSR_CIR017",
+          "count": 3800,
+          "sample_fraction": 0.2083676043208861
+        },
+        {
+          "label": "CCSR_END003",
+          "count": 3180,
+          "sample_fraction": 0.174370784668531
+        },
+        {
+          "label": "CCSR_END002",
+          "count": 2941,
+          "sample_fraction": 0.16126555902834896
+        },
+        {
+          "label": "CCSR_GEN002",
+          "count": 2906,
+          "sample_fraction": 0.15934638372539342
+        },
+        {
+          "label": "CCSR_NVS016",
+          "count": 2649,
+          "sample_fraction": 0.1452541536436914
+        },
+        {
+          "label": "CCSR_END001",
+          "count": 2430,
+          "sample_fraction": 0.13324559960519822
+        },
+        {
+          "label": "CCSR_RSP008",
+          "count": 2411,
+          "sample_fraction": 0.1322037615835938
+        },
+        {
+          "label": "CCSR_MBD005",
+          "count": 2329,
+          "sample_fraction": 0.1277074080166694
+        },
+        {
+          "label": "CCSR_BLD003",
+          "count": 2222,
+          "sample_fraction": 0.12184021494763393
+        },
+        {
+          "label": "CCSR_MBD017",
+          "count": 1990,
+          "sample_fraction": 0.10911882436804299
+        },
+        {
+          "label": "CCSR_RSP009",
+          "count": 1984,
+          "sample_fraction": 0.10878982288753633
+        },
+        {
+          "label": "CCSR_SYM006",
+          "count": 1906,
+          "sample_fraction": 0.10451280364094971
+        },
+        {
+          "label": "CCSR_SYM017",
+          "count": 1900,
+          "sample_fraction": 0.10418380216044305
+        },
+        {
+          "label": "CCSR_END009",
+          "count": 1867,
+          "sample_fraction": 0.10237429401765641
+        },
+        {
+          "label": "CCSR_DIG025",
+          "count": 1804,
+          "sample_fraction": 0.09891977847233646
+        },
+        {
+          "label": "CCSR_GEN004",
+          "count": 1633,
+          "sample_fraction": 0.08954323627789658
+        },
+        {
+          "label": "CCSR_BLD006",
+          "count": 1590,
+          "sample_fraction": 0.0871853923342655
+        },
+        {
+          "label": "CCSR_NVS019",
+          "count": 1587,
+          "sample_fraction": 0.08702089159401218
+        },
+        {
+          "label": "CCSR_SYM013",
+          "count": 1504,
+          "sample_fraction": 0.08246970444700334
+        },
+        {
+          "label": "CCSR_DIG019",
+          "count": 1414,
+          "sample_fraction": 0.07753468223940341
+        },
+        {
+          "label": "CCSR_END016",
+          "count": 1352,
+          "sample_fraction": 0.0741350002741679
+        }
+      ],
+      "top_cooccurrence_pairs": [
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END010",
+          "count": 2956,
+          "sample_fraction": 0.16208806272961562,
+          "p_a_given_b": 0.47692804130364636,
+          "p_b_given_a": 0.4753940173689289,
+          "jaccard": 0.3124735729386892
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_FAC025",
+          "count": 2527,
+          "sample_fraction": 0.13856445687338925,
+          "p_a_given_b": 0.40640077195239627,
+          "p_b_given_a": 0.49549019607843137,
+          "jaccard": 0.287453077010579
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_END010",
+          "count": 2518,
+          "sample_fraction": 0.13807095465262928,
+          "p_a_given_b": 0.6079188797682279,
+          "p_b_given_a": 0.40495336120939207,
+          "jaccard": 0.32109155827595004
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_CIR019",
+          "count": 2127,
+          "sample_fraction": 0.11663102483961178,
+          "p_a_given_b": 0.5135200386286818,
+          "p_b_given_a": 0.5287099179716629,
+          "jaccard": 0.35226896323285856
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_GEN003",
+          "count": 2111,
+          "sample_fraction": 0.11575368755826068,
+          "p_a_given_b": 0.5247327864777529,
+          "p_b_given_a": 0.5198227037675449,
+          "jaccard": 0.35342374016407163
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_END010",
+          "count": 2079,
+          "sample_fraction": 0.11399901299555848,
+          "p_a_given_b": 0.45904173106646057,
+          "p_b_given_a": 0.3343518816339659,
+          "jaccard": 0.2398477157360406
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END010",
+          "count": 2074,
+          "sample_fraction": 0.11372484509513626,
+          "p_a_given_b": 0.515535669898086,
+          "p_b_given_a": 0.3335477645545191,
+          "jaccard": 0.2539488184155749
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_CIR019",
+          "count": 2064,
+          "sample_fraction": 0.11317650929429182,
+          "p_a_given_b": 0.5431578947368421,
+          "p_b_given_a": 0.5130499627143923,
+          "jaccard": 0.35839555478381663
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_GEN003",
+          "count": 2054,
+          "sample_fraction": 0.11262817349344739,
+          "p_a_given_b": 0.3303312962367321,
+          "p_b_given_a": 0.5057867520315193,
+          "jaccard": 0.24972644376899697
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_GEN003",
+          "count": 2001,
+          "sample_fraction": 0.10972199374897187,
+          "p_a_given_b": 0.39235294117647057,
+          "p_b_given_a": 0.4927357793646885,
+          "jaccard": 0.2794692737430168
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_FAC025",
+          "count": 1987,
+          "sample_fraction": 0.10895432362778966,
+          "p_a_given_b": 0.5228947368421053,
+          "p_b_given_a": 0.3896078431372549,
+          "jaccard": 0.2874294806885578
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_FAC025",
+          "count": 1985,
+          "sample_fraction": 0.10884465646762077,
+          "p_a_given_b": 0.6242138364779874,
+          "p_b_given_a": 0.3892156862745098,
+          "jaccard": 0.3153296266878475
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_FAC025",
+          "count": 1978,
+          "sample_fraction": 0.10846082140702966,
+          "p_a_given_b": 0.4916728809346259,
+          "p_b_given_a": 0.38784313725490194,
+          "jaccard": 0.2768369489153254
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_FAC025",
+          "count": 1894,
+          "sample_fraction": 0.1038548006799364,
+          "p_a_given_b": 0.4572670207629165,
+          "p_b_given_a": 0.37137254901960787,
+          "jaccard": 0.2577572128470332
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_END010",
+          "count": 1880,
+          "sample_fraction": 0.10308713055875418,
+          "p_a_given_b": 0.49473684210526314,
+          "p_b_given_a": 0.30234802187198456,
+          "jaccard": 0.23101499139837797
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_GEN003",
+          "count": 1820,
+          "sample_fraction": 0.09979711575368756,
+          "p_a_given_b": 0.5723270440251572,
+          "p_b_given_a": 0.4481654764836247,
+          "jaccard": 0.33573141486810554
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_GEN003",
+          "count": 1818,
+          "sample_fraction": 0.09968744859351868,
+          "p_a_given_b": 0.43891839690970547,
+          "p_b_given_a": 0.44767298694902735,
+          "jaccard": 0.28472983555207515
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_DIG004",
+          "count": 1791,
+          "sample_fraction": 0.09820694193123869,
+          "p_a_given_b": 0.28896418199419166,
+          "p_b_given_a": 0.3954515345550894,
+          "jaccard": 0.20042524619516563
+        },
+        {
+          "label_a": "CCSR_END003",
+          "label_b": "CCSR_END010",
+          "count": 1779,
+          "sample_fraction": 0.09754893897022536,
+          "p_a_given_b": 0.559433962264151,
+          "p_b_given_a": 0.28610485686715986,
+          "jaccard": 0.2334952093450584
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_FAC025",
+          "count": 1754,
+          "sample_fraction": 0.09617809946811427,
+          "p_a_given_b": 0.2829945143594708,
+          "p_b_given_a": 0.343921568627451,
+          "jaccard": 0.18378038558256496
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_END011",
+          "count": 1621,
+          "sample_fraction": 0.08888523331688326,
+          "p_a_given_b": 0.26069475715664203,
+          "p_b_given_a": 0.39955632240571853,
+          "jaccard": 0.18731222556043448
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_FAC025",
+          "count": 1575,
+          "sample_fraction": 0.08636288863299885,
+          "p_a_given_b": 0.34775888717156106,
+          "p_b_given_a": 0.3088235294117647,
+          "jaccard": 0.1955550037248572
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_GEN002",
+          "count": 1559,
+          "sample_fraction": 0.08548555135164775,
+          "p_a_given_b": 0.384274094158245,
+          "p_b_given_a": 0.5364762560220234,
+          "jaccard": 0.2884900074019245
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_CIR017",
+          "count": 1531,
+          "sample_fraction": 0.08395021110928333,
+          "p_a_given_b": 0.36962819893771126,
+          "p_b_given_a": 0.40289473684210525,
+          "jaccard": 0.23880829823740446
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_CIR011",
+          "count": 1521,
+          "sample_fraction": 0.08340187530843889,
+          "p_a_given_b": 0.24540174249757987,
+          "p_b_given_a": 0.36721390632544665,
+          "jaccard": 0.17246853384737498
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_FAC025",
+          "count": 1463,
+          "sample_fraction": 0.08022152766354115,
+          "p_a_given_b": 0.3606112891298989,
+          "p_b_given_a": 0.2868627450980392,
+          "jaccard": 0.1901481674031713
+        },
+        {
+          "label_a": "CCSR_END002",
+          "label_b": "CCSR_END010",
+          "count": 1450,
+          "sample_fraction": 0.07950869112244338,
+          "p_a_given_b": 0.49302958177490647,
+          "p_b_given_a": 0.23319395303956256,
+          "jaccard": 0.1880918407056687
+        },
+        {
+          "label_a": "CCSR_GEN002",
+          "label_b": "CCSR_GEN003",
+          "count": 1449,
+          "sample_fraction": 0.07945385754235894,
+          "p_a_given_b": 0.4986235375086029,
+          "p_b_given_a": 0.3568086678158089,
+          "jaccard": 0.2625951431678144
+        },
+        {
+          "label_a": "CCSR_END011",
+          "label_b": "CCSR_GEN003",
+          "count": 1448,
+          "sample_fraction": 0.0793990239622745,
+          "p_a_given_b": 0.35691397584421986,
+          "p_b_given_a": 0.3565624230485102,
+          "jaccard": 0.21709145427286355
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END002",
+          "count": 1441,
+          "sample_fraction": 0.0790151889016834,
+          "p_a_given_b": 0.23249435301710228,
+          "p_b_given_a": 0.48996939816388985,
+          "jaccard": 0.1871914783060535
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_END003",
+          "count": 1407,
+          "sample_fraction": 0.0771508471788123,
+          "p_a_given_b": 0.33969097054563013,
+          "p_b_given_a": 0.44245283018867926,
+          "jaccard": 0.2378698224852071
+        },
+        {
+          "label_a": "CCSR_CIR017",
+          "label_b": "CCSR_GEN003",
+          "count": 1378,
+          "sample_fraction": 0.07556067335636343,
+          "p_a_given_b": 0.3626315789473684,
+          "p_b_given_a": 0.3393252893376016,
+          "jaccard": 0.21255591547123245
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_CIR017",
+          "count": 1370,
+          "sample_fraction": 0.07512200471568789,
+          "p_a_given_b": 0.22103904485317843,
+          "p_b_given_a": 0.3605263157894737,
+          "jaccard": 0.15878535002318034
+        },
+        {
+          "label_a": "CCSR_CIR011",
+          "label_b": "CCSR_DIG004",
+          "count": 1366,
+          "sample_fraction": 0.07490267039535012,
+          "p_a_given_b": 0.32979237083534524,
+          "p_b_given_a": 0.3016118348421285,
+          "jaccard": 0.18699520876112252
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_GEN002",
+          "count": 1321,
+          "sample_fraction": 0.07243515929155014,
+          "p_a_given_b": 0.3283619189659458,
+          "p_b_given_a": 0.4545767377838954,
+          "jaccard": 0.23555634807417974
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_GEN002",
+          "count": 1315,
+          "sample_fraction": 0.07210615781104349,
+          "p_a_given_b": 0.21148279189449984,
+          "p_b_given_a": 0.45251204404679973,
+          "jaccard": 0.16839544115763863
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END003",
+          "count": 1312,
+          "sample_fraction": 0.07194165707079016,
+          "p_a_given_b": 0.32612478250062144,
+          "p_b_given_a": 0.4125786163522013,
+          "jaccard": 0.22271261245968427
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_END011",
+          "count": 1311,
+          "sample_fraction": 0.07188682349070571,
+          "p_a_given_b": 0.32587621178225207,
+          "p_b_given_a": 0.323145181168351,
+          "jaccard": 0.1936770571724036
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_MBD002",
+          "count": 1310,
+          "sample_fraction": 0.07183198991062126,
+          "p_a_given_b": 0.21135850274282025,
+          "p_b_given_a": 0.3430217334380728,
+          "jaccard": 0.1504536579763409
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_MBD002",
+          "count": 1308,
+          "sample_fraction": 0.07172232275045237,
+          "p_a_given_b": 0.21035702798327435,
+          "p_b_given_a": 0.3424980361351139,
+          "jaccard": 0.1498453431091763
+        },
+        {
+          "label_a": "CCSR_CIR019",
+          "label_b": "CCSR_DIG004",
+          "count": 1303,
+          "sample_fraction": 0.07144815485003016,
+          "p_a_given_b": 0.323887646035297,
+          "p_b_given_a": 0.2877014793552661,
+          "jaccard": 0.1797489308870189
+        },
+        {
+          "label_a": "CCSR_CIR007",
+          "label_b": "CCSR_END011",
+          "count": 1290,
+          "sample_fraction": 0.07073531830893239,
+          "p_a_given_b": 0.20813165537270087,
+          "p_b_given_a": 0.3179689425684003,
+          "jaccard": 0.14389291689905187
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_MBD002",
+          "count": 1284,
+          "sample_fraction": 0.07040631682842573,
+          "p_a_given_b": 0.2835062927798631,
+          "p_b_given_a": 0.3362136684996072,
+          "jaccard": 0.18176670441676104
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_END011",
+          "count": 1275,
+          "sample_fraction": 0.06991281460766574,
+          "p_a_given_b": 0.28151909913888273,
+          "p_b_given_a": 0.31427162928272123,
+          "jaccard": 0.17439474764054164
+        },
+        {
+          "label_a": "CCSR_FAC025",
+          "label_b": "CCSR_GEN002",
+          "count": 1236,
+          "sample_fraction": 0.06777430498437242,
+          "p_a_given_b": 0.24235294117647058,
+          "p_b_given_a": 0.4253269098417068,
+          "jaccard": 0.18257016248153618
+        },
+        {
+          "label_a": "CCSR_DIG004",
+          "label_b": "CCSR_GEN003",
+          "count": 1235,
+          "sample_fraction": 0.06771947140428798,
+          "p_a_given_b": 0.27268712740119233,
+          "p_b_given_a": 0.3041122876138882,
+          "jaccard": 0.167912984364378
+        },
+        {
+          "label_a": "CCSR_END002",
+          "label_b": "CCSR_FAC025",
+          "count": 1217,
+          "sample_fraction": 0.066732466962768,
+          "p_a_given_b": 0.4138048282896974,
+          "p_b_given_a": 0.23862745098039215,
+          "jaccard": 0.17834114888628372
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_NVS016",
+          "count": 1211,
+          "sample_fraction": 0.06640346548226134,
+          "p_a_given_b": 0.19475715664200707,
+          "p_b_given_a": 0.4571536428841072,
+          "jaccard": 0.1581765935214211
+        },
+        {
+          "label_a": "CCSR_MBD002",
+          "label_b": "CCSR_MBD005",
+          "count": 1183,
+          "sample_fraction": 0.0648681252398969,
+          "p_a_given_b": 0.3097669547001833,
+          "p_b_given_a": 0.5079433233147274,
+          "jaccard": 0.23826787512588116
+        },
+        {
+          "label_a": "CCSR_END010",
+          "label_b": "CCSR_RSP008",
+          "count": 1158,
+          "sample_fraction": 0.06349728573778582,
+          "p_a_given_b": 0.18623351559987134,
+          "p_b_given_a": 0.48029863127333056,
+          "jaccard": 0.15499933074554945
+        }
+      ],
+      "pair_count_total": 37644
+    }
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "step": 4,
+  "title": "Temporal Structure Analysis",
+  "datasets": {
+    "train": {
+      "samples": 143677,
+      "history_length": {
+        "min": 2.0,
+        "p25": 21.0,
+        "median": 44.0,
+        "p75": 95.0,
+        "p95": 292.0,
+        "max": 1636.0,
+        "mean": 82.39302741566152,
+        "std": 115.17957964036002
+      },
+      "label_length": {
+        "min": 1.0,
+        "p25": 6.0,
+        "median": 9.0,
+        "p75": 13.0,
+        "p95": 19.0,
+        "max": 34.0,
+        "mean": 9.46768097886231,
+        "std": 5.094505697075807
+      },
+      "history_span_months": {
+        "min": -180.0,
+        "p25": -12.0,
+        "median": 0.0,
+        "p75": 12.0,
+        "p95": 72.0,
+        "max": 180.0,
+        "mean": -0.032489542515503525,
+        "std": 42.39513529977152
+      },
+      "history_span_years": {
+        "min": -15.0,
+        "p25": -1.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p95": 6.0,
+        "max": 15.0,
+        "mean": -0.0027074618762919604,
+        "std": 3.5329279416476265
+      },
+      "unique_age_points_per_sample": {
+        "min": 1.0,
+        "p25": 2.0,
+        "median": 3.0,
+        "p75": 5.0,
+        "p95": 9.0,
+        "max": 16.0,
+        "mean": 3.541165252615241,
+        "std": 2.5666227777165416
+      },
+      "age_sequence_quality": {
+        "non_monotonic_rows": 99277,
+        "non_monotonic_pct": 69.09735030659047,
+        "zero_month_consecutive_gaps": 10898754
+      },
+      "inter_event_positive_gaps_months": {
+        "min": 12.0,
+        "p25": 12.0,
+        "median": 36.0,
+        "p75": 60.0,
+        "p95": 108.0,
+        "max": 180.0,
+        "mean": 41.254213768106865,
+        "std": 32.199179164896925
+      },
+      "recurrence_vs_new_targets": {
+        "total_target_codes": 1360288,
+        "recurrent_count": 944270,
+        "new_count": 416018,
+        "recurrent_pct": 69.41691759392128,
+        "new_pct": 30.583082406078713,
+        "recurrent_per_sample": {
+          "min": 0.0,
+          "p25": 3.0,
+          "median": 6.0,
+          "p75": 9.0,
+          "p95": 14.0,
+          "max": 29.0,
+          "mean": 6.572172303152209,
+          "std": 4.08300983615975
+        },
+        "new_per_sample": {
+          "min": 0.0,
+          "p25": 1.0,
+          "median": 2.0,
+          "p75": 4.0,
+          "p95": 9.0,
+          "max": 29.0,
+          "mean": 2.8955086757101,
+          "std": 3.0258580056519193
+        }
+      },
+      "longitudinal_progression": {
+        "patients_with_multiple_snapshots": 19783,
+        "snapshot_transitions": 123894,
+        "end_age_delta_months": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 12.0,
+          "p95": 48.0,
+          "max": 168.0,
+          "mean": 9.555910697854618,
+          "std": 17.44047763434989
+        },
+        "end_age_delta_years": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 1.0,
+          "p95": 4.0,
+          "max": 14.0,
+          "mean": 0.7963258914878848,
+          "std": 1.4533731361958242
+        },
+        "history_growth_per_transition": {
+          "min": -1620.0,
+          "p25": -8.0,
+          "median": 12.0,
+          "p75": 28.0,
+          "p95": 92.0,
+          "max": 1138.0,
+          "mean": 3.9755597526918174,
+          "std": 83.22813981422885
+        },
+        "codes_added_per_transition": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 2.0,
+          "p75": 7.0,
+          "p95": 19.0,
+          "max": 77.0,
+          "mean": 5.050147706910746,
+          "std": 7.0667765392730635
+        },
+        "codes_removed_per_transition": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 2.0,
+          "p95": 24.0,
+          "max": 106.0,
+          "mean": 3.9442184447995867,
+          "std": 9.318920562316706
+        },
+        "transitions_with_removals": 33934,
+        "transitions_with_removals_pct": 27.3895426735758
+      }
+    },
+    "val": {
+      "samples": 17799,
+      "history_length": {
+        "min": 2.0,
+        "p25": 21.0,
+        "median": 43.0,
+        "p75": 94.0,
+        "p95": 287.09999999999854,
+        "max": 1199.0,
+        "mean": 81.62413618742626,
+        "std": 114.39847382544187
+      },
+      "label_length": {
+        "min": 1.0,
+        "p25": 6.0,
+        "median": 9.0,
+        "p75": 12.0,
+        "p95": 19.0,
+        "max": 32.0,
+        "mean": 9.398224619360638,
+        "std": 5.110638290583149
+      },
+      "history_span_months": {
+        "min": -180.0,
+        "p25": -12.0,
+        "median": 0.0,
+        "p75": 12.0,
+        "p95": 72.0,
+        "max": 180.0,
+        "mean": 0.035732344513736726,
+        "std": 40.938609316961866
+      },
+      "history_span_years": {
+        "min": -15.0,
+        "p25": -1.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p95": 6.0,
+        "max": 15.0,
+        "mean": 0.002977695376144727,
+        "std": 3.4115507764134887
+      },
+      "unique_age_points_per_sample": {
+        "min": 1.0,
+        "p25": 2.0,
+        "median": 3.0,
+        "p75": 5.0,
+        "p95": 9.0,
+        "max": 15.0,
+        "mean": 3.496320017978538,
+        "std": 2.6113659109670158
+      },
+      "age_sequence_quality": {
+        "non_monotonic_rows": 12233,
+        "non_monotonic_pct": 68.72858025731783,
+        "zero_month_consecutive_gaps": 1335253
+      },
+      "inter_event_positive_gaps_months": {
+        "min": 12.0,
+        "p25": 12.0,
+        "median": 36.0,
+        "p75": 60.0,
+        "p95": 108.0,
+        "max": 168.0,
+        "mean": 41.09684148381383,
+        "std": 32.528776667498185
+      },
+      "recurrence_vs_new_targets": {
+        "total_target_codes": 167279,
+        "recurrent_count": 116193,
+        "new_count": 51086,
+        "recurrent_pct": 69.46060174917353,
+        "new_pct": 30.539398250826462,
+        "recurrent_per_sample": {
+          "min": 0.0,
+          "p25": 3.0,
+          "median": 6.0,
+          "p75": 9.0,
+          "p95": 14.0,
+          "max": 28.0,
+          "mean": 6.528063374346873,
+          "std": 4.077578862717375
+        },
+        "new_per_sample": {
+          "min": 0.0,
+          "p25": 1.0,
+          "median": 2.0,
+          "p75": 4.0,
+          "p95": 9.0,
+          "max": 24.0,
+          "mean": 2.870161245013765,
+          "std": 3.027181231081288
+        }
+      },
+      "longitudinal_progression": {
+        "patients_with_multiple_snapshots": 2472,
+        "snapshot_transitions": 15327,
+        "end_age_delta_months": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 12.0,
+          "p95": 48.0,
+          "max": 156.0,
+          "mean": 9.51967116852613,
+          "std": 17.569843696671224
+        },
+        "end_age_delta_years": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 1.0,
+          "p95": 4.0,
+          "max": 13.0,
+          "mean": 0.7933059307105109,
+          "std": 1.4641536413892686
+        },
+        "history_growth_per_transition": {
+          "min": -1151.0,
+          "p25": -8.0,
+          "median": 12.0,
+          "p75": 28.0,
+          "p95": 87.0,
+          "max": 922.0,
+          "mean": 4.011091537809095,
+          "std": 83.21267213416714
+        },
+        "codes_added_per_transition": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 2.0,
+          "p75": 7.0,
+          "p95": 19.0,
+          "max": 74.0,
+          "mean": 4.9468258628563975,
+          "std": 6.883817414677604
+        },
+        "codes_removed_per_transition": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 2.0,
+          "p95": 23.69999999999891,
+          "max": 106.0,
+          "mean": 3.8231225941149605,
+          "std": 9.129414994118568
+        },
+        "transitions_with_removals": 4106,
+        "transitions_with_removals_pct": 26.78932602596725
+      }
+    },
+    "test": {
+      "samples": 18237,
+      "history_length": {
+        "min": 2.0,
+        "p25": 21.0,
+        "median": 44.0,
+        "p75": 95.0,
+        "p95": 290.2000000000007,
+        "max": 921.0,
+        "mean": 80.96627734824807,
+        "std": 105.55739774609292
+      },
+      "label_length": {
+        "min": 1.0,
+        "p25": 5.0,
+        "median": 9.0,
+        "p75": 12.0,
+        "p95": 19.0,
+        "max": 32.0,
+        "mean": 9.267533037232,
+        "std": 5.200881619238739
+      },
+      "history_span_months": {
+        "min": -168.0,
+        "p25": -12.0,
+        "median": 0.0,
+        "p75": 12.0,
+        "p95": 72.0,
+        "max": 168.0,
+        "mean": -1.287711794703076,
+        "std": 42.29821472498633
+      },
+      "history_span_years": {
+        "min": -14.0,
+        "p25": -1.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p95": 6.0,
+        "max": 14.0,
+        "mean": -0.10730931622525634,
+        "std": 3.5248512270821943
+      },
+      "unique_age_points_per_sample": {
+        "min": 1.0,
+        "p25": 2.0,
+        "median": 3.0,
+        "p75": 5.0,
+        "p95": 9.0,
+        "max": 14.0,
+        "mean": 3.5574381751384547,
+        "std": 2.5464386095334683
+      },
+      "age_sequence_quality": {
+        "non_monotonic_rows": 12801,
+        "non_monotonic_pct": 70.1924658660964,
+        "zero_month_consecutive_gaps": 1340404
+      },
+      "inter_event_positive_gaps_months": {
+        "min": 12.0,
+        "p25": 12.0,
+        "median": 36.0,
+        "p75": 60.0,
+        "p95": 108.0,
+        "max": 168.0,
+        "mean": 42.591367877979955,
+        "std": 31.8839838427629
+      },
+      "recurrence_vs_new_targets": {
+        "total_target_codes": 169012,
+        "recurrent_count": 117047,
+        "new_count": 51965,
+        "recurrent_pct": 69.25366246183702,
+        "new_pct": 30.746337538162972,
+        "recurrent_per_sample": {
+          "min": 0.0,
+          "p25": 3.0,
+          "median": 6.0,
+          "p75": 9.0,
+          "p95": 14.0,
+          "max": 27.0,
+          "mean": 6.418106048143883,
+          "std": 4.104791603448665
+        },
+        "new_per_sample": {
+          "min": 0.0,
+          "p25": 1.0,
+          "median": 2.0,
+          "p75": 4.0,
+          "p95": 9.0,
+          "max": 25.0,
+          "mean": 2.8494269890881174,
+          "std": 3.0443571149871254
+        }
+      },
+      "longitudinal_progression": {
+        "patients_with_multiple_snapshots": 2473,
+        "snapshot_transitions": 15763,
+        "end_age_delta_months": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 12.0,
+          "p95": 48.0,
+          "max": 156.0,
+          "mean": 9.520522743132652,
+          "std": 17.579761969046125
+        },
+        "end_age_delta_years": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 1.0,
+          "p95": 4.0,
+          "max": 13.0,
+          "mean": 0.7933768952610544,
+          "std": 1.4649801640871771
+        },
+        "history_growth_per_transition": {
+          "min": -906.0,
+          "p25": -9.0,
+          "median": 12.0,
+          "p75": 28.0,
+          "p95": 86.0,
+          "max": 638.0,
+          "mean": 3.8900589989215253,
+          "std": 77.99117262753929
+        },
+        "codes_added_per_transition": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 2.0,
+          "p75": 7.0,
+          "p95": 19.0,
+          "max": 73.0,
+          "mean": 4.93192920129417,
+          "std": 6.969204607053528
+        },
+        "codes_removed_per_transition": {
+          "min": 0.0,
+          "p25": 0.0,
+          "median": 0.0,
+          "p75": 2.0,
+          "p95": 24.0,
+          "max": 80.0,
+          "mean": 3.839751316373787,
+          "std": 9.041633673889347
+        },
+        "transitions_with_removals": 4288,
+        "transitions_with_removals_pct": 27.2029436021062
+      }
+    }
+  },
+  "cross_split_summary": {
+    "recurrent_pct_by_split": {
+      "train": 69.41691759392128,
+      "val": 69.46060174917353,
+      "test": 69.25366246183702
+    },
+    "new_pct_by_split": {
+      "train": 30.583082406078713,
+      "val": 30.539398250826462,
+      "test": 30.746337538162972
+    },
+    "max_recurrent_pct_gap": 0.20693928733651035
+  }
+}

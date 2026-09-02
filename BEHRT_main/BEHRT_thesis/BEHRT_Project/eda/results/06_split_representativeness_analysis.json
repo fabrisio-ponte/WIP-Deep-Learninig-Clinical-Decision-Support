@@ -1,0 +1,631 @@
+{
+  "step": 6,
+  "title": "Split Representativeness Analysis",
+  "split_summaries": {
+    "train": {
+      "samples": 143677,
+      "unique_patients": 19783,
+      "history_length": {
+        "min": 2.0,
+        "p25": 21.0,
+        "median": 44.0,
+        "p75": 95.0,
+        "p95": 292.0,
+        "max": 1636.0,
+        "mean": 82.39302741566152,
+        "std": 115.17957964036002
+      },
+      "label_length": {
+        "min": 1.0,
+        "p25": 6.0,
+        "median": 9.0,
+        "p75": 13.0,
+        "p95": 19.0,
+        "max": 34.0,
+        "mean": 9.46768097886231,
+        "std": 5.094505697075807
+      },
+      "age_years": {
+        "min": 18.0,
+        "p25": 51.0,
+        "median": 63.0,
+        "p75": 74.0,
+        "p95": 89.0,
+        "max": 106.0,
+        "mean": 61.74591618700279,
+        "std": 17.100671336410283
+      },
+      "top_labels": [
+        {
+          "label": "CCSR_END010",
+          "count": 52559,
+          "fraction_of_samples": 0.36581359577385386
+        },
+        {
+          "label": "CCSR_CIR007",
+          "count": 50748,
+          "fraction_of_samples": 0.35320893392818614
+        },
+        {
+          "label": "CCSR_FAC025",
+          "count": 40269,
+          "fraction_of_samples": 0.2802745046179973
+        },
+        {
+          "label": "CCSR_DIG004",
+          "count": 37866,
+          "fraction_of_samples": 0.263549489479875
+        },
+        {
+          "label": "CCSR_CIR011",
+          "count": 33828,
+          "fraction_of_samples": 0.23544478239384176
+        },
+        {
+          "label": "CCSR_GEN003",
+          "count": 33581,
+          "fraction_of_samples": 0.2337256485032399
+        },
+        {
+          "label": "CCSR_END011",
+          "count": 33400,
+          "fraction_of_samples": 0.23246587832429685
+        },
+        {
+          "label": "CCSR_MBD002",
+          "count": 31593,
+          "fraction_of_samples": 0.21988905670357817
+        },
+        {
+          "label": "CCSR_CIR019",
+          "count": 30752,
+          "fraction_of_samples": 0.21403564940804723
+        },
+        {
+          "label": "CCSR_CIR017",
+          "count": 28801,
+          "fraction_of_samples": 0.2004565796891639
+        },
+        {
+          "label": "CCSR_END003",
+          "count": 25097,
+          "fraction_of_samples": 0.1746765313863736
+        },
+        {
+          "label": "CCSR_GEN002",
+          "count": 24391,
+          "fraction_of_samples": 0.169762731682872
+        },
+        {
+          "label": "CCSR_END002",
+          "count": 22685,
+          "fraction_of_samples": 0.157888875742116
+        },
+        {
+          "label": "CCSR_NVS016",
+          "count": 22021,
+          "fraction_of_samples": 0.15326739840057907
+        },
+        {
+          "label": "CCSR_END001",
+          "count": 20293,
+          "fraction_of_samples": 0.14124042122260347
+        },
+        {
+          "label": "CCSR_MBD005",
+          "count": 20233,
+          "fraction_of_samples": 0.14082281784836823
+        },
+        {
+          "label": "CCSR_BLD003",
+          "count": 17834,
+          "fraction_of_samples": 0.12412564293519492
+        },
+        {
+          "label": "CCSR_RSP008",
+          "count": 16660,
+          "fraction_of_samples": 0.11595453691265825
+        },
+        {
+          "label": "CCSR_SYM017",
+          "count": 15469,
+          "fraction_of_samples": 0.10766510993408827
+        },
+        {
+          "label": "CCSR_END009",
+          "count": 15269,
+          "fraction_of_samples": 0.10627309868663738
+        }
+      ],
+      "label_support": {
+        "unique_labels": 463,
+        "max_label_count": 52559,
+        "min_label_count": 1,
+        "mean_label_count": 2937.987041036717
+      }
+    },
+    "val": {
+      "samples": 17799,
+      "unique_patients": 2472,
+      "history_length": {
+        "min": 2.0,
+        "p25": 21.0,
+        "median": 43.0,
+        "p75": 94.0,
+        "p95": 287.09999999999854,
+        "max": 1199.0,
+        "mean": 81.62413618742626,
+        "std": 114.39847382544187
+      },
+      "label_length": {
+        "min": 1.0,
+        "p25": 6.0,
+        "median": 9.0,
+        "p75": 12.0,
+        "p95": 19.0,
+        "max": 32.0,
+        "mean": 9.398224619360638,
+        "std": 5.110638290583149
+      },
+      "age_years": {
+        "min": 18.0,
+        "p25": 51.0,
+        "median": 62.0,
+        "p75": 74.0,
+        "p95": 88.0,
+        "max": 102.0,
+        "mean": 61.57048148772403,
+        "std": 17.028943167045416
+      },
+      "top_labels": [
+        {
+          "label": "CCSR_END010",
+          "count": 6552,
+          "fraction_of_samples": 0.36811056800943875
+        },
+        {
+          "label": "CCSR_CIR007",
+          "count": 6070,
+          "fraction_of_samples": 0.34103039496600934
+        },
+        {
+          "label": "CCSR_FAC025",
+          "count": 5082,
+          "fraction_of_samples": 0.2855216585201416
+        },
+        {
+          "label": "CCSR_DIG004",
+          "count": 4485,
+          "fraction_of_samples": 0.2519804483397944
+        },
+        {
+          "label": "CCSR_GEN003",
+          "count": 4288,
+          "fraction_of_samples": 0.24091241080959605
+        },
+        {
+          "label": "CCSR_CIR011",
+          "count": 4250,
+          "fraction_of_samples": 0.2387774594078319
+        },
+        {
+          "label": "CCSR_END011",
+          "count": 4145,
+          "fraction_of_samples": 0.23287825158716782
+        },
+        {
+          "label": "CCSR_MBD002",
+          "count": 4079,
+          "fraction_of_samples": 0.22917017809989326
+        },
+        {
+          "label": "CCSR_CIR019",
+          "count": 3837,
+          "fraction_of_samples": 0.21557390864655318
+        },
+        {
+          "label": "CCSR_CIR017",
+          "count": 3497,
+          "fraction_of_samples": 0.19647171189392662
+        },
+        {
+          "label": "CCSR_END003",
+          "count": 3185,
+          "fraction_of_samples": 0.1789426372268105
+        },
+        {
+          "label": "CCSR_GEN002",
+          "count": 2998,
+          "fraction_of_samples": 0.1684364290128659
+        },
+        {
+          "label": "CCSR_END002",
+          "count": 2807,
+          "fraction_of_samples": 0.1577054890724198
+        },
+        {
+          "label": "CCSR_NVS016",
+          "count": 2685,
+          "fraction_of_samples": 0.15085117141412438
+        },
+        {
+          "label": "CCSR_MBD005",
+          "count": 2439,
+          "fraction_of_samples": 0.13703017023428282
+        },
+        {
+          "label": "CCSR_END001",
+          "count": 2383,
+          "fraction_of_samples": 0.133883926063262
+        },
+        {
+          "label": "CCSR_BLD003",
+          "count": 2160,
+          "fraction_of_samples": 0.12135513231080398
+        },
+        {
+          "label": "CCSR_RSP008",
+          "count": 2052,
+          "fraction_of_samples": 0.11528737569526377
+        },
+        {
+          "label": "CCSR_DIG025",
+          "count": 1908,
+          "fraction_of_samples": 0.10719703354121018
+        },
+        {
+          "label": "CCSR_SYM017",
+          "count": 1895,
+          "fraction_of_samples": 0.10646665543008034
+        }
+      ],
+      "label_support": {
+        "unique_labels": 424,
+        "max_label_count": 6552,
+        "min_label_count": 1,
+        "mean_label_count": 394.5259433962264
+      }
+    },
+    "test": {
+      "samples": 18237,
+      "unique_patients": 2474,
+      "history_length": {
+        "min": 2.0,
+        "p25": 21.0,
+        "median": 44.0,
+        "p75": 95.0,
+        "p95": 290.2000000000007,
+        "max": 921.0,
+        "mean": 80.96627734824807,
+        "std": 105.55739774609292
+      },
+      "label_length": {
+        "min": 1.0,
+        "p25": 5.0,
+        "median": 9.0,
+        "p75": 12.0,
+        "p95": 19.0,
+        "max": 32.0,
+        "mean": 9.267533037232,
+        "std": 5.200881619238739
+      },
+      "age_years": {
+        "min": 18.0,
+        "p25": 49.0,
+        "median": 62.0,
+        "p75": 74.0,
+        "p95": 89.0,
+        "max": 102.0,
+        "mean": 61.24148708669189,
+        "std": 17.239365648523506
+      },
+      "top_labels": [
+        {
+          "label": "CCSR_END010",
+          "count": 6218,
+          "fraction_of_samples": 0.34095520096507104
+        },
+        {
+          "label": "CCSR_CIR007",
+          "count": 6198,
+          "fraction_of_samples": 0.3398585293633821
+        },
+        {
+          "label": "CCSR_FAC025",
+          "count": 5100,
+          "fraction_of_samples": 0.27965125843066296
+        },
+        {
+          "label": "CCSR_DIG004",
+          "count": 4529,
+          "fraction_of_samples": 0.24834128420244558
+        },
+        {
+          "label": "CCSR_CIR011",
+          "count": 4142,
+          "fraction_of_samples": 0.22712068870976587
+        },
+        {
+          "label": "CCSR_GEN003",
+          "count": 4061,
+          "fraction_of_samples": 0.22267916872292592
+        },
+        {
+          "label": "CCSR_END011",
+          "count": 4057,
+          "fraction_of_samples": 0.22245983440258815
+        },
+        {
+          "label": "CCSR_CIR019",
+          "count": 4023,
+          "fraction_of_samples": 0.22059549267971706
+        },
+        {
+          "label": "CCSR_MBD002",
+          "count": 3819,
+          "fraction_of_samples": 0.20940944234249054
+        },
+        {
+          "label": "CCSR_CIR017",
+          "count": 3800,
+          "fraction_of_samples": 0.2083676043208861
+        },
+        {
+          "label": "CCSR_END003",
+          "count": 3180,
+          "fraction_of_samples": 0.174370784668531
+        },
+        {
+          "label": "CCSR_END002",
+          "count": 2941,
+          "fraction_of_samples": 0.16126555902834896
+        },
+        {
+          "label": "CCSR_GEN002",
+          "count": 2906,
+          "fraction_of_samples": 0.15934638372539342
+        },
+        {
+          "label": "CCSR_NVS016",
+          "count": 2649,
+          "fraction_of_samples": 0.1452541536436914
+        },
+        {
+          "label": "CCSR_END001",
+          "count": 2430,
+          "fraction_of_samples": 0.13324559960519822
+        },
+        {
+          "label": "CCSR_RSP008",
+          "count": 2411,
+          "fraction_of_samples": 0.1322037615835938
+        },
+        {
+          "label": "CCSR_MBD005",
+          "count": 2329,
+          "fraction_of_samples": 0.1277074080166694
+        },
+        {
+          "label": "CCSR_BLD003",
+          "count": 2222,
+          "fraction_of_samples": 0.12184021494763393
+        },
+        {
+          "label": "CCSR_MBD017",
+          "count": 1990,
+          "fraction_of_samples": 0.10911882436804299
+        },
+        {
+          "label": "CCSR_RSP009",
+          "count": 1984,
+          "fraction_of_samples": 0.10878982288753633
+        }
+      ],
+      "label_support": {
+        "unique_labels": 430,
+        "max_label_count": 6218,
+        "min_label_count": 1,
+        "mean_label_count": 393.0511627906977
+      }
+    }
+  },
+  "cross_split_differences": {
+    "age_median_by_split": {
+      "train": 63.0,
+      "val": 62.0,
+      "test": 62.0
+    },
+    "history_length_median_by_split": {
+      "train": 44.0,
+      "val": 43.0,
+      "test": 44.0
+    },
+    "label_length_median_by_split": {
+      "train": 9.0,
+      "val": 9.0,
+      "test": 9.0
+    },
+    "largest_top_label_drift": [
+      {
+        "label": "CCSR_MBD017",
+        "max_minus_min_fraction": 0.10911882436804299,
+        "values": {
+          "train": 0.0,
+          "val": 0.0,
+          "test": 0.10911882436804299
+        }
+      },
+      {
+        "label": "CCSR_RSP009",
+        "max_minus_min_fraction": 0.10878982288753633,
+        "values": {
+          "train": 0.0,
+          "val": 0.0,
+          "test": 0.10878982288753633
+        }
+      },
+      {
+        "label": "CCSR_SYM017",
+        "max_minus_min_fraction": 0.10766510993408827,
+        "values": {
+          "train": 0.10766510993408827,
+          "val": 0.10646665543008034,
+          "test": 0.0
+        }
+      },
+      {
+        "label": "CCSR_DIG025",
+        "max_minus_min_fraction": 0.10719703354121018,
+        "values": {
+          "train": 0.0,
+          "val": 0.10719703354121018,
+          "test": 0.0
+        }
+      },
+      {
+        "label": "CCSR_END009",
+        "max_minus_min_fraction": 0.10627309868663738,
+        "values": {
+          "train": 0.10627309868663738,
+          "val": 0.0,
+          "test": 0.0
+        }
+      },
+      {
+        "label": "CCSR_END010",
+        "max_minus_min_fraction": 0.027155367044367718,
+        "values": {
+          "train": 0.36581359577385386,
+          "val": 0.36811056800943875,
+          "test": 0.34095520096507104
+        }
+      },
+      {
+        "label": "CCSR_MBD002",
+        "max_minus_min_fraction": 0.019760735757402725,
+        "values": {
+          "train": 0.21988905670357817,
+          "val": 0.22917017809989326,
+          "test": 0.20940944234249054
+        }
+      },
+      {
+        "label": "CCSR_GEN003",
+        "max_minus_min_fraction": 0.018233242086670126,
+        "values": {
+          "train": 0.2337256485032399,
+          "val": 0.24091241080959605,
+          "test": 0.22267916872292592
+        }
+      },
+      {
+        "label": "CCSR_RSP008",
+        "max_minus_min_fraction": 0.016916385888330013,
+        "values": {
+          "train": 0.11595453691265825,
+          "val": 0.11528737569526377,
+          "test": 0.1322037615835938
+        }
+      },
+      {
+        "label": "CCSR_DIG004",
+        "max_minus_min_fraction": 0.015208205277429415,
+        "values": {
+          "train": 0.263549489479875,
+          "val": 0.2519804483397944,
+          "test": 0.24834128420244558
+        }
+      },
+      {
+        "label": "CCSR_CIR007",
+        "max_minus_min_fraction": 0.01335040456480402,
+        "values": {
+          "train": 0.35320893392818614,
+          "val": 0.34103039496600934,
+          "test": 0.3398585293633821
+        }
+      },
+      {
+        "label": "CCSR_MBD005",
+        "max_minus_min_fraction": 0.013115409831698815,
+        "values": {
+          "train": 0.14082281784836823,
+          "val": 0.13703017023428282,
+          "test": 0.1277074080166694
+        }
+      },
+      {
+        "label": "CCSR_CIR017",
+        "max_minus_min_fraction": 0.011895892426959487,
+        "values": {
+          "train": 0.2004565796891639,
+          "val": 0.19647171189392662,
+          "test": 0.2083676043208861
+        }
+      },
+      {
+        "label": "CCSR_CIR011",
+        "max_minus_min_fraction": 0.011656770698066032,
+        "values": {
+          "train": 0.23544478239384176,
+          "val": 0.2387774594078319,
+          "test": 0.22712068870976587
+        }
+      },
+      {
+        "label": "CCSR_END011",
+        "max_minus_min_fraction": 0.01041841718457967,
+        "values": {
+          "train": 0.23246587832429685,
+          "val": 0.23287825158716782,
+          "test": 0.22245983440258815
+        }
+      },
+      {
+        "label": "CCSR_GEN002",
+        "max_minus_min_fraction": 0.010416347957478589,
+        "values": {
+          "train": 0.169762731682872,
+          "val": 0.1684364290128659,
+          "test": 0.15934638372539342
+        }
+      },
+      {
+        "label": "CCSR_NVS016",
+        "max_minus_min_fraction": 0.008013244756887666,
+        "values": {
+          "train": 0.15326739840057907,
+          "val": 0.15085117141412438,
+          "test": 0.1452541536436914
+        }
+      },
+      {
+        "label": "CCSR_END001",
+        "max_minus_min_fraction": 0.007994821617405251,
+        "values": {
+          "train": 0.14124042122260347,
+          "val": 0.133883926063262,
+          "test": 0.13324559960519822
+        }
+      },
+      {
+        "label": "CCSR_CIR019",
+        "max_minus_min_fraction": 0.006559843271669835,
+        "values": {
+          "train": 0.21403564940804723,
+          "val": 0.21557390864655318,
+          "test": 0.22059549267971706
+        }
+      },
+      {
+        "label": "CCSR_FAC025",
+        "max_minus_min_fraction": 0.0058704000894786446,
+        "values": {
+          "train": 0.2802745046179973,
+          "val": 0.2855216585201416,
+          "test": 0.27965125843066296
+        }
+      }
+    ]
+  }
+}
